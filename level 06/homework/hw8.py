@@ -23,14 +23,12 @@ print(x>y)
 print(type(x))
 print(type(x>y))
 
-x_type=int(x)
+x_type=str(x)
 y_type=str(y)
 
 print(x_type)
 print(y_type)
 print(type(x_type) , type(y_type))
-
-
 
 
 
