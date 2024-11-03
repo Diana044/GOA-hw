@@ -14,10 +14,6 @@ namee="Goga"
 num=65,6
 
 # boolean
-x=44
-y=43
-z=x-y
-print(z)
+knows_programming=True
 
-print(x==y)
-print(x>+y)
+print(knows_programming)

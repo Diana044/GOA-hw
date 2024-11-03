@@ -3,14 +3,14 @@
 num1="33"
 num2="655"
 
-num1_type=float(num1)
-num2_type=int(num2)
+num1_float=float(num1)
+num2_int=int(num2)
 
-x=num1_type + num2_type
-A=x/2
+number_sum=num1_float + num2_int
+average=number_sum/2
 
-print(A)
-print(type(A))
+print(average)
+print(type(average))
 print(type(num1), type(num2))
-print(type(num1_type) , type(num2_type))
+print(type(num1_float) , type(num2_int))
 

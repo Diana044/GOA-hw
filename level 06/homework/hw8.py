@@ -1,24 +1,19 @@
 # 8) ჩამოწერეთ ოთხივე ტიპის ცვლადი  და ჩაატარეთ ექსპერიმენტული გარდაქმნები 
 
+#str to bool
 name="diana"
 surname="dghg"
 
-name_type=bool(name)
-surname_type=bool(surname)
+name_bool=bool(name)
+surname_bool=bool(surname)
 
-print(type(name_type))
-print(type(surname_type))
+print(type(name_bool))
+print(type(surname_bool))
 
-#
+# numbers
 
 x=5/7
 y=5-3
-
-print(x)
-print(y)
-print(x*y)
-print(y-x)
-print(x>y)
 
 print(type(x))
 print(type(x>y))
