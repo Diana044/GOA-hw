@@ -2,7 +2,7 @@
 
 options=input('You got 2 options. 1.hello 2.hello world')
 if options== "hello":
-    print('The writen word is hello')
+    print('The written word is hello')
 elif options=='hello world':
     print('The written word is hello world')
 else :
