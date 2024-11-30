@@ -1,0 +1,14 @@
+body{
+    background-color: rgba(242, 247, 253, 0.825);
+}
+h1{
+    font-weight: bolder;
+}
+button{
+    border-radius: 20px;
+    background-color: cadetblue;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 249, 241);
+}
