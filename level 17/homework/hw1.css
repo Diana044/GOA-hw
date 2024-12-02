@@ -1,14 +1,36 @@
 body{
-    background-color: rgba(242, 247, 253, 0.825);
+    background-color: rgba(212, 255, 218, 0.825);
 }
 h1{
     font-weight: bolder;
 }
 button{
     border-radius: 20px;
-    background-color: cadetblue;
+    background-color: rgb(83, 203, 207);
 }
 a{
     text-decoration: none;
-    color: rgb(255, 249, 241);
+    color: rgb(11, 114, 27);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family:cursive;
+    color:maroon
+}
+p{
+    font-size: 19px;
+    color: rgb(51, 11, 11);
+}
+h2{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: maroon;
+    font-family: cursive;
+}
+img{
+    border-radius: 38px;
+    width: 380px;
 }
