@@ -1,5 +1,4 @@
-for i in range(-10,10):
-    if i<0:
-        print(i,'is negative')
-    elif i>=0:
-        print(i, 'is positive')
+#  5) დაბეჭდეთ ნულიდან 30 მდე მხოლოდ კენტი რიცხვები
+for i in range(0,30):
+    if i%2!=0:
+        print(i)
