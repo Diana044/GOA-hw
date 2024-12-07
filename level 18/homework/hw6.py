@@ -4,3 +4,4 @@ for i in range(70):
         print(i,'is even')
     elif i%2!=0:
         print(i, 'is odd')
+    
