@@ -1,0 +1,52 @@
+#img1{
+    width: 60px;
+    border-radius: 50%;
+}
+
+#nav1 {
+    display: flex;
+}
+
+#ul1 {
+    display: flex;
+    list-style: none;
+}
+
+.li1 {
+    padding-left: 25px;
+    color: rgb(0, 0, 0);
+}
+
+
+body {
+    background-color: rgb(252, 247, 247);
+    font-family: sans-serif;
+}
+#comtact-a {
+    text-decoration: none;
+    color: black;
+}
+#contactform{
+    text-align: center;
+}
+
+#text{
+    padding: 14px;
+}
+#submit{
+    border-radius: 30px;
+    background-color: rgb(0, 119, 238);
+    color: rgb(16, 6, 108);
+    transition: 1s;
+    cursor: pointer;
+    font-size: 25px;
+    border-color: darkcyan;
+}
+
+#submit:hover {
+    color: rgb(255, 0, 0);
+    background-color: black;
+    font-size: 34px;
+    border-color: rgb(255, 0, 0);
+
+}
