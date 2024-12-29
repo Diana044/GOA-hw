@@ -1,0 +1,36 @@
+.submit_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    border:2px solid black; 
+    width: 400px;
+    margin-left: 430px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.submit_div:hover{
+    box-shadow: 5px 6px 9px 0px rgb(101, 141, 101);
+
+}
+
+.homepage-a{
+    text-decoration: none;
+    color: rgb(0, 65, 11);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.homepage-a:hover{
+    color: rgb(46, 161, 11);
+    font-size: 20px;
+    margin-bottom: 19px;
+
+}
+.submit_pic{
+    width: 67px;
+    margin-top: 25px;
+}

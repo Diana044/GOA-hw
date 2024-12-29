@@ -1,0 +1,257 @@
+
+body{
+   background-color: rgb(203, 230, 230);
+}
+
+#img1{
+    width: 60px;
+    border-radius: 50%;
+}
+
+#nav1 {
+    display: flex;
+    background-color: #061729;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#ul1 {
+    display: flex;
+    list-style: none;
+
+}
+
+li{
+  font-size: 22px;
+  padding-top: 20px;
+  padding-right: 40px;
+  
+}
+
+a {
+    text-decoration: none;
+    color: #AFEEEE;
+    transition: 1s;
+
+}
+
+a:hover {
+    color:#07c465;
+    margin-right: 13px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+
+
+
+
+#main_div {
+    display: flex;
+    justify-content: center;
+}
+
+.cpu {
+    width: 300px;
+    height: 440px;
+    background-color: rgb(190, 248, 248);
+    border-radius: 15px;
+    border: 2px solid rgb(10, 85, 8);
+}
+
+.img1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* seqciebi */
+
+#section1 {
+    color:  rgb(203, 230, 230);
+    transition: 1s;
+}
+#section2 {
+    color: rgb(203, 230, 230);
+    transition: 1s;
+}
+#section3{
+    color:  rgb(203, 230, 230);
+    transition: 2s;
+}
+#section4{
+    color:  rgb(203, 230, 230);
+    transition: 2s;
+}
+#section5{
+    color:  rgb(203, 230, 230);
+    transition: 2s;
+}
+#section6{
+    color:  rgb(203, 230, 230);
+    transition: 2s;
+}
+#section7{
+    color:  rgb(203, 230, 230);
+    transition: 2s;
+}
+#section8{
+    color:  rgb(203, 230, 230);
+    transition: 2s;
+}
+
+
+/* div */
+
+#div1 {
+    display: inline-block;
+    height: 300px;
+    transition: 2s;
+    cursor: pointer;
+}
+
+#div2 {
+    display: inline-block;
+    height: 300px;
+    transition: 2s;
+    cursor: pointer;
+}
+#div3{
+    display: inline-block;
+    height: 300px;
+    transition: 2s;
+    cursor: pointer;
+}
+#div4{
+    display: inline-block;
+    height: 300px;
+    transition: 1s;
+    cursor: pointer;
+}
+#div5{
+    display: inline-block;
+    height: 300px;
+    transition: 1s;
+    cursor: pointer;
+}
+#div6{
+    display: inline-block;
+    height: 300px;
+    transition: 1s;
+    cursor: pointer;
+}
+#div7{
+    display: inline-block;
+    height: 300px;
+    transition: 1s;
+    cursor: pointer;
+}
+#div8{
+    display: inline-block;
+    height: 300px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+/* hover */
+
+#div1:hover {
+    height: 440px;
+    #section1 {
+        color: black;
+    }
+    #section1 b {
+        color: #1abc9c;
+    }
+}
+
+#div2:hover {
+    height: 440px;
+    #section2 {
+        color: black;
+    }
+    #section2 b {
+        color: #1abc9c;
+    }
+}
+
+#div3:hover{
+    height: 430px;
+    #section3 {
+        color: rgb(0, 0, 0);
+    }
+    #section3 b{
+        color: #1abc9c;
+    }
+}
+
+#div4:hover{
+    height: 430px;
+    #section4{
+        color: rgb(0, 0, 0);
+    }
+    #section4 b {
+        color: #1abc9c;
+  }
+}
+#div5:hover{
+    height: 430px;
+    #section5{
+        color: rgb(0, 0, 0);
+    }
+    #section5 b {
+        color: #1abc9c;
+  }
+}
+#div6:hover{
+    height: 430px;
+    #section6{
+        color: rgb(0, 0, 0);
+    }
+    #section6 b {
+        color: #1abc9c;
+  }
+}
+#div7:hover{
+    height: 430px;
+    #section7{
+        color: rgb(0, 0, 0);
+    }
+    #section7 b {
+        color: #1abc9c;
+  }
+}
+#div8:hover{
+    height: 430px;
+    #section8{
+        color: rgb(0, 0, 0);
+    }
+    #section8 b {
+        color: #1abc9c;
+  }
+}
+
+/* footerr */
+body{
+    margin: 0;
+    padding: 0;
+}
+#footer1 {
+    margin-top: 60px;
+    width: 1270px;
+    height: 100px;
+    background-color:#061729;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.footer-a{
+    margin: 3px;
+    text-decoration: none;
+    color: azure;
+}

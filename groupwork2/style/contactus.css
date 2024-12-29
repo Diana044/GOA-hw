@@ -1,0 +1,73 @@
+
+#contactbody{
+    background-image: url(/groupwork2/images/contactimg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+  
+}
+
+
+#text{
+    padding: 14px;
+}
+#submit{
+    border-radius: 30px;
+    background-color: rgba(6, 132, 155, 0.400);
+    color: rgb(254, 254, 255);
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    transition: 1s;
+    cursor: pointer;
+    font-size: 25px;
+    border-color: rgb(0, 255, 255);
+}
+
+#submit:hover {
+    color: rgba(255, 0, 0, 0.925);
+    background-color: rgb(0, 2, 8);
+    font-size: 35px;
+    border-radius: 50%;
+    border-color: rgb(255, 0, 0);
+
+}
+#contactform{
+    margin-left: 500px;
+    margin-top: 100px;
+    text-align: center;
+    color: rgb(19, 166, 211);
+}
+
+label {
+    padding-right: 90px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 5px;
+    color: rgb(7, 117, 151);
+}
+
+input::placeholder {
+    color: black;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.input1 {
+    border: none;
+}
+
+
+#h1_1{
+    font-family: cursive;
+    transition: 1.5s;
+}
+#h1_1:hover{
+    margin-bottom: 18px;
+    color: rgb(4, 194, 130);
+    cursor:grab;
+}

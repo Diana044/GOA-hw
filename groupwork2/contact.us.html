@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conact us</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/contactus.css">
+    <link rel="icon" href="/groupwork2/images/gamebase.png" type="image/x-icon"/>
+
 </head>
-<body>
-    <form id="contactform">
-        <h1>Contact us!</h1>
-        <input type="text" name="name" id="name" placeholder="Enter your name and surname">
+<body id="contactbody">
+    <form id="contactform" action="submitted.html">
+        <h1 id="h1_1">Contact us!</h1>
+        <label for="name">Full name:</label><br>
+        <input type="text" name="name" id="name" placeholder="Enter your full name" class="input1">
         <br>
         <br>
-        <input type="email" name="addres" id="addres" placeholder="Email address">
+        <label for="email">Email address:</label><br>
+        <input type="email" name="addres" id="addres" placeholder="Email address" class="input1">
         <br>
         <br>
-        <input type="number" name="pnone" id="phone" placeholder="Mobile phone number">
+        <label for="phone">Phone number:</label><br>
+        <input type="number" name="phone" id="phone" placeholder="current phone number" class="input1">
         <br>
         <br>
-        <input type="text" name="text" id="text" placeholder="Type the text"><br><br>
+        <label for="">Your Message:</label><br>
+        <input type="text" name="text" id="text" placeholder="enter your Message" class="kok1"><br><br>
+
         <input type="submit" placeholder="submit" id="submit" name="submit">
     </form>
 </body>
