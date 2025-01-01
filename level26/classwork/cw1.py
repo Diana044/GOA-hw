@@ -12,3 +12,5 @@ print(list[len(list)//2:len(list)])
 print(list[-3])
 print(list[-1])
 
+
+print(type(list))
