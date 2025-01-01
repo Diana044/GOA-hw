@@ -6,6 +6,7 @@
 }
 body{
    background-color: rgb(203, 230, 230);
+   overflow-x: hidden;
 }
 
 #img1{
@@ -22,9 +23,9 @@ body{
 #ul1 {
     display: flex;
     list-style: none;
-
 }
 
+/* navbar list elements  */
 li{
   font-size: 22px;
   padding-top: 20px;
@@ -32,26 +33,25 @@ li{
   
 }
 
-a {
+#nav1 a, #footer1 a {
     text-decoration: none;
     color: #AFEEEE;
     transition: 1s;
-
 }
 
-a:hover {
-    color:#07c465;
+#nav1 a:hover, #footer1 a:hover {
+    color:#30f783;
     margin-right: 13px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-
+/* first section cpus */
 
 .div{
     position: relative;
     display: inline-block;
     top: 50px;
-    left: 50px;
+    left: 70px;
     border-radius: 10px;
     box-shadow:  5px 5px 15px 0px  #008080;
     transition:1.5s;
@@ -66,19 +66,22 @@ a:hover {
 
 .img{
     display: flex;
-    border-radius: 10px;
+    border-radius: 50%;
     width: 200px;
 }
 .p{
-    display: flex;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(6, 92, 63);
 }
 .div1{
     position: relative;
     display: inline-block;
     top: 50px;
-    left: 100px;
+    left: 175px;
     border-radius: 10px;
-    box-shadow:  5px 5px 15px 0px  #008080;
+    box-shadow:  5px 5px 15px 0px  #008080;;
     transition:1.5s;
     cursor: pointer;
 
@@ -93,7 +96,7 @@ a:hover {
     position: relative;
     display: inline-block;
     top: 50px;
-    left: 150px;
+    left: 285px;
     border-radius: 10px;
     box-shadow:  5px 5px 15px 0px  #008080;
     transition:1.5s;
@@ -109,7 +112,7 @@ a:hover {
     position: relative;
     display: inline-block;
     top: 50px;
-    left: 200px;
+    left: 400px;
     border-radius: 10px;
     box-shadow:  5px 5px 15px 0px  #008080;
     transition:1.5s;
@@ -121,30 +124,39 @@ a:hover {
     box-shadow:  5px 5px 15px 0px  #04c97d;
 }
 
+/* meore seqcia */
 
-/* .second_div{
-    position: relative;
-    display: inline-block;
-    top: 50px;
-    left: 200px;
-    border-radius: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 5px 8px 0 purple;
-    background-color: rgb(255, 255, 255);
+.second_div{
+    display: flex;
+    justify-content: space-around;
 }
-
 
 .pc_img{
-    width: 159px;
+    width: 120px;
+    height: 130px;
+    border-radius: 50%;
 }
-.div4{
-    padding: 15px;
-    text-align: center;
-} */
 
+/*  meore seqciis 4 divi  */
+.div4{
+    padding: 12px;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 16px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px 0 rgb(0, 119, 128);
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 260px;
+    margin-top: 120px;
+    margin-left: 45px;
+}
+
+
+/* footer */
 
 #footer1 {
-    margin-top: 600px;
+    margin-top: 300px;
     width: 1270px;
     height: 100px;
     background-color:#061729;
@@ -156,4 +168,32 @@ a:hover {
 
 .footer-a{
     margin: 3px;
+}
+
+/* boy now  */
+.div_buy {
+    background-color: rgb(147, 239, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 12px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.div_buy:hover {
+    background-color: #04c97d;
+    
+}
+
+
+
+.a_problem {
+    color: black;
+    text-decoration: none;
 }

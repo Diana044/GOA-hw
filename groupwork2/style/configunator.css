@@ -1,4 +1,4 @@
-
+/* navbar */
 body{
    background-color: rgb(203, 230, 230);
 }
@@ -42,15 +42,11 @@ a:hover {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-
-
-
-
-
+/* body */
 
 #main_div {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .cpu {
@@ -106,14 +102,15 @@ a:hover {
 /* div */
 
 #div1 {
-    display: inline-block;
+    /* display: inline-block; */
     height: 300px;
     transition: 2s;
     cursor: pointer;
+    
 }
 
 #div2 {
-    display: inline-block;
+    /* display: inline-block; */
     height: 300px;
     transition: 2s;
     cursor: pointer;
@@ -239,7 +236,7 @@ body{
     padding: 0;
 }
 #footer1 {
-    margin-top: 60px;
+    margin-top: 120px;
     width: 1270px;
     height: 100px;
     background-color:#061729;
