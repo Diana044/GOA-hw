@@ -13,4 +13,4 @@ print(list[-3])
 print(list[-1])
 
 
-print(type(list))
+print(list)

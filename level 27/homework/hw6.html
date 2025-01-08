@@ -1,2 +1,60 @@
 <!-- 1) შექმენით საიტი, სადაც გექნებათ სარეგისტრაციო ფორმა. უნდა იყოს 3 შესაყვანი ველი: სახელი, ემაილი და პაროლი. გასტილეთ ფორმა თქვენ როგორც გინდათ
  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 98.3597851vh;
+        }
+
+        form {
+            border: 1px solid black;
+        }
+
+        #div1 {
+            padding: 60px;
+        }
+        input {
+            border-radius: 10px;
+        }
+
+        input[type='submit'] {
+            margin-top: 30px;
+            padding: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 15px;
+            background-color: rgb(80, 180, 159);
+            border: none;
+            cursor: pointer;
+            transition: 1s;
+        }
+        input[type='submit']:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <center>
+            <div id="div1">
+                <h1>Registration</h1>
+                <label for="name">Enter your name: </label><br>
+                <input type="text" id="name"><br>
+                <label for="email">Enter your email: </label><br>
+                <input type="email" id="email"><br>
+                <label for="Pass">Enter you password: </label><br>
+                <input type="password" id="Pass"><br>
+                <input type="submit">
+            </div>
+        </center>
+    </form>
+</body>
+</html>
