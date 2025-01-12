@@ -1,0 +1,56 @@
+*{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+} 
+
+.quote{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(74, 70, 70);
+}
+
+img{
+    width: 259px;
+    border-radius: 20px;
+    margin-left: 60px;
+}
+#car_img{
+    height: 297px;
+}
+
+.div{
+     width: 380px;
+     display: inline-block;
+     margin: 10px;
+}
+#div1{
+    border:2px solid rgb(31, 130, 1);
+    text-decoration: none;
+
+}
+
+#div2{
+    border:2px solid rgb(176, 62, 0);
+}
+
+#div3{
+    border: 2px solid red;
+}
+
+.text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#mamardaimg{
+    height: 295px;
+}
+
+.heading{
+    font-weight: bold;
+
+}
+
+#h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
