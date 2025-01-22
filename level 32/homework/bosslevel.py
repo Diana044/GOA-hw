@@ -3,31 +3,77 @@
 user_items=[]
 total_price=[]
 
+
 user_name=input('enter your name')
 print('hi', user_name,'this is PC Parts shop. Here you can purchase:')
-print('1.cpus')
-print('2.GPU ')
-print('3.Motherboard')
-print('4.RAM')
+print('1.Intel Core i7-12700K ($400)')
+print('2.GPU,NVIDIA GeForce RTX 3070 ($500) ')
+print('3.Motherboard, ASUS ROG Strix Z590-E (Intel, $300)')
+print('4.RAM, Corsair Vengeance LPX 64GB (4x16GB, DDR4 3200MHz) ($250)')
 print('5.Storage')
-print('6.Operating System and etc')
-user_interest=input(('which product are you interested in? (Choose by number)'))
+
+while True:
+       user_interest=input(('which product are you interested in? (Choose by number)'))
+
+
 # first product
 if user_interest== '1':
-    print('CPU,Purpose-Executes instructions for programs and games, acting as the brain of the computer.')
-    print('product1: AMD Ryzen 5 5600X ($200).')
-    print('product2: Intel Core i7-12700K ($400)')
-    print('Price range: $100 - $700+')
-    chosen_cpu=input('Choose which cpu would you like to purchase (example:product1)')
-    if chosen_cpu== 'product1':
-        user_items.append(chosen_cpu)
-        print(' AMD Ryzen 5 5600X ($200)- has been successfully added to shoppig list')
-        continue_shopping=input('would you like to add more products or leave(add or leave)')
-        if continue_shopping=='add':
-                chosen_cpu=input('Choose which cpu would you like to purchase (example:product1)')
-        elif chosen_cpu=='product2':
-            user_items.append(chosen_cpu)
-            print('Intel Core i7-12700K ($400)-has been successfully added to shoppig list')
+    user_items.append('Intel Core i7-12700K ($400)')
+    total_price.append(400)
+    print(' Intel Core i7-12700K ($400)- has been successfully added to shoppig list')
+ 
+# second product
+elif user_interest== '2':
+    user_items.append('NVIDIA GeForce RTX 3070' )
+    total_price.append(500)
+    print('GPU,NVIDIA GeForce RTX 3070 ($500)- has been successfully added to shoppig list ')
+
+elif user_interest=='3':
+            user_items.append(' ASUS ROG Strix Z590-E- has been successfully added to shoppig list')
+            total_price.append(300)
+            print('Motherboard, ASUS ROG Strix Z590-E (Intel, $300)- has been successfully added to soppig list')
+
+elif user_interest=='4':
+       user_items.append('Corsair Vengeance LPX 64GB ')
+       total_price.append(250)
+       print(' Corsair Vengeance LPX 64GB (4x16GB, DDR4 3200MHz) ($250)- has been successfully added to shoppig list')
+
+elif user_interest=='5':
+       user_items.append('Storage(100$)')
+       total_price.append(100)
+       print('Storage- has been successfully added to shoppig list')
+
+else:
+       priint()
+
+                     
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# if continue_shopping=='leave':
+
+
+
+
+
+
+
 
 
 
