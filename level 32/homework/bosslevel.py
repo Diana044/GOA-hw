@@ -14,7 +14,7 @@ print("5.Storage")
 
 while True:
     user_interest = input(("which product are you interested in? (Choose by number)"))
-
+ 
     if user_interest == "1":
         user_items.append("Intel Core i7-12700K ($400)")
         total_price.append(400)
