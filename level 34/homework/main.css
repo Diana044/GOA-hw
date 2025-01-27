@@ -2,8 +2,8 @@ body{
     background-image: url(bg-img.gif);
     background-repeat: no-repeat;
     background-size: cover ;
-    overflow: hidden;
     color: azure;
+    overflow-x: hidden;
 
 }
 

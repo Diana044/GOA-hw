@@ -1,0 +1,11 @@
+.p1{
+    font-family: cursive;
+    font-size: 30px;
+    border: 2px solid blue;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
+
