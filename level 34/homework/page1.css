@@ -5,7 +5,7 @@
 
 .nav_a{
     text-decoration: none;
-    color: rgb(218, 231, 210);
+    color: rgb(0, 0, 0);
     transition: 1s;
 
 }
@@ -19,7 +19,7 @@
     justify-content: space-around;
     font-family: sans-serif;
     width: 100%;
-    background: rgba(53, 52, 52, 0.3);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 #main-title{
@@ -38,7 +38,7 @@
 }
 
 body {
-    background-color:rgb(221, 255, 215);
+    background-color:rgb(168, 168, 168);
 }
 
 .div1 {
@@ -53,11 +53,11 @@ body {
 
 .div3{
     font-size: 30px;
-    color: rgb(2, 26, 0);
+    color: rgb(4, 42, 0);
 }
 
 .content{
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
 }
 .img1{
     width: 200px;
