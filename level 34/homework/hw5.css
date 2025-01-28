@@ -1,0 +1,16 @@
+ul {
+    font-size: 70px;
+    color: red;
+    font-family: cursive;
+    transition: 1s;
+}
+ul:hover {
+    color: blue;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    background-color: green;
+}
