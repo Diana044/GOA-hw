@@ -6,13 +6,11 @@ def addition():
 def subtraction():
     print(555-5)
     
-    
 def multiplication():
     print(453*0)
     
 def division():
     print(456/2)
-    
     
 addition()
 subtraction()
