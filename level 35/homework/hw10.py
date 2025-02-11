@@ -2,7 +2,7 @@
 
 def numbers():
     nums=int(input('Enter number'))
-    for i in range(nums):
+    for i in range(1,nums):
         print(i)
         
 numbers()

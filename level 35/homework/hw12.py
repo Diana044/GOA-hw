@@ -2,7 +2,7 @@
 
 def odds():
     number=int(input('enter number'))
-    for ricxvebi in range(number):
+    for ricxvebi in range(1,number):
         if ricxvebi%2!=0:
             print(ricxvebi)
             
