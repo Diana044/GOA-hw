@@ -14,14 +14,38 @@ def creating_accaunt():
         repeat_password=input('გაიმეორეთ პაროლი:')
         
     print('აქაუნთი წარმატებით შეიქმნა!\nთქვენი სახელია:',username,'\nთქვენი პაროლია:', password)
-    
+        
+        
+
+def taking_credit(credit, balance):
+    print('აიღე სესხი 2 წუთში!')
+    amount=int(input('რა რაოდენობის თანხა გნებავთ?'))
+    credit-=amount
+    balance+=amount
+    print('თქვენ ანგარიშზე არსებული თანხა შეადგენს',balance ,'ლარს','\nთქვენი დავალიანება შეადგენს',credit ,'ლარს')
+    return credit, balance
+
+
+def covering_credit(credit, balance):
+    print('სესხის დაფარვა')
+    print('თქვენ ანგარიშზე არსებული თანხა შეადგენს',balance,'ლარს','\nთქვენი დავალიანება შეადგენს',credit ,'ლარს')
+    what_amount=int(input('რა რაოდენობის თანხა გსურთ დაფაროთ'))
+    if what_amount>balance:
+        print('მაგდენი ფული არ გაქვთ')
+    elif what_amount > abs(credit): #!!! 
+        print("მაგდენი კრედიტი არ გაქვთ")
+    else:
+        credit+=what_amount
+        balance-=what_amount
+        print('თქვენ ანგარიშზე არსებული თანხა შეადგენს',balance ,'ლარს','\nთქვენი დავალიანება შეადგენს',credit ,'ლარს')
+    return credit, balance 
+
 def show_balance(balance):
     print('თქვენ ანგარიშზე არსებული თანხა შეადგენს',balance,'ლარს')
-    
+
 def deposit():
-    amount_money = int(input('რამდენი ლარის შეტანა გნებავთ ანგარიშზე?: '))
-    print('თქვენ ანგარიშზე არსებული თანხა შეადგენს',balance ,'ლარს')
-    return amount_money
+    amount_money = int(input('რამდენი ლარი: '))
+    return amount_money 
 
 def withdraw(balance):
     print('თანხის გამოტანა ანგარიშიდან')
@@ -40,28 +64,6 @@ def withdraw(balance):
         
     return amount 
 
-def taking_credit(credit, balance):
-    print('აიღე სესხი 2 წუთში!')
-    amount=int(input('რა რაოდენობის თანხა გნებავთ?'))
-    credit-=amount
-    balance+=amount
-    print('თქვენ ანგარიშზე არსებული თანხა შეადგენს',balance ,'ლარს','\nთქვენი დავალიანება შეადგენს',credit ,'ლარს')
-    return credit, balance
-
-def covering_credit(credit, balance):
-    print('სესხის დაფარვა')
-    print('თქვენ ანგარიშზე არსებული თანხა შეადგენს',balance,'ლარს','\nთქვენი დავალიანება შეადგენს',credit ,'ლარს')
-    what_amount=int(input('რა რაოდენობის თანხა გსურთ დაფაროთ'))
-    if what_amount>balance:
-        print('ანგარიშზე არ გაქვთ საკმარისი თანხა')
-    elif balance>credit and what_amount>credit:
-        print('მიუთითეთ სასურველი ოდენობის თანხა')
-    else:
-        credit+=what_amount
-        balance-=what_amount
-        print('თქვენ ანგარიშზე არსებული თანხა შეადგენს',balance ,'ლარს','\nთქვენი დავალიანება შეადგენს',credit ,'ლარს')
-        
-        return credit, balance
 
 
 
