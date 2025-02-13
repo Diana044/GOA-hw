@@ -15,7 +15,6 @@ def creating_accaunt():
         
     print('აქაუნთი წარმატებით შეიქმნა!\nთქვენი სახელია:',username,'\nთქვენი პაროლია:', password)
         
-        
 
 def taking_credit(credit, balance):
     print('აიღე სესხი 2 წუთში!')
@@ -31,9 +30,9 @@ def covering_credit(credit, balance):
     print('თქვენ ანგარიშზე არსებული თანხა შეადგენს',balance,'ლარს','\nთქვენი დავალიანება შეადგენს',credit ,'ლარს')
     what_amount=int(input('რა რაოდენობის თანხა გსურთ დაფაროთ'))
     if what_amount>balance:
-        print('მაგდენი ფული არ გაქვთ')
+        print('ანგარიშზე არ გაქვთ საკმარისი თანხა')
     elif what_amount > abs(credit): #!!! 
-        print("მაგდენი კრედიტი არ გაქვთ")
+        print("შეყვანილი თანხა აღემატება სესხის ოდენობას")
     else:
         credit+=what_amount
         balance-=what_amount
@@ -53,7 +52,7 @@ def withdraw(balance):
 
     if amount > balance:
         print("!!!!!!!!!!!!!!!!") 
-        print("ეს შეუძლებელია!") 
+        print("ეს შეუძლებელია! ანგარიშზე არ გაქვთ საკმარისი თანხა") 
         print("!!!!!!!!!!!!!!!!") 
         return 0  
     elif amount < 0:
@@ -65,11 +64,10 @@ def withdraw(balance):
     return amount 
 
 
-
-
 while is_running:
     print("================================")
     print('საბანკო პროგრამა')
+    print('მოგესალმებით გოა ბანკში, აირჩიეთ თქვენთვის სასურველი ოპერაცია')
     time.sleep(0.5)
     print('1.შექმენი აქაუნთი')
     time.sleep(0.5)
