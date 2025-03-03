@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(255, 206, 214);
+}
+ #p1{
+    color: rgb(51, 0, 0);
+    font-weight: 700;
+    font-family: cursive;
+    border: 2px solid palevioletred;
+    text-align: center;
+    border-radius: 50%;
+
+ }
+ .p2{
+    color: rgb(82, 3, 3);
+    font-weight: bolder;
+    text-align: center;
+    font-family: cursive;
+    border: 2px solid palevioletred;
+    border-radius: 50%;
+ }
+ 
