@@ -1,0 +1,33 @@
+body{
+    background-color:#000000;
+    border: 4px solid rgb(169, 31, 31);
+    border-radius: 50px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.sect1{
+    display: inline-block;
+    border: 2px solid rgb(151, 0, 0);
+    width: 500px;
+    border-radius: 50px;
+    margin: 30px;
+
+}
+.sect2{
+    display: inline-block;
+    border: 2px solid rgb(151, 0, 0);
+    width: 500px;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+/* #img1{
+    width: 400px;
+    border-radius: 50px;
+} */
+
+.video1{
+    width: 600px;
+    border-radius: 20px;
+}

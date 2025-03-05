@@ -1,0 +1,24 @@
+body{
+    background-color: pink;
+}
+
+h1{
+    font-family: cursive;
+    font-weight: 900;
+    color: rgb(208, 145, 239);
+}
+
+.div1{
+    border: 2px solid rgb(150, 88, 99);
+    background-color: aliceblue;
+    border-radius: 30px;
+    text-align: center;
+    filter: blur(1px);
+}
+
+.div1 img{
+    width: 80px;
+    border-radius: 50px;
+    align-items: center;
+
+}
