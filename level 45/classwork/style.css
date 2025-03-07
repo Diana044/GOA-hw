@@ -1,3 +1,9 @@
+body{
+    background-color: rgb(250, 234, 214);
+    text-align: center;
+    
+}
+
 .button1{
     padding: 20px;
     background-color: rgb(132, 255, 9);
