@@ -1,0 +1,29 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.content1, .content2 {
+    display: flex;
+}
+.red{
+    border: 3px solid red;
+    color: red;
+    border-radius: 15px;
+    padding: 60px;
+    font-weight: 500;
+
+    
+}
+
+.blue{
+    padding: 60px;
+    border: 3px solid blue;
+    color: blue;
+    border-radius: 15px;
+    font-weight: 500;
+}

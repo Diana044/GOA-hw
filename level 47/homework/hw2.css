@@ -1,0 +1,82 @@
+body{
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+.main{
+    background-color: rgb(26, 26, 26);
+    width: 350px;
+    height: 550px;
+    border-radius: 15px;
+    padding: 25px;
+  
+}
+
+.profile_pic{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #1A1A1A
+}
+
+.content1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.name{
+    color: rgb(255,255,255);
+    font-weight: 700;
+    margin-bottom: 5px; 
+    font-size: 24px;
+    font-family: 'Poppins', 'Inter', 'Montserrat', sans-serif;
+}
+.location{
+    font-size: 15px;
+    font-weight: 600;
+    color: #C4F82A;
+    margin-top: 0,2;
+    
+}
+
+.job{
+    color: rgba(223, 218, 218, 0.753);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.content2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 12px;
+}
+
+.content2 button{
+    width: 96%;
+    height: 45px;
+    background-color:#333333 ;
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+.content2 button:hover{
+    background-color: #C4F82A;
+    color: black;
+    
+}
