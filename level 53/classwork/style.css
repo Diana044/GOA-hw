@@ -1,0 +1,18 @@
+.div1{
+    background-color: rgb(76, 70, 0);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 150px;
+    top:200px ;
+    z-index: 2 ;
+}
+
+.div2{
+    background-color: rgb(188, 173, 7);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
