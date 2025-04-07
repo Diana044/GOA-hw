@@ -7,9 +7,9 @@ surname = "Dzukaevi"
 # print(name)
 # # პრინტ ფუნქციას გადაეცემა ეკრანზე გამოსატანი ობიექტი
 
-# name = "Diana" # ეს არის str(string) ტიპის ცვლადი
+# name = "Diana" # ეს არის str(string) ტიპისს ცვლადი
 age = 17 # ეს არის int(integer) მთელი რიცხვი
-height = 1.75 # ეს არის float ტიპის ცვლადი (ათწილადი)
+height = 1.75 # ეს არის float ტიპისს ცვლადი (ათწილადი)
 
 knows_programming = True # True ან False
 # is_ugly = False # snakecase(უბრალო წერის სტილი სტანდარტული)

@@ -1,0 +1,95 @@
+*
+ {
+    font-family: cursive;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    gap: 500px;
+
+}
+
+.nav-ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    justify-content: center;
+    color: rgb(255, 238, 222);
+
+
+}
+
+.logo{
+    color: rgb(190, 150, 102);
+    position: relative;
+    left: 60px;
+}
+
+body{
+    background-color: rgb(49, 47, 47);
+}
+
+.div1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 3px 3px 30px  rgb(167, 130, 96);
+    color: aliceblue;
+    width: 360px;
+    height: 260px;
+    position: relative;
+    top: 190px;
+    left: 60px;
+}
+
+.buttons{
+    position: absolute;
+    left: 240px;
+    top: 440px;
+    display: flex;
+    gap: 10px;
+}
+
+.button1 , .button2{
+    border-radius: 2px;
+    border-color: rgb(255, 221, 169);
+    height: 30px;
+    width: 95px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.button1{
+    background-color:  rgb(250, 216, 165);
+    color: rgb(254, 247, 238);
+}
+
+.button2{
+    background-color: rgb(49, 47, 47);
+    color: whitesmoke;
+}
+.button1:hover , .button2:hover{
+    background-color: burlywood;
+    border-radius: 0px;
+}
+
+.button1:active, .button2:active{
+    background-color: rgb(77, 44, 18);
+    border-color: rgb(82, 52, 16);
+    color: rgb(255, 255, 255);
+}
+
+.coffe-img{
+    position: relative;
+    left: 650px;
+    bottom: 196px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.coffe-img:hover{
+    transform: rotate(-9deg);
+
+}
