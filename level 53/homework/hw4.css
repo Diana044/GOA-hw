@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(250, 217, 222);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navigation{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    gap: 800px;
+    border: 1px solid rgb(255, 180, 251);
+    width: 98%;
+    background-color: rgb(255, 192, 203);
+    box-shadow: 6px 6px 10px palevioletred;
+    color: rgb(10, 7, 7);
+    
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.image{
+    width: 200px;
+    position: relative;
+    left: 500px;
+    top: 170px;
+    border-radius: 20px;
+}
+
