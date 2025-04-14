@@ -1,0 +1,35 @@
+body{
+    background-image: url("FsY6H.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div{
+    background-image: url("img.avif");
+    border: 1px solid green;
+    width:280px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(50, 8, 150);
+
+}
+
+button{
+    background-color: rgb(15, 8, 124);
+    border-radius: 30px;
+    color: aliceblue;
+    
+}
