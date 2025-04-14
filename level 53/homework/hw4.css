@@ -13,7 +13,7 @@ body{
     border: 1px solid rgb(255, 180, 251);
     background-color: rgb(255, 192, 203);
     box-shadow: 6px 6px 10px palevioletred;
-    color: rgb(55, 40, 99);
+    color: rgb(8, 7, 10);
     
 }
 
@@ -30,7 +30,7 @@ body{
     left: 500px;
     top: 170px;
     border-radius: 20px;
-    border: 2px solid brown;
+    border: 2px solid rgb(255, 0, 0);
 }
 
 .h1{
