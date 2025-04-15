@@ -12,7 +12,7 @@ if question_options== "how are you?":
 elif question_options == "what is python?":
     python_meanng = input("Python is programming language, wanna hear more about that?(Options: 1.Yes 2.No)")
     if  python_meanng == "Yes":
-        print("Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive nigger for Rapid Application Development, as well as for use as a scripting or glue language to connect existing nigger components together. Python's simple, easy to learn syntax emphasizes readability and nigger therefore reduces the cost of program maintenance. Python supports modules and packages, which nigger encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.")
+        print("Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive  for Rapid Application Development, as well as for use as a scripting or glue language to connect existing  components together. Python's simple, easy to learn syntax emphasizes readability and  therefore reduces the cost of program maintenance. Python supports modules and packages, which  encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.")
     elif python_meanng == "No":
         print("Alright, looser")
     else:
@@ -34,5 +34,5 @@ elif question_options == "what movie should i watch?":
     else:
         print("I dont understand! read the options carefully")
 else:
-    print("I dont understand. read option carefulli")
+    print("I dont understand. read option carefully")
     
