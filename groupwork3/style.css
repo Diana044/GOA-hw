@@ -8,7 +8,7 @@
 /*  */
 
 .header{
-    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(24, 44, 2, 0.7)), url("/groupwork3/images/bg.jpg");  
+    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(24, 44, 2, 0.7)), url("/groupwork3/images/bg.jpg");   /* vaertebt or fers */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ nav img:hover{
 }
 
 .nav-links ul li a::after{
-    content:' ' ;  /* aq shegvidzlia chavwerot nebiseri ram da gamochndeba teqstis shemdgom an qvemot, axlxa carielia */
+    content:' ' ;  /* aq shegvidzlia chavwerot nebiseri ram da gamochndeba teqstis shemdgom anu qvemot, ::after elementis shemdgom qmnis axal elements*/
     width: 0%;
     height: 2px;
     background: #a5ca00;
