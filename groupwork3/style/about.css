@@ -48,7 +48,7 @@
     content: " "; /* aq shegvidzlia chavwerot nebiseri ram da gamochndeba teqstis shemdgom an qvemot, axlxa carielia */
     width: 0%;
     height: 2px;
-    background: #a1a495;
+    background: #ddded9;
     display: block;
     margin: auto;
     cursor: pointer;
@@ -61,7 +61,7 @@
   
   /* dacheris hemdgom teqsti icvlis fers */
   .nav-links ul li a:active {
-    color: #0768e7;
+    color: #ff2b2bc3;
   }
 .hero-section {
     position: relative;
@@ -99,11 +99,19 @@
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     border-radius: 15px;
+    width: 300px; 
+    height: 140px;
     transition: 1s;
+    cursor: pointer;
+
  }
  .photo:hover{
-    width: 230px;
+    width:270px;
+    transform: rotate(20deg);
+
  }
+
+
   .slicer {
     background-color: #777;
     width: 100%;
@@ -116,18 +124,23 @@
     margin-left: 2%;
     margin-right: 2%;
     display: flex;
+    transition: 1s;
+    cursor: pointer;
   }
-
+  .about:hover{
+    box-shadow: 10px 8px 20px rgba(2, 55, 103, 0.714);
+  }
+  
   .about img {
     width:900px;
     height: 600px;
     border-radius: 20px;
     padding-left: 5px;
     padding-right: 5px;
-    background-repeat: no-repeat;
-    background-size: cover;
+
   }
   
+
   .abouttext {
     width: 800px;
     margin: 50px ;
@@ -139,14 +152,15 @@
     color: #2b2a2a;
     text-align: left;
   }
+
   .abouttext p {
     margin-top: 16px;
     margin-bottom: 55px;
   }
   .book-now {
     font-size: 20px;
-    background-color: #2d2929;
-    color: lightslategrey;
+    background-color: #000000;
+    color: rgb(93, 99, 106);
     padding: 15px 28px;
     border-radius: 50px;
     font-size: 20px;
@@ -156,7 +170,7 @@
   
   .book-now:hover{
     background-color: #0a6cb3;
-    color: black;
+    color: rgb(0, 0, 0);
   }
   .book-now:active{
     background-color: #0e76c0;
@@ -175,4 +189,25 @@
   .footer-text {
     margin: 5px;
     padding: 0;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+  
+    margin-top: 18px;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 9px;
   }
