@@ -8,7 +8,7 @@
   
   .header {
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(24, 44, 2, 0.7)),
-      url("/groupwork/images/bg.jpg");
+      url("/groupwork3/images/bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -208,10 +208,7 @@
     padding: 9px;
   }
   
-  #insta{
-    margin: 0;
-  }
-  
+
   
   .logo {
       font-size: 30px;
@@ -222,7 +219,7 @@
     }
   
   
-  /* choose your plan */
+  /* choose your plan-is  */
   
   .course {
     width: 1200px;
