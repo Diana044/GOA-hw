@@ -1,0 +1,43 @@
+#button1{
+    width: 100px;
+    font-size-adjust: 1;
+    border-radius: 50%;
+    background-color: pink;
+}
+
+#button2{
+    width: 100px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+#button3{
+    width: 100px;
+    border-radius: 50px;
+    background-color: rgb(25, 248, 114);
+}
+
+#button1:hover{
+    background-color: rgb(255, 0, 43);
+    color: blue;
+}
+#button2:hover{
+    background-color: rgb(117, 179, 31);
+    font-size: 30px;
+    color: rgb(244, 244, 252);
+
+}
+#button3:hover{
+    background-color: rgb(93, 29, 255);
+    color: rgb(63, 63, 77);
+
+}
+
+#button3:active{
+    background-color: rgb(21, 230, 2);
+    color: rgb(255, 255, 255);
+    font-size-adjust: 2;
+    border-radius: 20px;
+    width: 300px;
+
+}
