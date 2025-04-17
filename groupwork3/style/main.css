@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Code", monospace;
+    text-decoration: none;
+  }
+  
+  
+  .header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(24, 44, 2, 0.7)),
+      url("/groupwork/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /*   mtliani ekranis zomas moicavs headeris contenti */
+    position: sticky;
+    width: 100%; /* ikavebs  ekranis mtlian siganes */
+  }
+  
+  /* navigacia */
+  
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav img {
+    width: 100px;
+    border-radius: 10px;
+    transition: 1.5s;
+  }
+  /* mausis mitanis shemdgom surati trialdeba 360 gradusit da izrdeba 30px-ti */
+  nav img:hover {
+    transform: rotate(360deg);
+    width: 130px;
+  }
+  
+  .nav-links {
+    text-align: right;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1px 10px;
+    position: relative;
+  }
+  .nav-links ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Bebas Neue", sans-serif;
+    transition: 1s;
+  }
+  
+  .nav-links ul li a::after {
+    content: " "; /* aq shegvidzlia chavwerot nebiseri ram da gamochndeba teqstis shemdgom an qvemot, axlxa carielia */
+    width: 0%;
+    height: 2px;
+    background: #a5ca00;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: 1s; /* amit vakonrolebt tu ramdenad chqara/nela moxdeba moqmedeba */
+  }
+  /* rodesac cursors mivitant teqstan  qvemot gamouchndeba mwvane xazi*/
+  .nav-links ul li a:hover::after {
+    width: 100%;
+  }
+  
+  /* dacheris hemdgom teqsti icvlis fers */
+  .nav-links ul li a:active {
+    color: #ff1500;
+  }
+  
+  /* #2 */
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .image {
+    width: 95%;
+    height: 120px;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sub {
+    text-align: left;
+    border-color: red;
+  }
+  .sub p {
+    font-size: 20px;
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Georgia", serif;
+  }
+  
+  .slicer {
+    background-color: #777;
+    width: 100%;
+    height: 2px;
+    margin-top: 20px;
+  }
+  
+  .about {
+    margin: 80px;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+  }
+  .about img {
+    width:900px;
+    height: 600px;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .abouttext {
+    width: 800px;
+    margin: 50px ;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2b2a2a;
+    text-align: left;
+  }
+  .abouttext p {
+    margin-top: 16px;
+    margin-bottom: 55px;
+  }
+  .abouttext h1 {
+    color: #000000;
+    font-family: "Georgia", serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .book-now {
+    font-size: 20px;
+    background-color: #2d2929;
+    color: lightslategrey;
+    padding: 15px 28px;
+    border-radius: 50px;
+    font-size: 20px;
+    transition: 1s;
+    
+  } 
+  
+  .book-now:hover{
+    background-color: #0a6cb3;
+    color: black;
+  }
+  .book-now:active{
+    background-color: #0e76c0;
+  }
+  
+  .text {
+    font-size: 25px;
+  }
+  
+  .footer {
+    background-color: #2d2929;
+    color: lightslategrey;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-text {
+    margin: 5px;
+    padding: 0;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+  
+    margin-top: 18px;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 9px;
+  }
+  
+  #insta{
+    margin: 0;
+  }
+  
+  
+  .logo {
+      font-size: 30px;
+      color: #777;
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+    }
+  
+  
+  /* choose your plan */
+  
+  .course {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .times h2 {
+    font-size: 24px;
+    color: #0077cc;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 5px;
+    width: 100%;
+  }
+  
+  .times {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .groups {
+    background: #f9f9f9;
+    border-left: 5px solid #0077cc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    flex: 1 1 calc(50% - 20px); /* 2 per row */
+    max-width: calc(50% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .groups h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .groups p {
+    font-size: 15px;
+    margin: 6px 0;
+    line-height: 1.5;
+  }
+  
