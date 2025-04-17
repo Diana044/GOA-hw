@@ -74,7 +74,17 @@
   .nav-links ul li a:active {
     color: #004db1;
   }
-  
+  .center-div{
+    color: rgb(211, 231, 255);
+    text-align: center;
+    position: relative;
+    top: 260px;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+  }
+  .center-div h2{
+    font-family: cursive;
+  }
   /* #2 */
   
   .container {
