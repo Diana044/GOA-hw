@@ -89,3 +89,15 @@ body{
     width: 100px;
     padding-left: 100px;
 }
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transform: translate(0px, 70px);
+    gap: 10px;
+}
+
+.socials img{
+  width: 50px;
+}
