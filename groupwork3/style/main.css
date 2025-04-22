@@ -1,272 +1,292 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Fira Code", monospace;
-    text-decoration: none;
-  }
-  
-  
-  .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(18, 97, 170, 0.7)),
-      url("https://img.freepik.com/free-vector/gradient-abstract-wireframe-background_23-2149014186.jpg?t=st=1744922048~exp=1744925648~hmac=edc9b9d6f1b424d8819ed1d344c41f9ddc62ec231dd90b95acdd3402b65dfab0&w=996");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /*   mtliani ekranis zomas moicavs headeris contenti */
-    position: sticky;
-    width: 100%; /* ikavebs  ekranis mtlian siganes */
-  }
-  
-  /* navigacia */
-  
-  nav {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav img {
-    width: 100px;
-    border-radius: 10px;
-    transition: 1.5s;
-  }
-  /* mausis mitanis shemdgom surati trialdeba 360 gradusit da izrdeba 30px-ti */
-  nav img:hover {
-    transform: rotate(360deg);
-    width: 130px;
-  }
-  
-  .nav-links {
-    text-align: right;
-  }
-  
-  .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 1px 10px;
-    position: relative;
-  }
-  .nav-links ul li a {
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 13px;
-    font-family: "Bebas Neue", sans-serif;
-    transition: 1s;
-  }
-  
-  .nav-links ul li a::after {
-    content: " "; /* aq shegvidzlia chavwerot nebiseri ram da gamochndeba teqstis shemdgom an qvemot, axlxa carielia */
-    width: 0%;
-    height: 2px;
-    background: #0cb2ff;
-    display: block;
-    margin: auto;
-    cursor: pointer;
-    transition: 1s; /* amit vakonrolebt tu ramdenad chqara/nela moxdeba moqmedeba */
-  }
-  /* rodesac cursors mivitant teqstan  qvemot gamouchndeba mwvane xazi*/
-  .nav-links ul li a:hover::after {
-    width: 100%;
-  }
-  
-  /* dacheris hemdgom teqsti icvlis fers */
-  .nav-links ul li a:active {
-    color: #7c3603;
-  }
-  .center-div{
-    color: rgb(211, 231, 255);
-    text-align: center;
-    position: relative;
-    top: 260px;
-    font-family: 'Roboto', sans-serif;
-    font-size: larger;
-  }
-  .center-div h2{
-    font-family: cursive;
-  }
-  /* #2 */
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  }
-  
-  .image {
-    width: 95%;
-    height: 120px;
-    border-radius: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code", monospace;
+  text-decoration: none;
+}
 
-  
-  .slicer {
-    background-color: #777;
-    width: 100%;
-    height: 2px;
-    margin-top: 20px;
-  }
-  
-  .about {
-    margin: 80px;
-    margin-left: 2%;
-    margin-right: 2%;
-    display: flex;
-  }
-  .about img {
-    width:900px;
-    height: 600px;
-    border-radius: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .abouttext {
-    width: 800px;
-    margin: 50px ;
-    padding: 40px 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #2b2a2a;
-    text-align: left;
-  }
+.header {
+  background-image: linear-gradient(
+      rgba(1, 52, 99, 0.366),
+      rgba(13, 78, 139, 0.383)
+    ),
+    url("https://img.freepik.com/free-vector/gradient-abstract-wireframe-background_23-2149014186.jpg?t=st=1744922048~exp=1744925648~hmac=edc9b9d6f1b424d8819ed1d344c41f9ddc62ec231dd90b95acdd3402b65dfab0&w=996");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /*   mtliani ekranis zomas moicavs headeris contenti */
+  position: sticky;
+  width: 100%; /* ikavebs  ekranis mtlian siganes */
+}
 
-  .abouttext p {
-    margin-top: 16px;
-    margin-bottom: 55px;
-  }
-  .abouttext h1 {
-    color: #000000;
-    font-family: "Georgia", serif;
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .book-now {
-    font-size: 20px;
-    background-color: #0a6cb3;
-    color: rgb(255, 255, 255);
-    padding: 15px 28px;
-    border-radius: 50px;
-    font-size: 20px;
-    transition: 1s;
-    
-  } 
-  
-  .book-now:hover{
-    background-color: #26271d;
-    color: rgb(255, 255, 255);
-  }
-  .book-now:active{
-    background-color: #0e76c0;
-  }
-  
-  .text {
-    font-size: 25px;
-  }
-  
-  
-  .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  .social-media {
-    display: flex;
-    justify-content: center;
-  
-    margin-top: 18px;
-  }
-  
-  .icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding: 9px;
-  }
-  
+/* navigacia */
 
-  
-  .logo {
-      font-size: 30px;
-      color: #777;
-      font-family: 'Georgia', serif;
-      display: flex;
-      justify-content: center;
-    }
-  
-  
-  /* choose your plan-is  */
-  
-  .course {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-  }
-  
-  .times h2 {
-    font-size: 24px;
-    color: #0077cc;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #0077cc;
-    padding-bottom: 5px;
-    width: 100%;
-  }
-  
-  .times {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 50px;
-  }
-  
-  .groups {
-    background: #f9f9f9;
-    border-left: 5px solid #0077cc;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    flex: 1 1 calc(50% - 20px); /* 2 per row */
-    max-width: calc(50% - 20px);
-    box-sizing: border-box;
-  }
-  
-  .groups h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .groups p {
-    font-size: 15px;
-    margin: 6px 0;
-    line-height: 1.5;
-  }
-  
+nav {
+  display: flex;
+  padding: 1% 6%;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: rgba(1, 52, 99, 0.7); /* Optional: semi-transparent */
+  z-index: 1000;
+}
 
-  .footer {
-    background-color: #002f59;
-    color: lightslategrey;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  .footer-text {
-    margin: 5px;
-    padding: 0;
-  }
+nav img {
+  width: 100px;
+  border-radius: 10px;
+  transition: 1.5s;
+}
+/* mausis mitanis shemdgom surati trialdeba 360 gradusit da izrdeba 30px-ti */
+nav img:hover {
+  transform: rotate(360deg);
+  width: 130px;
+}
+
+.nav-links {
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 1px 10px;
+  margin-left: 20px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "Bebas Neue", sans-serif;
+  transition: 1s;
+}
+
+.nav-links ul li a::after {
+  content: " "; /* aq shegvidzlia chavwerot nebiseri ram da gamochndeba teqstis shemdgom an qvemot, axlxa carielia */
+  width: 0%;
+  height: 2px;
+  background: #0cb2ff;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 2px;
+  transition: 1s; /* amit vakonrolebt tu ramdenad chqara/nela moxdeba moqmedeba */
+}
+/* rodesac cursors mivitant teqstan  qvemot gamouchndeba mwvane xazi*/
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+
+/* dacheris hemdgom teqsti icvlis fers */
+.nav-links ul li a:active {
+  color: #7c3603;
+}
+.center-div {
+  color: rgb(211, 231, 255);
+  text-align: center;
+  position: relative;
+  top: 200px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.goa-pfp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+  transition: transform 1s ease;
+}
+.center-div h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.center-div .p-tag {
+  font-size: 20px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-div strong {
+  font-weight: 800;
+  color: #3ac1ff;
+}
+
+/* #2 */
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.image {
+  width: 95%;
+  height: 120px;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slicer {
+  background-color: #777;
+  width: 100%;
+  height: 2px;
+  margin-top: 20px;
+}
+
+.about {
+  margin: 80px;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+}
+.about img {
+  width: 900px;
+  height: 600px;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.abouttext {
+  width: 800px;
+  margin: 50px;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2b2a2a;
+  text-align: left;
+}
+
+.abouttext p {
+  margin-top: 16px;
+  margin-bottom: 55px;
+}
+.abouttext h1 {
+  color: #000000;
+  font-family: "Georgia", serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.book-now {
+  font-size: 20px;
+  background-color: #0a75c28d;
+  color: rgb(255, 255, 255);
+  padding: 15px 28px;
+  border-radius: 50px;
+  transition: 1s;
+}
+
+.book-now:hover {
+  background-color: #089deedc;
+  color: rgb(255, 255, 255);
+}
+
+.text {
+  font-size: 25px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 18px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 9px;
+}
+
+.logo {
+  font-size: 30px;
+  color: #777;
+  font-family: "Georgia", serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* choose your plan-is  */
+
+.course {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.times h2 {
+  font-size: 24px;
+  color: #0077cc;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.groups {
+  background: #f9f9f9;
+  border-left: 5px solid #0077cc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  flex: 1 1 calc(50% - 20px); /* 2 per row */
+  max-width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+.groups h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.groups p {
+  font-size: 15px;
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.footer {
+  background-color: #002f59;
+  color: lightslategrey;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer-text {
+  margin: 5px;
+  padding: 0;
+}

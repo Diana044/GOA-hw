@@ -1,0 +1,62 @@
+.course-page {
+  background-color: #f4f4f4;
+  padding: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.course-details h2 {
+  font-size: 28px;
+  color: #0cb2ff;
+  margin-bottom: 15px;
+}
+
+.course-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-details li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.course-details ul ul {
+  margin-left: 20px;
+}
+
+.contact-info {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.contact-btn {
+  display: inline-block;
+  background-color: #0cb2ff;
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #0097e6;
+}

@@ -1,213 +1,205 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Fira Code", monospace;
-    text-decoration: none;
-  }
-  
-  
-  /* navigacia */
-  
-  nav {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav img {
-    width: 100px;
-    border-radius: 10px;
-    transition: 1.5s;
-  }
-  /* mausis mitanis shemdgom surati trialdeba 360 gradusit da izrdeba 30px-ti */
-  nav img:hover {
-    transform: rotate(360deg);
-    width: 130px;
-  }
-  
-  .nav-links {
-    text-align: right;
-  }
-  
-  .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 1px 10px;
-    position: relative;
-  }
-  .nav-links ul li a {
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 13px;
-    font-family: "Bebas Neue", sans-serif;
-    transition: 1s;
-  }
-  
-  .nav-links ul li a::after {
-    content: " "; /* aq shegvidzlia chavwerot nebiseri ram da gamochndeba teqstis shemdgom an qvemot, axlxa carielia */
-    width: 0%;
-    height: 2px;
-    background: #ddded9;
-    display: block;
-    margin: auto;
-    cursor: pointer;
-    transition: 1s; /* amit vakonrolebt tu ramdenad chqara/nela moxdeba moqmedeba */
-  }
-  /* rodesac cursors mivitant teqstan  qvemot gamouchndeba mwvane xazi*/
-  .nav-links ul li a:hover::after {
-    width: 100%;
-  }
-  
-  /* dacheris hemdgom teqsti icvlis fers */
-  .nav-links ul li a:active {
-    color: #ff2b2bc3;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code", monospace;
+  text-decoration: none;
+}
+
+/* navigacia */
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 100px;
+  border-radius: 10px;
+  transition: 1.5s;
+}
+/* mausis mitanis shemdgom surati trialdeba 360 gradusit da izrdeba 30px-ti */
+nav img:hover {
+  transform: rotate(360deg);
+  width: 130px;
+}
+
+.nav-links {
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 1px 10px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: "Bebas Neue", sans-serif;
+  transition: 1s;
+}
+
+.nav-links ul li a::after {
+  content: " "; /* aq shegvidzlia chavwerot nebiseri ram da gamochndeba teqstis shemdgom an qvemot, axlxa carielia */
+  width: 0%;
+  height: 2px;
+  background: #ddded9;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: 1s; /* amit vakonrolebt tu ramdenad chqara/nela moxdeba moqmedeba */
+}
+/* rodesac cursors mivitant teqstan  qvemot gamouchndeba mwvane xazi*/
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+
+/* dacheris hemdgom teqsti icvlis fers */
+.nav-links ul li a:active {
+  color: #ff2b2bc3;
+}
 .hero-section {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    overflow: hidden;
-  }
-  
-  .center-content {
-    max-width: 400px;
-    color: #000000;
-  }
-  
-  .center-content h2 {
-    font-size: 24px;
-    margin-bottom: 1rem;
-    color: #000000;
-  }
-  
-  .center-content p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    color: #000000;
-  }
-  
-  
-  /* Shared photo class */
-  .photo {
-    position: absolute;
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border-radius: 15px;
-    width: 300px; 
-    height: 140px;
-    transition: 1s;
-    cursor: pointer;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  overflow: hidden;
+}
 
- }
- .photo:hover{
-    width:270px;
-    transform: rotate(20deg);
+.center-content {
+  max-width: 400px;
+  color: #000000;
+}
 
- }
+.center-content h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: #000000;
+}
 
+.center-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #000000;
+}
 
-  .slicer {
-    background-color: #777;
-    width: 100%;
-    height: 2px;
-    margin-top: 20px;
-  }
-  
-  .about {
-    margin: 80px;
-    margin-left: 2%;
-    margin-right: 2%;
-    display: flex;
-    transition: 1s;
-    cursor: pointer;
-  }
-  .about:hover{
-    box-shadow: 10px 8px 20px rgba(2, 55, 103, 0.714);
-  }
-  
-  .about img {
-    width:900px;
-    height: 600px;
-    border-radius: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+/* Shared photo class */
+.photo {
+  position: absolute;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 300px;
+  height: 140px;
+  transition: 1s;
+  cursor: pointer;
+}
+.photo:hover {
+  width: 270px;
+  transform: rotate(20deg);
+}
 
-  }
-  
+.slicer {
+  background-color: #777;
+  width: 100%;
+  height: 2px;
+  margin-top: 20px;
+}
 
-  .abouttext {
-    width: 800px;
-    margin: 50px ;
-    padding: 40px 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #2b2a2a;
-    text-align: left;
-  }
+.about {
+  margin: 80px;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  transition: 1s;
+  cursor: pointer;
+}
+.about:hover {
+  box-shadow: 10px 8px 20px rgba(2, 55, 103, 0.714);
+}
 
-  .abouttext p {
-    margin-top: 16px;
-    margin-bottom: 55px;
-  }
-  .book-now {
-    font-size: 20px;
-    background-color: #000000;
-    color: rgb(93, 99, 106);
-    padding: 15px 28px;
-    border-radius: 50px;
-    font-size: 20px;
-    transition: 1s;
-    
-  } 
-  
-  .book-now:hover{
-    background-color: #0a6cb3;
-    color: rgb(0, 0, 0);
-  }
-  .book-now:active{
-    background-color: #0e76c0;
-  }
-  
-  .footer {
-    background-color: #020d20;
-    color: lightslategrey;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  .footer-text {
-    margin: 5px;
-    padding: 0;
-  }
+.about img {
+  width: 900px;
+  height: 600px;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
-  .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  .social-media {
-    display: flex;
-    justify-content: center;
-  
-    margin-top: 18px;
-  }
-  
-  .icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding: 9px;
-  }
+.abouttext {
+  width: 800px;
+  margin: 50px;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2b2a2a;
+  text-align: left;
+}
+
+.abouttext p {
+  margin-top: 16px;
+  margin-bottom: 55px;
+}
+.book-now {
+  font-size: 20px;
+  background-color: #000000;
+  color: rgb(93, 99, 106);
+  padding: 15px 28px;
+  border-radius: 50px;
+  font-size: 20px;
+  transition: 1s;
+}
+
+.book-now:hover {
+  background-color: #0a6cb3;
+  color: rgb(0, 0, 0);
+}
+.book-now:active {
+  background-color: #0e76c0;
+}
+
+.footer {
+  background-color: #020d20;
+  color: lightslategrey;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer-text {
+  margin: 5px;
+  padding: 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 18px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 9px;
+}
