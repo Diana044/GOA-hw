@@ -20,6 +20,17 @@ def capitalize(s):
 
     return [even, odd]
 
+def is_pangram(st):
+    
+    alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    
+    st = st.upper()
+    for char in alphabet:
+        if char not in st:
+            return False
+    
+    return True
+
 
 # 2) ახსენით რა არის transition და რისთვის ვიყენებთ. განმარტეთ თითოეული ქვე-კუთვნილება: transition-duration, transition-property, transition-timing-function
 #transition propertyt vakonkretebt tu romeli css propertystvis aris gawerili efeqti
