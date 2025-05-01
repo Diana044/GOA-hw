@@ -1,0 +1,19 @@
+.parent{
+    width: 00px;
+    height: 300px;
+    color: cadetblue;
+    border-radius: 10px;
+    padding: 5px;
+}
+.child{
+    width: 100px;
+    height: 200px;
+    color: rgba(160, 252, 255, 0.845);
+    border-radius: 10px;
+    transition:1s  ease-in ;
+    transition-duration: 2s;
+}
+.child:hover{
+    width:400px  ;
+    background-color: chartreuse;
+}
