@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 6px;
+            height: 100vh;
+         
+            
+        }
+        .main{
+            background-color: black;
+            border-radius: 10px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .main img{
+            width: 30px;
+            margin-top: 20px;
+        }
+
+        .loading-bar{
+            border: 1px solid rgba(138, 138, 138, 0.719);
+            border-radius: 7px;
+            width: 110px;
+            background-color: rgba(187, 183, 183, 0.63);
+            margin-top: 30px;
+        }
+
+        .spinner{
+            border: 1px solid white;
+            background-color: white;
+            width: 60px;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQesa2rF2WhrA7Sl3iIoznL-gFpA0y0GB-tQ&s" alt="apple-icon">
+        <div class="loading-bar">
+            <div class="spinner"></div>
+        </div>
+    </div>
+</body>
+</html>
