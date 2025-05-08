@@ -1,0 +1,147 @@
+body{
+    background-color: rgba(36,27,51,255);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun{
+    background-color: rgb(211, 160, 64);
+    box-shadow: 0px 0px 25px yellow;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+}
+
+.orbita{
+    border: 1px solid gainsboro;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orbita1{
+    width: 900px;
+    height: 900px;
+    animation-name: eating ;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+
+}
+
+.orbita2{
+    width: 800px;
+    height: 800px;
+}
+
+.orbita3{
+    width: 700px;
+    height: 700px;
+}
+
+.orbita4{
+    width: 600px;
+    height: 600px;
+}
+
+.orbita5{
+    width: 500px;
+    height: 500px;
+}
+
+.orbita6{
+    width: 400px;
+    height: 400px;
+}
+
+.orbita7{
+    width: 300px;
+    height: 300px;
+ 
+}
+
+img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    
+
+}
+
+.img7{
+    animation: rotateCircle1 4s infinite linear;
+}
+.img6{
+    animation: rotateCircle2 8s infinite linear;  
+
+}.img5{
+    animation: rotateCircle3 16s infinite linear;  
+
+}.img4{
+    animation: rotateCircle4 18s infinite linear;  
+
+}.img3{
+    animation: rotateCircle5 20s infinite linear;  
+
+}
+
+
+@keyframes rotateCircle1 {
+    0% {
+        transform: rotate(0deg) translateX(150px) ;
+    }
+    100% {
+        transform: rotate(360deg) translateX(150px) ; 
+    }
+}
+@keyframes rotateCircle2 {
+    0% {
+        transform: rotate(0deg) translateX(200px);
+    }
+    100% {
+        transform: rotate(360deg) translateX(200px); 
+    }
+}
+@keyframes rotateCircle3 {
+    0% {
+        transform: rotate(0deg) translateX(250px);
+    }
+    100% {
+        transform: rotate(360deg) translateX(250px) ; 
+    }
+}
+@keyframes rotateCircle4 {
+    0% {
+        transform: rotate(0deg) translateX(300px) ;
+    }
+    100% {
+        transform: rotate(360deg) translateX(300px) ; 
+    }
+}
+@keyframes rotateCircle5 {
+    0% {
+        transform: rotate(0deg) translateX(350px) ;
+    }
+    100% {
+        transform: rotate(360deg) translateX(350px) ; 
+    }
+}
+
+@keyframes eating{
+    from{
+        transform: translate(-1300px, 1000px) rotate(360deg);
+        
+    }
+    to{
+        transform: translate(2400px);
+
+    }
+}
