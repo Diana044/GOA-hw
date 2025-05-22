@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      padding: 2rem;
+    }
+    .cart-container {
+      max-width: 800px;
+      margin: auto;
+    }
+    .cart-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #444;
+      padding-bottom: 1rem;
+    }
+    .cart-item img {
+      width: 100px;
+      margin-right: 1rem;
+    }
+    .cart-item-info {
+      flex: 1;
+    }
+    .total {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: right;
+      margin-top: 2rem;
+    }
+        body {
+      margin: 0;
+      font-family: fantasy;
+    }
+
+
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ========== Top Bar ========== */
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid #333;
+      font-size: 0.9rem;
+      background-color: #1e1e1e;
+    }
+
+    .topbar div {
+      margin-left: 1rem;
+      cursor: pointer;
+    }
+
+    .topbar div:hover {
+      text-decoration: underline;
+    }
+
+    /* ========== Header ========== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #1e1e1e;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    /* ========== Navigation ========== */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      position: relative;
+    }
+
+    nav ul li:hover {
+      color: #aaa;
+    }
+
+    /* Shop Item Hover Effect */
+    .shop-item {
+      position: relative;
+      z-index: 1;
+    }
+
+    .shop-item::after {
+      content: " ";
+      width: 0%;
+      height: 2px;
+      background: #ddded9;
+      display: block;
+      cursor: pointer;
+      transition: width 1.3s;
+      margin-top: 3px;
+    }
+
+    .shop-item:hover::after {
+      width: 100%;
+    }
+
+    /* ========== Dropdown ========== */
+    .shop-dropdown {
+      opacity: 0;
+      position: absolute;
+      background-color: #2a2a2a;
+      border: 1px solid #444;
+      padding: 1rem;
+      z-index: 1000;
+      transition: opacity 1s ease;
+      pointer-events: none;
+      color: #fff;
+    }
+
+    .shop-item:hover .shop-dropdown {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .shop-dropdown ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    /* Dropdown Item Hover Background (Modified) */
+    #dropdown-list li {
+      position: relative;
+    }
+
+    #dropdown-list li::after {
+      content: " ";
+      position: absolute;
+      width: 0%;
+      height: 100%;
+      background: #ffffff;
+      display: block;
+      transition: width 1s;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    #dropdown-list li:hover::after {
+      width: 100%;
+    }
+
+    /* ========== Icons ========== */
+    .right-icons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .right-icons div {
+      cursor: pointer;
+    }
+
+    .right-icons div:hover {
+      opacity: 0.7;
+    }
+
+    .addcart {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+    display: block;
+    margin-left: auto; 
+    }
+
+    .addcart:hover {
+      transform: scale(1.1);
+    }
+
+        .delete-btn {
+    background: none;
+    color: red;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    }
+
+    .delete-btn:hover {
+    color: #ff4d4d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #111;
+      color: #ccc;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+
+  </style>
+</head>
+<body>
+
+    <div class="topbar">
+    <div>
+      <img src="georgia.png" style="border-radius: 50%; max-width: 20px; height: 20px;" alt="georgia">
+      Georgia (CAD $)
+    </div>
+    <div>English</div>
+  </div>
+
+  <header>
+    <div class="logo"><a href="hw.html">TKBR</a></div>
+    <nav>
+      <ul>
+        <li class="shop-item">
+          Shop ▼
+          <div class="shop-dropdown">
+            <ul>
+              <li><a href="tshirts.html">T-Shirts</a></li>
+              <li><a href="hoodies.html">Hoodies</a></li>
+              <li><a href="zip.html">zip-ups</a></li>
+              <li><a href="./Outerwear.html">Outerwear</a></li>
+              <li><a href="bottoms.html">Bottoms</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>Track Your Order</li>
+        <li>Size Help</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <div class="right-icons">
+      <div>CAD</div>
+      <div>🔍</div>
+      <div><a href="cart.html">🛒</a></div>
+    </div>
+  </header>
+  <div class="cart-container">
+    <h1>Your Cart</h1>
+    <div id="cart-items"></div>
+    <div class="total" id="cart-total"></div>
+
+    <a href="payment.html" class="addcart">Order Now</a>
+  </div>
+
+
+
+
+
+
+    <script>
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+
+    function renderCart() {
+        cartItemsContainer.innerHTML = '';
+        let total = 0;
+
+        cart.forEach((item, index) => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'cart-item';
+
+        itemDiv.innerHTML = `
+            <img src="${item.image}" alt="${item.name}">
+            <div class="cart-item-info">
+            <h2>${item.name}</h2>
+            <p>$${item.price.toFixed(2)}</p>
+            </div>
+            <button class="delete-btn" data-index="${index}">✖</button>
+        `;
+
+        cartItemsContainer.appendChild(itemDiv);
+        total += item.price;
+        });
+
+        cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+
+        // Add delete functionality
+        const deleteButtons = document.querySelectorAll('.delete-btn');
+        deleteButtons.forEach(btn => {
+        btn.addEventListener('click', function () {
+            const index = this.getAttribute('data-index');
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            renderCart(); // Re-render the cart after deletion
+        });
+        });
+    }
+
+    renderCart();
+    </script>
+
+
+
+
+
+    <footer>
+        <p>&copy; 2025 TKBR. All rights reserved.</p>
+    </footer>
+</body>
+</html>

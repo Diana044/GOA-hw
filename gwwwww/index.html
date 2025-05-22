@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Loading...</title>
+  <style>
+    body {
+      margin: 0;
+      background-image: url('background.png');
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+      flex-direction: column;
+    }
+
+    .uptodown {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      margin-bottom: 20px;
+      animation: loading 1s infinite alternate;
+      background: linear-gradient(to right, red, blue);
+      
+
+    }
+    @keyframes loading {
+      0% {
+        transform: translateY(50px);
+      }
+      100% {
+        transform: translateY(-50px);
+      }
+    }
+
+    h1 {
+      font-size: 20px;
+      color: #000000;
+      z-index: 200;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="uptodown"></div>
+  <h1>Loading your experience...</h1>
+
+  <script>
+    
+    setTimeout(function () {
+      window.location.href = "hw.html"; 
+    }, 3000); 
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TKBR</title>
+    <style>
+/* ========== Base Styles ========== */
+body {
+  margin: 0;
+  font-family: fantasy;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========== Top Bar ========== */
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #333;
+  font-size: 0.9rem;
+  background-color: #1e1e1e;
+}
+
+.topbar div {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.topbar div:hover {
+  text-decoration: underline;
+}
+
+/* ========== Header ========== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1e1e1e;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* ========== Navigation ========== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  cursor: pointer;
+  position: relative;
+}
+
+nav ul li:hover {
+  color: #aaa;
+}
+
+/* Shop Item Hover Effect */
+.shop-item {
+  position: relative;
+  z-index: 1;
+}
+
+.shop-item::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background: #ddded9;
+  display: block;
+  cursor: pointer;
+  transition: width 1.3s;
+  margin-top: 3px;
+}
+
+.shop-item:hover::after {
+  width: 100%;
+}
+
+/* ========== Dropdown ========== */
+.shop-dropdown {
+  opacity: 0;
+  position: absolute;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  padding: 1rem;
+  z-index: 1000;
+  transition: opacity 1s ease;
+  pointer-events: none;
+  color: #fff;
+}
+
+.shop-item:hover .shop-dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.shop-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Dropdown Item Hover Background (Modified) */
+#dropdown-list li {
+  position: relative;
+}
+
+#dropdown-list li::after {
+  content: " ";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #ffffff;
+  display: block;
+  transition: width 1s;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#dropdown-list li:hover::after {
+  width: 100%;
+}
+
+/* ========== Icons ========== */
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right-icons div {
+  cursor: pointer;
+}
+
+.right-icons div:hover {
+  opacity: 0.7;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1a1a1a;
+}
+
+/* ========== Product Grid ========== */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.product {
+  flex: 1 1 calc(33% - 2rem);
+  box-sizing: border-box;
+  border: 1px solid #333;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* ========== Add to Cart Button ========== */
+.addcart {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.addcart:hover {
+  transform: scale(1.5);
+  background-color: #ccc;
+}
+
+/* ========== Misc Styles ========== */
+.ftpc {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.slicer {
+  height: 2px;
+  background-color: #333;
+  margin: 10px;
+}
+
+/* ========== Banner & Registration Section ========== */
+.banner {
+  background: #000;
+  color: white;
+  padding: 2rem;
+  margin: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.registrireba {
+  margin-top: 1rem;
+}
+
+.registrireba label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Email Subscription */
+.email {
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.email input {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+}
+
+.email button {
+  background: #000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* ========== Feature Section (pliusebi) ========== */
+.pliusebi-section {
+  background: #3a3a3a;
+  color: black;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.pliusebi-list {
+  display: flex;
+  gap: 3rem;
+  text-align: center;
+}
+
+#van-img {
+  width: 100px;
+}
+
+#reverse {
+  width: 100px;
+}
+
+#card {
+  width: 100px;
+}
+
+.li1 span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+    </style>
+  </head>
+<body>
+    <div class="topbar">
+      <div>
+        <img
+          src="georgia.png"
+          style="border-radius: 50%; max-width: 20px; height: 20px"
+          alt="georgia"
+        />
+        Georgia (CAD $)
+      </div>
+      <div>English</div>
+    </div>
+
+    <header>
+      <div class="logo"><a href="hw.html">TKBR</a></div>
+      <nav>
+        <ul>
+          <li class="shop-item">
+            <span>Shop ▼</span>
+            <div class="shop-dropdown">
+              <ul id="dropdown-list">
+                <li><a href="tshirts.html">T-Shirts</a></li>
+                <li><a href="hoodies.html">Hoodies</a></li>
+                <li><a href="zip.html">zip-ups</a></li>
+                <li><a href="./Outerwear.html">Outerwear</a></li>
+                <li><a href="bottoms.html">Bottoms</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="shop-item">Track Your Order</li>
+          <li class="shop-item">Size Help</li>
+          <li><a href="contact.html" class="shop-item">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="right-icons">
+        <div>CAD</div>
+        <div>🔍</div>
+        <div><a href="cart.html">🛒</a></div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Free Shipping Over $70 USD</h1>
+      <p>14-Day Money Back Guarantee</p>
+    </section>
+    <div class="slicer"></div>
+
+    <section class="hero">
+      <h1>most sold:</h1>
+    </section>
+
+    <section class="products">
+      <div class="product">
+        <img src="sweatshirt.png" alt="Product 1" />
+        <h2>V2 ALIEN SWEATER "GRANIT GREY"</h2>
+        <p>$129.99</p>
+        <a href="sweatshirt.html"
+          ><button class="addcart">add to cart</button></a
+        >
+      </div>
+      <div class="product">
+        <img src="blackjeans.png" alt="Product 2" />
+        <h2>Vintage Jeans</h2>
+        <p>$49.99</p>
+        <a href="blackjeans.html"
+          ><button class="addcart">add to cart</button></a
+        >
+      </div>
+      <div class="product">
+        <img src="image.png" alt="Product 3" />
+        <h2>Heavyweight Washed zip-up</h2>
+        <p>$79.99</p>
+        <a href="GREYZIP.html"
+          ><button class="addcart">add to cart</button></a
+        >
+      </div>
+    </section>
+
+    <!-- damateba -->
+    <section class="banner">
+      <div class="banner-content">
+        <h2>SUBSCRIBE FOR 10% OFF YOUR FIRST ORDER</h2>
+        <div class="registrireba">
+          <label>Join Our Community</label>
+          <div class="email">
+            <input type="email" placeholder="Email" />
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pliusebi-section">
+      <div class="pliusebi-list">
+        <div class="li1">
+          <img id="van-img" src="van.png" alt="van" />
+          <h3>Free Shipping</h3>
+          <p>FREE SHIPPING OVER $60</p>
+        </div>
+        <div class="li1">
+          <img id="reverse" src="refund.png" alt="reverse" />
+          <h3>Full Refund</h3>
+          <p>14 Day Refunds</p>
+        </div>
+        <div class="li1">
+          <img id="card" src="card.png" alt="card">
+          <h3>Secure Online Payment</h3>
+          <p>100% SECURE CHECKOUT</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- damateba -->
+
+    <footer>
+      <p>&copy; TKBR</p>
+      <p>all rights reserved</p>
+      <p>2025</p>
+      <p>Contact Us and</p>
+      <p>Follow us on:</p>
+      <p>
+        <a href="https://www.facebook.com/tornike.beridze.1213"
+          ><img src="fb.png" class="ftpc" alt="" />Facebook</a
+        >
+        |
+        <a href="https://www.instagram.com/tkbr_1q231/"
+          ><img src="instagram.png" class="ftpc" alt="" />Instagram</a
+        >
+        |
+        <a href="https://github.com/tornike440/GOA-projects"
+          ><img src="github.png" class="ftpc" alt="" />GitHub</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

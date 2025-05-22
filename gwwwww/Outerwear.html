@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TKBR</title>
+  <style>
+      body {
+        margin: 0;
+        font-family: fantasy;
+        background-color: #121212;
+        color: #ffffff;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #333;
+        font-size: 0.9rem;
+        background-color: #1e1e1e;
+      }
+
+      .topbar div {
+        margin-left: 1rem;
+        cursor: pointer;
+      }
+
+      .topbar div:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #1e1e1e;
+      }
+
+      .logo {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        cursor: pointer;
+        position: relative;
+      }
+
+      nav ul li:hover {
+        color: #aaa;
+      }
+
+      .shop-dropdown {
+        opacity: 0;
+        position: absolute;
+        background-color: #2a2a2a;
+        border: 1px solid #444;
+        padding: 1rem;
+        z-index: 1000;
+        transition: opacity 1s ease;
+        pointer-events: none;
+        color: #fff;
+      }
+
+      .shop-item:hover .shop-dropdown {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      /* shecvlili racari */
+      .shop-item {
+        position: relative;
+        z-index: 1;
+      }
+
+      #dropdown-list li::after {
+        position: absolute;
+        content: " ";
+        width: 0%;
+        height: 2px;
+        background: #ffffff;
+        display: block;
+        cursor: pointer;
+        transition: 1s;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+      #dropdown-list li:hover::after {
+        width: 100%;
+        .shop-item {
+          color: black;
+        }
+      }
+
+      .shop-item::after {
+        content: " ";
+        width: 0%;
+        height: 2px;
+        background: #ddded9;
+        display: block;
+        cursor: pointer;
+        transition: 1.3s;
+        margin-top: 3px;
+      }
+
+      .shop-item:hover::after {
+        width: 100%;
+      }
+      /* shecvlili racari */
+
+      .shop-dropdown ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .right-icons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .right-icons div {
+        cursor: pointer;
+      }
+
+      .right-icons div:hover {
+        opacity: 0.7;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 2rem;
+        background-color: #1a1a1a;
+      }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .product {
+    flex: 1 1 calc(33% - 2rem);
+    box-sizing: border-box;
+    border: 1px solid #444;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    text-align: center;
+    transition: 0.4s linear;
+  }
+
+  .product:hover {
+    transform: scale(1.05);
+    border-color: #888;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
+
+  .product img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .addcart {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .addcart:hover {
+    transform: scale(1.5);
+    background-color: #ddd;
+  }
+
+  .ftpc {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #fff;
+  }
+
+  .slicer {
+    height: 2px;
+    background-color: #444;
+    margin: 10px;
+  }
+
+  .price {
+    font-size: 15px;
+    color: #ff5252;
+  }
+
+  .original-price {
+    margin-left: 10px;
+    color: #888;
+    text-decoration: line-through;
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div>
+      <img src="georgia.png" style="border-radius: 50%; max-width: 20px; height: 20px;" alt="georgia">
+      Georgia (CAD $)
+    </div>
+    <div>English</div>
+  </div>
+
+    <header>
+      <div class="logo"><a href="hw.html">TKBR</a></div>
+      <nav>
+        <ul>
+          <li class="shop-item">
+            <span>Shop ▼</span>
+            <div class="shop-dropdown">
+              <ul id="dropdown-list">
+                <li><a href="tshirts.html">T-Shirts</a></li>
+                <li><a href="hoodies.html">Hoodies</a></li>
+                <li><a href="zip.html">zip-ups</a></li>
+                <li><a href="./Outerwear.html">Outerwear</a></li>
+                <li><a href="bottoms.html">Bottoms</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="shop-item">Track Your Order</li>
+          <li class="shop-item">Size Help</li>
+          <li><a href="contact.html" class="shop-item">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="right-icons">
+        <div>CAD</div>
+        <div>🔍</div>
+        <div><a href="cart.html">🛒</a></div>
+      </div>
+    </header>
+
+  <section class="hero" style="background-color: #000; color: rgb(205, 205, 205);">
+    <h3><a href="hw.html">home</a> > <a href="/gwwwww/Outerwear.html">Outerwear</a></h3>
+    <h1>Outerwear</h1>
+  </section>
+    <section class="products">
+
+      <a href="/gwwwww/Outerwear png/Ou/Ou1.html" class="product">
+          <div >  
+            <img src="/gwwwww/Outerwear png/Ou1.png" alt="Product 1"/>
+            <h2>Patched Fur Jacket</h2>
+            <p>$69.99</p>
+            <button class="addcart" onclick="addToCart('“All Roads Lead to You” Tee', 34.99, 'tshirt1.png')">Add to Cart</button>
+        </div>
+      </a>
+
+      <a href="/gwwwww/Outerwear png/Ou/Ou2.html" class="product">
+        <div>
+          <img src="/gwwwww/Outerwear png/Ou2.png" alt="Product 2"/>
+          <h2>Patched Fur Camo Jacket</h2>
+          <p>$69.99</p>
+          <button class="addcart" onclick="addToCart('Vintage Maple Tee', 34.99, 'tshirt3.png')">Add to Cart</button>
+        </div>
+      </a>
+
+    <a href="/gwwwww/Outerwear png/Ou/Ou3.html" class="product">
+      <div>
+        <img src="/gwwwww/Outerwear png/Ou3.png" alt="Product 3"/>
+        <h2>Seamless Down Parka</h2>
+        <p>$199.99</p>
+        <button class="addcart" onclick="addToCart('City Core Graphic Tee', 34.99, 'tshirt6.png')">Add to Cart</button>
+      </div>
+    </a>
+
+    <a href="/gwwwww/Outerwear png/Ou/Ou4.html" class="product">
+      <div>
+        <img src="/gwwwww/Outerwear png/Ou4.png" alt="Product 4"/>
+        <h2>Ultra Light Down Jacket</h2>
+        <p>$49.99</p>
+        <button class="addcart" onclick="addToCart('Stamped Tee', 34.99, 'tshirt8.png')">Add to Cart</button>
+      </div>
+    </a>
+
+    <a href="/gwwwww/Outerwear png/Ou/Ou5.html" class="product">
+      <div>
+        <img src="/gwwwww/Outerwear png/Ou5.png" alt="Product 5"/>
+        <h2>Ultra Light Down Vest</h2>
+        <p>$59.99</p>
+        <button class="addcart" onclick="addToCart('Washed Printed Tee', 34.99, 'tshirt9.png')">Add to Cart</button>
+      </div>
+    </a>
+
+    <a href="/gwwwww/Outerwear png/Ou/Ou6.html" class="product">
+      <div>
+        <img src="/gwwwww/Outerwear png/Ou6.png" alt="Product 6"/>
+        <h2>AirSense Jacket (Wool-Like)</h2>
+        <p>$52.99</p>
+        <button class="addcart" style="text-decoration: line-through;" disabled>Add to Cart</button>
+        <p style="color: red;">Out of Stock</p>
+      </div>
+    </a>
+
+    <a href="/gwwwww/Outerwear png/Ou/Ou7.html" class="product">
+      <div>
+        <img src="/gwwwww/Outerwear png/Ou7.png" alt="Product 7"/>
+        <h2>MONCLER</h2>
+        <div>
+          <span class="price">$109.99</span>
+          <span class="original-price">$199.99</span>
+        </div>
+        <button class="addcart" onclick="addToCart('Anime Tee', 19.99, 'tshirt16.png')">Add to Cart</button>
+      </div>
+    </a>
+
+    <a href="/gwwwww/Outerwear png/Ou/Ou8.html" class="product">
+      <div>
+        <img src="/gwwwww/Outerwear png/Ou8.png" alt="Product 8"/>
+        <h2>Lightweight Stand Blouson</h2>
+        <p>$79.99</p>
+        <button class="addcart" onclick="addToCart('Comp. Tee', 34.99, 'tshirt18.png')">Add to Cart</button>
+      </div>
+    </a>
+
+    <a href="/gwwwww/Outerwear png/Ou/Ou9.html" class="product">
+      <div>
+        <img src="/gwwwww/Outerwear png/Ou9.png" alt="Product 9"/>
+        <h2>King Von Broke Opps Puffer Jacket</h2>
+        <p>$999.99</p>
+        <button class="addcart" style="text-decoration: line-through;" disabled>Add to Cart</button>
+        <p style="color: red;">Out of Stock</p>
+      </div>
+    </a>
+
+    </section>
+
+    
+    <script>
+    function addToCart(name, price, image) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push({ name, price, image });
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert(`${name} added to cart!`);
+    }
+    </script>
+
+        <footer>
+            <p>© 2023 TKBR. All rights reserved.</p>
+            <p>Follow us on social media!</p>
+
+        </footer>
+
+</body>
+</html>

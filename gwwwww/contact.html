@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - TKBR</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: fantasy;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid #333;
+      font-size: 0.9rem;
+      background-color: #1e1e1e;
+    }
+
+    .topbar div {
+      margin-left: 1rem;
+      cursor: pointer;
+    }
+
+    .topbar div:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #1e1e1e;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      position: relative;
+    }
+
+    nav ul li:hover {
+      color: #aaa;
+    }
+
+    .shop-dropdown {
+      opacity: 0;
+      position: absolute;
+      background-color: #2a2a2a;
+      border: 1px solid #444;
+      padding: 1rem;
+      z-index: 1000;
+      transition: opacity 1s ease;
+      pointer-events: none;
+      color: #fff;
+    }
+
+    .shop-item:hover .shop-dropdown {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .shop-item {
+      position: relative;
+      z-index: 1;
+    }
+
+    .shop-item::after {
+      content: " ";
+      width: 0%;
+      height: 2px;
+      background: #ddded9;
+      display: block;
+      cursor: pointer;
+      transition: 1.3s;
+      margin-top: 3px;
+    }
+
+    .shop-item:hover::after {
+      width: 100%;
+    }
+
+    .shop-dropdown ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .right-icons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .right-icons div {
+      cursor: pointer;
+    }
+
+    .right-icons div:hover {
+      opacity: 0.7;
+    }
+
+    /* === Contact Section Styling === */
+    .contact-container {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .contact-container h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-container p {
+      font-size: 0.95rem;
+      color: #bbb;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-container form {
+      flex: 1 1 500px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-container label {
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+      color: #ccc;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+      background-color: #111;
+      border: 1px solid #444;
+      border-radius: 6px;
+      padding: 12px;
+      margin-bottom: 1rem;
+      color: #fff;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    .contact-container input:focus,
+    .contact-container textarea:focus {
+      outline: none;
+      border-color: #fff;
+    }
+
+    .contact-container textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .contact-container button {
+      background-color: #fff;
+      color: #000;
+      padding: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .contact-container button:hover {
+      background-color: #ccc;
+      color: #111;
+    }
+
+    .sidebar {
+      flex: 1 1 250px;
+      color: #ccc;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 1rem;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div>
+      <img src="georgia.png" style="border-radius: 50%; max-width: 20px; height: 20px;" alt="georgia">
+      Georgia (CAD $)
+    </div>
+    <div>English</div>
+  </div>
+
+  <!-- Header with Nav -->
+  <header>
+    <div class="logo"><a href="hw.html">TKBR</a></div>
+    <nav>
+      <ul>
+        <li class="shop-item">
+          <span>Shop ▼</span>
+          <div class="shop-dropdown">
+            <ul id="dropdown-list">
+              <li><a href="tshirts.html">T-Shirts</a></li>
+              <li><a href="hoodies.html">Hoodies</a></li>
+              <li><a href="zip.html">Zip-ups</a></li>
+              <li><a href="./Outerwear.html">Outerwear</a></li>
+              <li><a href="bottoms.html">Bottoms</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="shop-item">Track Your Order</li>
+        <li class="shop-item">Size Help</li>
+        <li><a href="contact.html" class="shop-item">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="right-icons">
+      <div>CAD</div>
+      <div>🔍</div>
+      <div><a href="cart.html">🛒</a></div>
+    </div>
+  </header>
+
+  <!-- Contact Form Section -->
+  <div class="contact-container">
+    <div>
+      <h1>Contact Us</h1>
+      <p>If you’ve got great products you're making or looking to work with us, then drop us a line.</p>
+
+      <form action="https://formspree.io/f/xvgayldb" method="POST">
+        <label>Your email:
+          <input type="email" name="email" style="width:500px;" required>
+        </label>
+        <label style="display: flex;flex-direction: row;"><p>Your message:</p>
+          <textarea name="message" required ></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="sidebar">
+      <p><strong>Email:</strong> TKBR@gmail.com</p>
+      <p><strong>We're Open:</strong> 24/7 For You</p>
+      <p><strong>Socials:</strong> 📌 📘 📸</p>
+    </div>
+  </div>
+
+  <footer>© 2025 TKBR. All rights reserved.</footer>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Savoy West Product Page</title>
+  <style>
+/* ========== Base Styles ========== */
+body {
+  margin: 0;
+  font-family: fantasy;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========== Top Bar ========== */
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #333;
+  font-size: 0.9rem;
+  background-color: #1e1e1e;
+}
+
+.topbar div {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.topbar div:hover {
+  text-decoration: underline;
+}
+
+/* ========== Header ========== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1a1a1a;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* ========== Navigation ========== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+  color: #bbb;
+}
+
+/* Shop dropdown reveal on hover */
+.shop-item {
+  position: relative;
+  z-index: 1;
+}
+
+.shop-item::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background: #ddded9;
+  display: block;
+  cursor: pointer;
+  transition: width 1.3s;
+  margin-top: 3px;
+}
+
+.shop-item:hover::after {
+  width: 100%;
+}
+
+/* Dropdown menu */
+.shop-dropdown {
+  opacity: 0;
+  position: absolute;
+  background-color: #222;
+  border: 1px solid #444;
+  padding: 1rem;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  color: #fff;
+}
+
+.shop-item:hover .shop-dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.shop-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.shop-dropdown a {
+  color: #f5f5f5;
+}
+
+/* Dropdown hover underline animation */
+#dropdown-list li {
+  position: relative;
+}
+
+#dropdown-list li::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: #ffffff10;
+  transition: width 1s;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#dropdown-list li:hover::after {
+  width: 100%;
+}
+
+/* ========== Header Icons ========== */
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right-icons div {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.right-icons div:hover {
+  opacity: 0.7;
+}
+
+/* ========== Product Page ========== */
+.product-page {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.thumbnails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 125px;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #444;
+  cursor: pointer;
+}
+
+.main-image {
+  flex: 2;
+  text-align: center;
+}
+
+.main-image img {
+  max-width: 100%;
+  max-height: 600px;
+  object-fit: contain;
+}
+
+.details {
+  flex: 2;
+  padding: 0 2rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.original-price {
+  margin-left: 10px;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.par {
+  max-width: 400px;
+  border-radius: 5px;
+  color: #ddd;
+}
+
+/* Size selection dropdown */
+.size-select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.size-select:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+/* Add to cart button */
+.addcart {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 15px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 1rem 0;
+  transition: transform 0.3s ease;
+}
+
+.addcart:hover {
+  transform: scale(1.1);
+}
+
+/* ========== Footer ========== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div>
+      <img src="georgia.png" style="border-radius: 50%; max-width: 20px; height: 20px;" alt="georgia">
+      Georgia (CAD $)
+    </div>
+    <div>English</div>
+  </div>
+
+    <header>
+      <div class="logo"><a href="hw.html">TKBR</a></div>
+      <nav>
+        <ul>
+          <li class="shop-item">
+            <span>Shop ▼</span>
+            <div class="shop-dropdown">
+              <ul id="dropdown-list">
+                <li><a href="tshirts.html">T-Shirts</a></li>
+                <li><a href="hoodies.html">Hoodies</a></li>
+                <li><a href="zip.html">zip-ups</a></li>
+                <li><a href="./Outerwear.html">Outerwear</a></li>
+                <li><a href="bottoms.html">Bottoms</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="shop-item">Track Your Order</li>
+          <li class="shop-item">Size Help</li>
+          <li><a href="contact.html" class="shop-item">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="right-icons">
+        <div>CAD</div>
+        <div>🔍</div>
+        <div><a href="cart.html">🛒</a></div>
+      </div>
+    </header>
+
+<div class="product-page">
+    <div class="thumbnails">
+        <img src="tshirt17.png" alt="thumb1">
+
+
+    </div>
+
+    <div class="main-image">
+        <img src="tshirt17.png" alt="main product">
+    </div>
+
+    <div class="details">
+        <h2>Take Easy Tee</h2>
+        <div>
+            <span class="price">$34.99</span>
+
+        </div>
+        <p class="par">
+            • Washed Grey Lightweight Fabric – Ultra-soft, breathable, and comfortable for everyday wear.<br>
+            • Drop Shoulder Construction – Relaxed, oversized fit with a modern silhouette.<br>
+            • Subtle “Take Easy” Detailing – Minimal front print for a clean, understated look.<br>
+            • Unisex Design – Flattering and versatile for all body types.<br>
+            • Easy to Layer – Perfect on its own or styled with your favorite pieces.<br>
+            • Care Instructions: Machine wash cold, tumble dry low. Avoid ironing over print.<br>
+        </p>
+
+        <div>
+            <select class="size-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+        </div>
+
+        <button class="addcart" onclick="addToCart('Shoulder Dropped Tee', 34.99, 'tshirt15.png')">Add to Cart</button>
+    </div>
+</div>
+
+  <script>
+    function addToCart(name, price, image) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push({ name, price, image });
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(`${name} added to cart!`);
+    }
+  </script>
+
+  <footer>
+    &copy; 2025 TKBR. All rights reserved.
+  </footer>
+
+</body>
+</html> 
