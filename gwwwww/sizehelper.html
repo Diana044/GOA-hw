@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TKBR</title>
+    <title>Size Help</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
       /* ========== Base Styles ========== */
       body {
         margin: 0;
         font-family: fantasy;
-        background-color: #121212;
-        color: #ffffff;
+        background-color: #ffffff;
+        overflow-x: hidden;
       }
 
       a {
@@ -26,6 +28,7 @@
         border-bottom: 1px solid #333;
         font-size: 0.9rem;
         background-color: #1e1e1e;
+        color: #ffffff;
       }
 
       .topbar div {
@@ -44,6 +47,7 @@
         align-items: center;
         padding: 1rem;
         background-color: #1e1e1e;
+        color: #ffffff;
       }
 
       .logo {
@@ -154,61 +158,47 @@
         opacity: 0.7;
       }
 
-      /* ========== Hero Section ========== */
-      .hero {
-        text-align: center;
-        padding: 2rem;
-        background-color: #1a1a1a;
-      }
-
-      /* ========== Product Grid ========== */
-      .products {
+      /* main */
+      .main {
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #0000009b;
+        margin: 44px;
         display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      /* home>size help */
+      .location {
+        font-weight: 700;
+      }
+ 
+      .guide strong {
+        color: black;
+      }
+      .guide-list {
+        text-align: left;
+        transform: translate(10px);
+        max-width: 1098px;
+        font-size: 17px;
       }
 
-      .product {
-        flex: 1 1 calc(33% - 2rem);
-        box-sizing: border-box;
-        border: 1px solid #333;
-        background-color: #1e1e1e;
-        padding: 1rem;
+      .tables-div p{
         text-align: center;
-        color: #fff;
-      }
-
-      .product img {
-        max-width: 100%;
-        height: auto;
-        max-height: 300px;
-        object-fit: cover;
-      }
-
-      /* ========== Add to Cart Button ========== */
-      .addcart {
-        background-color: #fff;
         color: #000;
-        border: none;
-        border-radius: 15px;
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-        transition: transform 0.3s ease;
+        font-size: 70px;
+        font-family: monospace;
       }
 
-      .addcart:hover {
-        transform: scale(1.5);
-        background-color: #ccc;
-      }
+       .tables-div img{
+        transform: translate(50px);
+       }
 
-      /* ========== Misc Styles ========== */
-      .ftpc {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        margin-right: 5px;
-      }
+       .table3{
+        margin-bottom: 80px;
+       }
 
       footer {
         text-align: center;
@@ -219,89 +209,14 @@
 
       .slicer {
         height: 2px;
-        background-color: #333;
+        background-color: #ffffff;
         margin: 10px;
       }
-
-      /* ========== Banner & Registration Section ========== */
-      .banner {
-        background: #000;
-        color: white;
-        padding: 2rem;
-        margin: 70px;
-        display: flex;
-        justify-content: center;
-      }
-
-      .banner-content {
-        text-align: center;
-      }
-
-      .registrireba {
-        margin-top: 1rem;
-      }
-
-      .registrireba label {
-        display: block;
-        margin-bottom: 0.5rem;
-        font-size: 1rem;
-      }
-
-      /* Email Subscription */
-      .email {
-        display: flex;
-        justify-content: center;
-        max-width: 400px;
-        margin: 0 auto;
-      }
-
-      .email input {
-        flex: 1;
-        padding: 0.75rem;
-        border: none;
-        outline: none;
-      }
-
-      .email button {
-        background: #000;
-        color: white;
-        padding: 0.75rem 1.5rem;
-        border: none;
-        cursor: pointer;
-      }
-
-      /* ========== Feature Section (pliusebi) ========== */
-      .pliusebi-section {
-        background: #3a3a3a;
-        color: black;
-        padding: 2rem 1rem;
-        display: flex;
-        justify-content: center;
-        margin-top: 80px;
-      }
-
-      .pliusebi-list {
-        display: flex;
-        gap: 3rem;
-        text-align: center;
-      }
-
-      #van-img {
-        width: 100px;
-      }
-
-      #reverse {
-        width: 100px;
-      }
-
-      #card {
-        width: 100px;
-      }
-
-      .li1 span {
-        font-size: 2rem;
-        display: block;
-        margin-bottom: 0.5rem;
+      .ftpc {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 5px;
       }
     </style>
   </head>
@@ -345,77 +260,74 @@
         <div><a href="cart.html">🛒</a></div>
       </div>
     </header>
-
-    <section class="hero">
-      <h1>Free Shipping Over $70 USD</h1>
-      <p>14-Day Money Back Guarantee</p>
-    </section>
     <div class="slicer"></div>
 
-    <section class="hero">
-      <h1>most sold:</h1>
-    </section>
-
-    <section class="products">
-      <div class="product">
-        <img src="sweatshirt.png" alt="Product 1" />
-        <h2>V2 ALIEN SWEATER "GRANIT GREY"</h2>
-        <p>$129.99</p>
-        <a href="sweatshirt.html"
-          ><button class="addcart">add to cart</button></a
-        >
-      </div>
-      <div class="product">
-        <img src="blackjeans.png" alt="Product 2" />
-        <h2>Vintage Jeans</h2>
-        <p>$49.99</p>
-        <a href="blackjeans.html"
-          ><button class="addcart">add to cart</button></a
-        >
-      </div>
-      <div class="product">
-        <img src="image.png" alt="Product 3" />
-        <h2>Heavyweight Washed zip-up</h2>
-        <p>$79.99</p>
-        <a href="GREYZIP.html"><button class="addcart">add to cart</button></a>
-      </div>
-    </section>
-
-    <!-- damateba -->
-    <section class="banner">
-      <div class="banner-content">
-        <h2>SUBSCRIBE FOR 10% OFF YOUR FIRST ORDER</h2>
-        <div class="registrireba">
-          <label>Join Our Community</label>
-          <div class="email">
-            <input type="email" placeholder="Email" />
-            <button>Send</button>
+    <main>
+      <div class="main">
+        <h1 style="font-weight: 600">Size Help</h1>
+        <div>
+          <a class="location" href="hw.html">Home</a>
+          <span>></span>
+          <p class="location" style="display: inline-block">Size Help</p>
+        </div>
+        <div class="sizes-main">
+          <h2
+            style="
+              text-align: center;
+              font-size: 40px;
+              margin-top: 70px;
+              font-weight: 500;
+            "
+          >
+            Size Helper
+          </h2>
+          <div class="guide">
+            <div class="guide-list">
+              <ol>
+                <p><strong>Customer Size Guide </strong></p>
+                <li>
+                  <strong> Usual Size (Regular Fit):</strong>For a standard,
+                  comfortable fit, we recommend choosing your usual size. Our
+                  products are designed to be true to size, and you can expect
+                  them to fit well and comfortably according to your regular
+                  size.
+                </li>
+                <li>
+                  <strong> Oversized Look</strong> If you're aiming for an
+                  oversized look or want some extra room for a more relaxed
+                  style, we suggest sizing up once. This will give you a looser
+                  and more relaxed fit, perfect for achieving that trendy
+                  oversized appearance.
+                </li>
+                <p>
+                  <strong>Measurement Tips:</strong>To ensure you select the
+                  right size, we also recommend taking your measurements and
+                  referring to our detailed size chart down below. This will
+                  help you match your measurements with our product dimensions,
+                  providing additional guidance to guarantee the perfect fit.
+                </p>
+                <p>
+                  <strong>Need Further Assistance?</strong>If you're still
+                  unsure about the sizing, our customer support team is here to
+                  assist you. Feel free to reach out to us with any questions or
+                  concerns about choosing the right size. We want you to be
+                  happy with your purchase and look great in our products!
+                <p style="margin-top: 60px;">SIZE CHARTS</p>
+                </p>
+              </ol>
+            </div>
+            <div class="tables-div">
+                <p>JEANS</p>
+              <img src="table1.png" alt="table-size">
+              <p>T-SHIRTS</p>
+              <img src="table2.png" alt="table-size">
+              <p>HOODIES</p>
+              <img class="table3" src="table3.png" alt="table-size">
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="pliusebi-section">
-      <div class="pliusebi-list">
-        <div class="li1">
-          <img id="van-img" src="van.png" alt="van" />
-          <h3>Free Shipping</h3>
-          <p>FREE SHIPPING OVER $60</p>
-        </div>
-        <div class="li1">
-          <img id="reverse" src="refund.png" alt="reverse" />
-          <h3>Full Refund</h3>
-          <p>14 Day Refunds</p>
-        </div>
-        <div class="li1">
-          <img id="card" src="card.png" alt="card" />
-          <h3>Secure Online Payment</h3>
-          <p>100% SECURE CHECKOUT</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- damateba -->
+    </main>
 
     <footer>
       <p>&copy; TKBR</p>
