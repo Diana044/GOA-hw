@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.main {
+  display: flex;
+  width: 750px;
+  height: 420px;
+  border-radius: 10px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.div1 {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+  color: white;
+}
+
+.div2 {
+  background-color: #016871;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+  color: white;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.div3 {
+  background-color: #003f3e;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+  color: white;
+}
+
+button {
+  border-radius: 20px;
+  background-color: white;
+  width: 120px;
+  height: 40px;
+}
+
+.niggelando {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.div1 button{
+    color:  orange;
+}
+.div2 button{
+    color: #016871;
+}
+.div3 button{
+    color:#003f3e ;
+}
+
+p{
+    font-family: cursive;
+    color: rgba(255, 255, 255, 0.783);
+    font-size: 13px;
+}
+
+button {
+    cursor: pointer;
+    transition: 1s;
+    border: none;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+button:hover{
+    transform: scale(2) rotate(360deg) translate(20px);
+}
