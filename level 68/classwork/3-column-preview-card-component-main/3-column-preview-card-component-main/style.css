@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +49,7 @@ body {
 }
 
 h1 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .div3 {
@@ -70,34 +70,34 @@ button {
 }
 
 .niggelando {
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.div1 button{
-    color:  orange;
+.div1 button {
+  color: orange;
 }
-.div2 button{
-    color: #016871;
+.div2 button {
+  color: #016871;
 }
-.div3 button{
-    color:#003f3e ;
+.div3 button {
+  color: #003f3e;
 }
 
-p{
-    font-family: cursive;
-    color: rgba(255, 255, 255, 0.783);
-    font-size: 13px;
+p {
+  font-family: cursive;
+  color: rgba(255, 255, 255, 0.783);
+  font-size: 13px;
 }
 
 button {
-    cursor: pointer;
-    transition: 1s;
-    border: none;
-    text-transform: capitalize;
-    font-weight: 800;
+  cursor: pointer;
+  transition: 1s;
+  border: none;
+  text-transform: capitalize;
+  font-weight: 800;
 }
-button:hover{
-    transform: scale(2) rotate(360deg) translate(20px);
+button:hover {
+  transform: scale(2) rotate(360deg) translate(20px);
 }
