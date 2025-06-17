@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+     <style>
       .main {
         width: 840px;
         height: 840px;
         display: grid;
         grid-template-columns: 200px 200px 200px 200px;
         grid-template-rows: 200px 200px 200px 200px;
+        gap: 15px;
+        padding: 10px;
         border: 2px dashed pink;
+    
       }
 
       .main div {
         background-color: paleturquoise;
         border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
   
       }
     </style>
-  </head>
-  <body>
-    <!-- 2) შექმენით ერთი დიდი დივი სადაც მოათავსებთ 12 დივს,თქვენი დავალება იქნება რომ ეს 12 დივი გრიდის დახმარებით გადაანაწილოთ 4 როუზე და 4 ქოლუმნზე -->
+</head>
+<body>
+    <!-- 
+3)წინა დავალებაში გამოიყენეთ gap და დააშორეთ დივები ერთმანეთსაგან,ასევე მთლიანი კონტნენტი(გრიდი)მოათავსეთ მშობელი ელემენტის შუაში -->
+
     <div class="main">
       <div>1</div>
       <div>2</div>
@@ -37,5 +45,5 @@
       <div>11</div>
       <div>12</div>
     </div>
-  </body>
+</body>
 </html>
