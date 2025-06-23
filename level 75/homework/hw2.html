@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-columns: 150px 150px 150px 150px 150px 150px ;
+            grid-template-rows: 150px 150px 150px 150px  ;
+        }
+
+        .main div{
+            grid-column: 1 /span 5;
+            grid-row: 2 / 4;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div></div>
+    </div>
+</body>
+</html>

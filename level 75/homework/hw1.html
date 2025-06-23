@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 2px solid rgb(5, 11, 59);
+            display:grid;
+            grid-template-columns: 200px  200px  200px  200px  200px  200px;
+            grid-template-rows:  200px  200px  200px  200px;
+            
+        }
+
+        .div1{
+            background-color:rgb(192, 231, 255);
+            grid-column: 1 / span 2;
+        }
+
+        .div2{
+            background-color: dodgerblue;
+            grid-column: 5 / 7;
+        }
+
+        .div3{
+            background-color: darkturquoise;
+            grid-column:3 / span 3;
+            grid-row: 3/ span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+</body>
+</html>
