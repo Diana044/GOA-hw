@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(214, 17%, 92%);
+  display: grid;
+  place-items: center;
+  place-content: center;
+
+}
+
+.container {
+  margin-top: 120px;
+  height: 700px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2, 295px);
+  gap: 31px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.divs {
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.322);
+}
+
+.divs h2 {
+  font-size: 20px;
+}
+
+.divs p {
+  font-size: 14px;
+  color: hsla(214, 17%, 92%, 0.884);
+  line-height: 1.2;
+  margin-top: 3px;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.name h4 {
+  color: hsla(0, 0%, 100%, 0.918);
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 45px;
+}
+
+.h2 {
+  color: rgb(77, 84, 94);
+}
+
+.daniel_div {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(263, 55%, 52%);
+  color: rgb(255, 255, 255);
+  grid-column: 1 / span 2;
+  gap: 12px;
+}
+
+.pfp1 {
+  border: 3px solid rgb(163, 122, 217);
+}
+
+.jonathan_div {
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+  height: 305px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.jannete_div {
+  color: hsl(224, 10%, 45%);
+  grid-column: 1;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kira_div {
+  color: hsl(224, 10%, 45%);
+  grid-column: 4;
+  grid-row: 1/ 3;
+  height: 625px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.patrick_div {
+  background-color: hsl(219, 29%, 14%);
+  color: #fff;
+  grid-column: 2 / span 2;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.img5 {
+  border: 3px solid hsl(263, 55%, 52%);
+}
