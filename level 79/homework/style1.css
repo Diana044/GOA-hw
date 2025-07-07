@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.parent{
+    border:4px dashed red;
+    width: 700px;
+    height:700px;
+    gap: 10px;
+    display:grid;
+    grid-template-columns:repeat( auto-fit,minmax(100px, 1fr));
+
+
+
+}
+
+.parent div{
+    background-color: red;
+}
