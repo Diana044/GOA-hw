@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(220, 220, 220, 0.327);
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.parent {
+  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  grid-template-rows: 280px 30px 140px 220px;
+}
+
+.divs {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+img {
+  width: 200px;
+}
+
+.post_div {
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+  background-color: hsl(31, 66%, 93%);
+  grid-area: 1/1/4/2;
+}
+
+.post_div h2 {
+    margin-top: 27px;
+  font-size: 32px;
+}
+
+.post_div img {
+  width: 175px;
+}
+
+.post_div h2 span {
+  color: hsl(256, 67%, 59%);
+}
+
+.review_div {
+  grid-area: 1/2/2/4;
+  background-color: hsl(256, 67%, 59%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  font-size: 26px;
+  gap: 10px;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.review_div h1 span {
+  color: hsl(39, 100%, 71%);
+}
+.review_div p {
+  font-size: 16px;
+  color: #ffffffd4;
+}
+.review_div img {
+  width: 170px;
+  margin-top: 15px;
+}
+
+.schedule_div {
+ line-height: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  background-color: hsl(254, 88%, 90%);
+  padding: 24px;
+  padding-top: 40px;
+  grid-area: 1/4/4/5;
+}
+
+.schedule_div img {
+  width: 290px;
+}
+
+.schedule_div h2 {
+  font-size: 27px;
+}
+
+.ai_div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 33px;
+  background-color: hsl(39, 100%, 71%);
+  line-height: 1;
+  font-size: 23px;
+  grid-area: 3/1/5/2;
+}
+
+.manage_div {
+  background-color: white;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1;
+  grid-area: 2/2/4/3;
+}
+
+.manage_div img {
+  width: 300px;
+  padding-right: 20px;
+}
+
+.mantain_div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: hsl(39, 100%, 71%);
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1;
+  grid-area: 2/3/4/4;
+}
+
+.grow_div {
+  grid-area: 4/3/5/5;
+}
+ .procent_div{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 17px;
+    
+ }
+.procent_div h2{
+    font-size: 56px;
+    margin-top: 5px;
+}
+.procent_div p{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.procent_div img{
+    width: 160px;
+
+}
+
+.grow_div{
+    background-color: hsl(256, 67%, 59%); 
+    color: #fff;
+    padding: 19px;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    line-height:1;
+}
