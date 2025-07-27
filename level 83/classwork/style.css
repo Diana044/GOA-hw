@@ -1,0 +1,18 @@
+@media (max-width: 1536px){
+    body{background:red;}
+}
+@media (max-width: 1280px){
+    body{background:coral;}
+}
+@media (max-width:1024px){
+    body{background:yellow;}
+}
+@media( max-width:768px){
+    body{background:rgb(82, 176, 253);}
+}
+@media (max-width:640px){
+    body{background:blue;}
+}
+@media (max-width:480px){
+    body{background:green;}
+}
