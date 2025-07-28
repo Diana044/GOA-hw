@@ -25,7 +25,7 @@ nav {
 }
 
 
-nav ul  , .logo_img , .ul_pages,.ul_pages section {
+nav ul  ,  .ul_pages,.ul_pages section {
   list-style: none;
   display: flex;
   align-items: center;
@@ -116,7 +116,7 @@ nav ul  , .logo_img , .ul_pages,.ul_pages section {
   margin-top: 20px;
   flex-wrap: wrap;
 }
-.container2_1 P{
+.container2_1 p{
   font-size: 20px;
 }
 
@@ -161,7 +161,7 @@ nav ul  , .logo_img , .ul_pages,.ul_pages section {
 
 
 
-@media (max-width: 998px) {
+@media (max-width: 1178px) {
   nav .ul_pages section{
     display: none;
   }
