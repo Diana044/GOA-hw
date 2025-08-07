@@ -109,8 +109,9 @@ a {
   margin-left: 30px;
 }
 .hero-text h1 {
-  font-size: 45px;
+  font-size: 50px;
   max-width: 500px;
+ 
 }
 
 .hero-text h1 span {
@@ -228,7 +229,83 @@ a {
   text-align: center;
  
 }
+/* pixelgrade */
 
+#pixelgrade{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.pixelgrade2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pixelgrade2 h1{
+  font-size: 30px;
+  font-weight: 600;
+  max-width: 460px;
+}
+.pixelgrade2 p{
+  max-width: 680px;
+  font-weight: 300;
+  font-size: clamp(13px, 16px, 18px);
+
+}
+
+.pixelgrade2 button{
+  background-color: #4caf4f;
+  border: none;
+  padding: 14px;
+  width: 160px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* local business */
+
+.local_business{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #F5F7FA;
+  padding: 60px;
+  flex-wrap: wrap;
+  
+}
+
+.local_text h1{
+  font-size: clamp(20px,36px,38px);
+  max-width: 390px;
+  margin-bottom: 15px;
+}
+.local_text span{
+  color: #4caf4f;
+}
+.StatsOverview{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.stats{
+  display: flex;
+  gap:20px;
+}
+
+.stats_numbers h2{
+    font-size: clamp(14px,24px,29px);
+
+}
+
+.row1, .row2{
+  display: flex;
+  gap: 160px;
+}
 
 
 @media (max-width: 980px) {
@@ -262,6 +339,8 @@ a {
     padding: 16px;
     gap: 60px;
   }
+
+
 }
 
 @media (max-width: 700px) {
