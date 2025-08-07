@@ -5,6 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+p {
+  color: #717171;
+}
+h1,
+h2 {
+  color: #4d4d4d;
+}
 body {
   flex-direction: column;
   font-family: "Inter", sans-serif;
@@ -41,7 +48,7 @@ a {
   font-size: 30px;
   font-weight: 800;
   text-decoration: none;
-  color: black;
+  color: #263238;
 }
 .logo img {
   width: 37px;
@@ -68,7 +75,7 @@ a {
 .navbar ul li a {
   text-decoration: none;
   font-weight: 500;
-  color: black;
+  color: #717171;
   font-size: 17px;
 }
 .navbar-button {
@@ -166,13 +173,61 @@ a {
   height: auto;
 }
 
+/* manage */
 
+#clients-manage {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
 
+.manage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+.manage_text {
+  text-align: center;
+}
+.manage_text h1 {
+  font-size: 36px;
+  font-weight: 600;
+  max-width: 540px;
+  margin-bottom: 15px;
+}
+.manage_text p {
+  font-size: clamp(14px, 16px, 18px);
+  font-weight: 300;
+}
 
+.manage_imgs {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.manage_divs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
 
-
-
-
+.manage_divs img {
+  width: 55px;
+  height: auto;
+}
+.manage_divs h2 {
+  max-width: 200px;
+  text-align: center;
+}
+.manage_divs p {
+  max-width: 269px;
+  text-align: center;
+ 
+}
 
 
 
@@ -230,8 +285,10 @@ a {
     display: flex;
     gap: 40px;
   }
-  .logo span {
-    font-size: 20px;
+  .logo span,
+  .manage_text h1,
+  .manage_divs h2 {
+    font-size: 23px;
   }
 
   .logo img {
@@ -264,7 +321,16 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .client-imgs{
+  .client-imgs {
     gap: 20px;
+  }
+
+  .manage_imgs {
+    gap: 50px;
+  }
+
+  .manage_text p,
+  .manage_divs p{
+    font-size: 15px;
   }
 }
