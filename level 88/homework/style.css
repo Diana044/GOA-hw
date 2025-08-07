@@ -231,7 +231,7 @@ a {
 }
 /* pixelgrade */
 
-#pixelgrade{
+.pixelgrade{
   width: 100%;
   display: flex;
   align-items: center;
@@ -299,9 +299,7 @@ a {
 
 .stats_numbers h2{
     font-size: clamp(14px,24px,29px);
-
 }
-
 .row1, .row2{
   display: flex;
   gap: 160px;
@@ -340,7 +338,6 @@ a {
     gap: 60px;
   }
 
-
 }
 
 @media (max-width: 700px) {
@@ -357,6 +354,7 @@ a {
     justify-content: center;
     margin-left: 20px;
   }
+  
 }
 
 @media (max-width: 550px) {
@@ -412,4 +410,35 @@ a {
   .manage_divs p{
     font-size: 15px;
   }
+
+  
+  .local_text h1{
+    font-size: 30px;
+  }
+   .row1,
+  .row2 {
+    flex-direction: column;
+    gap: 30px; 
+    align-items: center;
+  
+  }
+
+  .StatsOverview {
+    gap: 60px; 
+    margin-top: 30px;
+  }
+
+  .stats {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .pixelgrade1 img{
+    width: 300px;
+  }
+  .pixelgrade2 h1{
+    font-size: 28px;
+  }
+   
 }
