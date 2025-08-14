@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px;
+  margin: 0px 140px;
+  align-items: center;
+  border-bottom: 1px solid #a8a8a8;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.nav ul {
+  display: flex;
+  gap: 35px;
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+button {
+  background-color: #ffce31;
+  width: 140px;
+  border: none;
+  padding: 18px;
+  border-radius: 40px;
+  font-weight: 700;
+}
+
+/* hero */
+
+#section-hero {
+  border-bottom: 1px solid #a8a8a8;
+}
+.div-hero {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.hero-text h1 {
+  font-size: 80px;
+  max-width: 600px;
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-weight: 400;
+  font-size: 19px;
+  max-width: 560px;
+}
+
+.hero-input {
+  display: flex;
+  gap: 15px;
+}
+.hero-input input {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 18px;
+  border-radius: 40px;
+  width: 300px;
+}
+.hero-input input::placeholder {
+  font-weight: 400;
+  font-size: 17px;
+}
+.hero-img img {
+  width: 770px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img1 {
+  width: 300px;
+}
+.socials-img {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.socials-img img {
+  width: 95px;
+}
+
+@media (max-width: 1310px) {
+  header {
+    margin: 0px 20px;
+  }
+  .div-hero , .socials,.socials-img{
+    flex-direction: column;
+    gap: 30px;
+  }
+   .div-hero h1{
+    font-size: 50px;
+   }
+   .hero-img img{
+    width: 600px;
+   }
+}
+
+@media (max-width: 800px) {
+  .nav ul {
+    display: none;
+  }
+}

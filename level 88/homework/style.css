@@ -330,6 +330,7 @@ a {
   margin-top: 30px;
   gap: 20px;
   font-size: 17px;
+  
 
 }
 
@@ -398,15 +399,18 @@ a {
 }
 .caring_text{
     background-color: #f5f7fa;
-    height: 100px;
+    height: 122px;
     display: flex;
     flex-direction:column;
     gap: 20px;
-    border-radius: 10px;
+    border-radius: 6px;
     position: relative;
-    bottom: 50px;
+    bottom: 72px;
     width: 220px;
     padding: 10px;
+    box-shadow: 0px 0px 15px rgba(187, 183, 183, 0.733);
+    font-size: 14px;
+    font-weight: 600;
 }
 
 
@@ -415,6 +419,64 @@ a {
   color: #4caf4f;
 
 }
+
+/* footer */
+
+footer{
+  background-color:#263238;
+  padding: 60px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+
+}
+
+.foot1{
+  display: flex;
+  flex-direction:column;
+  gap: 24px;
+  
+}
+
+.links{
+  width: 190px;
+}
+
+.company ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  color: rgb(219, 222, 226);
+}
+.company h2, .copyright{
+  color: white;
+}
+
+.stay-up{
+    display:flex;
+    flex-direction:column;
+    gap: 13px;
+}
+
+.input {
+  background-color: rgb(81, 91, 96);
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.input input{
+  background-color: rgb(81, 91, 96) ;
+  border: none;
+
+}
+
+.input input::placeholder{
+  color: rgb(166, 171, 177);
+}
+
+
 
 
 
@@ -433,7 +495,7 @@ a {
 
   .custumers  {
     flex-direction: column;
-    padding: 50px;
+    padding: 80px;
   }
   .customers_img1 img{
     width: 300px;
@@ -456,6 +518,17 @@ a {
    .caring_div2{
     flex-direction: column;
    }
+
+   footer{
+    flex-direction: column;
+    gap: 40px;
+   }
+
+   .custumers_text{
+    text-align: center;
+   }
+
+
 }
 
 .footer1{
@@ -468,13 +541,14 @@ a {
   gap: 20px;
 }
 .footer1 h1{
-  font-size: 35px;
-  max-width: 400px;
+  font-size: 50px;
+  max-width: 500px;
+  color: rgb(38, 50, 56);
 }
 .footer1 button{
   background-color: #4caf4f;
   border: none;
-  padding: 8px;
+  padding: 12px;
   width: 130px;
   color: white;
   border-radius: 5px;
