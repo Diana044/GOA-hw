@@ -108,20 +108,37 @@ button {
   header {
     margin: 0px 20px;
   }
-  .div-hero , .socials,.socials-img{
+  .div-hero,
+  .socials{
     flex-direction: column;
     gap: 30px;
+    align-items: center;
+
   }
-   .div-hero h1{
-    font-size: 50px;
-   }
-   .hero-img img{
-    width: 600px;
-   }
+  .div-hero h1 {
+    font-size: 2.3rem;
+  }
+  .hero-img img {
+    width: 400px;
+  }
 }
 
 @media (max-width: 800px) {
   .nav ul {
     display: none;
   }
+
+  .div-hero p {
+    max-width: 400px;
+
+  }
+  .hero-input{
+    flex-direction: column;
+  }
+  .hero-input button{
+    width: 300px;
+  }
+   .socials-img {
+    flex-direction:column;
+   }
 }
