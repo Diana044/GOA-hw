@@ -13,8 +13,8 @@ body {
 }
 header {
   display: flex;
-  justify-content: space-around;
-  padding: 25px;
+  justify-content: space-between;
+  padding: 25px 0px;
   margin: 0px 140px;
   align-items: center;
   border-bottom: 1px solid #a8a8a8;
@@ -55,6 +55,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+
 }
 .hero-text h1 {
   font-size: 80px;
@@ -89,8 +91,10 @@ button {
 
 .socials {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0px 150px 0px 150px;
+  margin-bottom: 80px;
 }
 .img1 {
   width: 300px;
@@ -104,16 +108,143 @@ button {
   width: 95px;
 }
 
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 140px 150px;
+  gap: 60px;
+  justify-content: center;
+  
+}
+
+.sec2-div1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.sec2-div1 h1 {
+  font-weight: 700;
+  font-size: 50px;
+  max-width: 600px;
+}
+
+.sec2-div1 p {
+  font-weight: 400;
+  font-size: 18px;
+  max-width: 400px;
+}
+.sec2-div2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+
+}
+.sec2-div2 img {
+ max-width: 550px;
+}
+
+
+
+.section3{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 140px;
+}
+.section3 h1{
+  font-size: 60px;
+  font-weight: 700;
+}
+.section3 p{
+  font-size: 19px;
+  font-weight: 400;
+}
+.section3 img{
+  width: 100%;
+  margin-top:100px;
+}
+
+.sec3-div1{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sec3-div2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  flex-wrap:wrap;
+  gap: 50px;
+  
+}
+.sec3-div2 div{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  max-width: 300px;
+}
+.sec3-div2 div h2{
+  font-size: 80px;
+  font-weight: 700;
+  display: flex;
+
+}
+.sec3-div2 div p{
+  font-size:18px;
+  font-weight: 400;
+
+}
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 180px 140px;
+  background-color: #FFCE31;
+  gap: 50px;
+  margin-top: 140px;
+}
+.section4  h1{
+  font-size: 80px;
+  font-weight: 700;
+  max-width: 1000px;
+  margin-top: 40px;
+
+}
+.section4  img{
+  width: 400px;
+}
+
+@media(max-width:1455px){
+  .sec2-div1{
+    justify-content: center;
+    text-align: center;
+  }
+  .sec2-div1 h1 ,.sec2-div1 p{
+   max-width:100% ;
+  }
+  .sec2-div2{
+    justify-content: center;
+
+  }
+}
+
 @media (max-width: 1310px) {
   header {
     margin: 0px 20px;
   }
   .div-hero,
-  .socials{
+  .socials {
     flex-direction: column;
     gap: 30px;
     align-items: center;
-
   }
   .div-hero h1 {
     font-size: 2.3rem;
@@ -121,6 +252,7 @@ button {
   .hero-img img {
     width: 400px;
   }
+
 }
 
 @media (max-width: 800px) {
@@ -130,15 +262,51 @@ button {
 
   .div-hero p {
     max-width: 400px;
-
   }
-  .hero-input{
+  .hero-input {
     flex-direction: column;
   }
-  .hero-input button{
+  .hero-input button {
     width: 300px;
   }
-   .socials-img {
-    flex-direction:column;
+  .socials-img {
+    flex-direction: column;
+  }
+   .section2{
+    padding: 140px 60px;
    }
+  .sec2-div1 h1{
+    font-size:40px;
+  }
+    .sec2-div1 p{
+    font-size:16px;
+  }
+  .sec2-div2 img{
+    width: 350px;
+  }
+
+  .section3{
+    padding: 0px 40px;
+    justify-content: center;
+
+  }
+  .sec3-div1 h1{
+    font-size: 30px;
+  }
+    .sec3-div1 p{
+      font-size: 16px;
+    }
+    .sec3-div2{
+     justify-content: center;
+     
+    }
+    /* .sec3-div2 div{
+      
+    } */
+    .sec3-div2 div h2{
+      font-size: 55px;
+    }
+     .sec3-div2 div p{
+      font-size: 15px;
+     }
 }
