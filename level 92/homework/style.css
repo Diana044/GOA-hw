@@ -252,6 +252,9 @@ button {
   .hero-img img {
     width: 400px;
   }
+  .section4 h1{
+    font-size: 60px;
+  }
 
 }
 
@@ -300,13 +303,18 @@ button {
      justify-content: center;
      
     }
-    /* .sec3-div2 div{
-      
-    } */
     .sec3-div2 div h2{
       font-size: 55px;
     }
      .sec3-div2 div p{
       font-size: 15px;
      }
+     .section4{
+      padding:40px 30px;
+     }
+       .section4 h1{
+    font-size: 40px;
+  
+  }
+  
 }
