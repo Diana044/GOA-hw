@@ -262,6 +262,7 @@ footer{
   height: 140px;
   font-weight: 400;
   font-size: 18px;
+  flex-wrap: wrap;
 }
 
 .privacy-p{
@@ -295,6 +296,13 @@ footer{
   .div-hero h1 { font-size: 2.3rem; }
   .hero-img img { width: 400px; }
   .section4 h1 { font-size: 60px; }
+  footer{
+      padding: 15px 0px;
+      margin: 30px 50px;
+      border-bottom: none;
+      justify-content: center;
+  }
+
 }
 
 @media (max-width:800px) {
