@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;}
+  .font700{
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  width: 100%;
+}
+.font300{
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+/*------------------- header------------------- */
+header{
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 230px;}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    list-style: none;
+    font-weight: 400;}
+
+.li1{font-weight: 600;}
+.buttons{
+    display: flex;
+    gap: 25px;
+    cursor: pointer;
+
+}
+.btn1{
+    border: none;
+    font-weight: 400;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+
+}
+.btn2{
+    border: 1px solid #003478;
+    color: #003478;
+    background-color: #fff;
+    font-weight: 600;
+    width: 106px;
+    font-size: 17px;
+    height: 48px;
+}
+
+/* -------------------hero ------------------*/
+
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#hero h1{
+  text-transform: uppercase;
+  font-size: 66px;
+  color: #003478;
+  max-width: 500px;
+
+}
+#hero h1 span{
+  color: rgb(251, 170, 12);
+}
+.lines{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.lines div{
+    background-color: #303231;
+    width: 690px;
+    height: 64px;
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.lines div span{
+    font-size: 28px;
+    
+}
+.hero-buttons{
+    display: flex;
+    gap: 45px;
+}
+.hero-btn1{
+    padding: 23px 44px;
+    max-width: 200px;
+    color: #fff;
+    background-color: #003478;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: center;
+}
+.hero-btn2{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.hero-btn2 div{
+    border-radius: 50%;
+    background-color: #003478;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-btn2 p{
+    font-weight: 500;
+    font-size: 17px;
+}
