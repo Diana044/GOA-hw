@@ -15,6 +15,7 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  width: 100%;
 }
 .font700 {
   font-family: "Sansation", sans-serif;
@@ -173,12 +174,175 @@ nav ul {
   top: 75px;
 }
 
-@media (max-width: 1140px) {
-  .car {
-    position: relative;
-    margin: 20px auto;
-    display: block;
+/* --------------------section2 -----------------*/
+#custom-order{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+ justify-content: space-evenly;
+ gap: 50px;
+ 
+}
+.custom-div1{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+.custom-div1 div{
+  background-color: #303231;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.custom-div1 div p{
+  font-size:34px ;
+  font-family: "Sansation", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  min-width: 400px;
+  color: #fff;
+  
+}
+
+.custom-div1 p{
+  font-weight:400;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 0;
+}
+.custom-div2{
+  width: 100%;
+  padding: 0px 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+
+}
+.custom-divs{
+  display: flex;
+  flex-direction:column;
+  gap: 30px;
+  align-items: center;
+  justify-content:center;
+  border: 1px solid #F5F5F5;
+  padding: 30px;
+}
+.border-right{
+  padding: 39px;
+}
+.line{
+  background-color: #BCBCBC;
+  height: 230px;
+  width: 1px;
+}
+
+ .circle{
+  border-radius: 50%;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FF6645;
+}
+.circle1{
+    background-color: #5046C7;
+
+}
+.circle3{
+    background-color: #81D9F8;
+
+}
+.custom-divs h3{
+  font-size: 18px;
+  font-weight:600;
+}
+.custom-divs p{
+  max-width:264px;
+  text-align:center;
+  font-weight:400;
+}
+.custom-divs h4{
+  color: #FF6645;
+  font-size: 14px;
+}
+.links{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  gap: 14px;
+}
+.links button {
+  padding: 15px 23px;
+  background-color: #003478;
+  border: none;
+
+}
+.links button a{
+  text-decoration: none;
+  color: #fff;
+  
+}
+.links a{
+  color: #0276B3;
+  font-weight: 400;
+  font-size: 18px;
+}
+.custom-nums{
+  padding: 0px 150px;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.custom-nums div{
+  width: 275px;
+  height: 142px;
+  border-radius: 10px;
+  box-shadow:0px 00px 20px rgba(169, 168, 168, 0.653);
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.custom-nums h3{
+  font-size: 48px;
+  font-weight: 400;
+}
+
+@media (max-width: 1170px) {
+  header {
+    padding: 0px 50px;
   }
+  .lines, .car{
+    display: none;
+  }
+  .car{
+    top:7%;
+    
+  }
+  .hero-text{
+    gap: 10px;
+    text-align: center;
+  }
+  #custom-order{
+    gap: 60px;
+  }
+
+}
+
+@media (max-width: 1140px) {
+
   .hero-text {
     z-index: 2;
     gap: 70px;
@@ -196,27 +360,19 @@ nav ul {
     height: 100px;
   }
   .car {
-    width: 900px;
-    top: 17%;
-  }
-}
-@media (max-width: 1170px) {
-  header {
-    padding: 0px 50px;
-  }
-  .lines, .car{
     display: none;
   }
-  .car{
-    top:7%;
-    
+
+  .line{
+    display: none;
   }
-  .hero-text{
-    gap: 10px;
-    text-align: center;
+  .custom-div1 div p{
+    font-size: 30px;
   }
 
 }
+
+
 
 @media (max-width: 1000px) {
   header nav ul,
@@ -226,6 +382,32 @@ nav ul {
   .menu {
     display: block;
   }
+  #custom-order{
+    gap: 50px;
+ 
+  }
+  .custom-div1 p{
+    padding: 0px 30px;
+  }
+  .custom-nums{
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 60px;
+  }
+  .custom-nums div{
+        box-shadow: none;
+
+  }
+  .custom-div2{
+    padding: 20px 15px;
+  }
+  .custom-divs{
+    padding: 20px;
+  }
+   .custom-divs h3{
+    font-size: 17px;
+   }
 }
 
 @media (max-width: 600px) {
@@ -236,9 +418,6 @@ nav ul {
       .hero-text p{
         font-size: 16px;
     }
-
-
-
   .hero-buttons{
     display: flex;
     flex-direction:column;
@@ -249,10 +428,12 @@ nav ul {
     margin-top: 20px;
   }
 
-  #hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .custom-div1 div p{
+    font-size: 19px;
+  }
+      .custom-div1  p{
+    font-size: 16px;
+    max-width: 300px;
+
   }
 }
