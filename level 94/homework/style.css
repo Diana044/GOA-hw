@@ -75,8 +75,10 @@ nav ul {
 /* -------------------hero ------------------*/
 #hero {
   position: relative;
-  height: 100vh;
   overflow: hidden;
+  padding-bottom: 100px;
+  min-height: 100vh; 
+  height: auto;     
 }
 
 .lines {
@@ -182,6 +184,7 @@ nav ul {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 50px;
+
 }
 .custom-div1 {
   display: flex;
@@ -323,7 +326,8 @@ nav ul {
   height: 100vh;
   display: flex;
   flex-direction: Column;
-  margin-top: 100px;
+  margin-top: 500px;
+  
 }
 .power-div1 {
   display: flex;
@@ -416,11 +420,23 @@ ul.spec-list li::before {
     display: none;
   }
   .car {
-    top: 7%;
+    display: none;
+  }
+  .line{
+    display: none;
   }
   .hero-text {
     gap: 10px;
     text-align: center;
+  }
+  .engine-div{
+    flex-direction: column;
+  }
+  .engine-div img{
+    width: 500px;
+  }
+  .eng-div h2{
+    font-size: 20px;
   }
 }
 
@@ -451,6 +467,21 @@ ul.spec-list li::before {
   .custom-div1 div p {
     font-size: 30px;
   }
+   .custom-nums {
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 60px;
+  }
+  .custom-nums div {
+    box-shadow: none;
+  }
+  .engine-div{
+    padding: 0px 60px;
+  }
+  .power-div1 p {
+  font-size: 19px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -467,15 +498,7 @@ ul.spec-list li::before {
   .custom-div1 p {
     padding: 0px 30px;
   }
-  .custom-nums {
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 60px;
-  }
-  .custom-nums div {
-    box-shadow: none;
-  }
+ 
   .custom-div2 {
     padding: 20px 15px;
   }
@@ -484,6 +507,9 @@ ul.spec-list li::before {
   }
   .custom-divs h3 {
     font-size: 17px;
+  }
+    .engine-div img{
+    width: 400px;
   }
 }
 
@@ -510,5 +536,8 @@ ul.spec-list li::before {
   .custom-div1 p {
     font-size: 16px;
     max-width: 300px;
+  }
+    .engine-div img{
+    width: 200px;
   }
 }
