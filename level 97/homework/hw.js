@@ -1,19 +1,4 @@
 
-// 1)შექმენით ჯავასკრიპტის ფაილი ,დააკავშირე html ის ფაილთან,ჯს ის ფაილში console.log()ის გამოყენებით დაბეჭდეთ 10 ჯერ განსხვავებული ცხოველის სახელი,გახსენით კონსოლი და ნახეთ შედეგი
-console.log('diana dzukaevi')
-console.log('avto gulashvili')
-console.log('girorgi gelashvili')
-console.log('natela nateladze')
-console.log('giorgi shukakidze')
-console.log('diana dzukaevi')
-console.log('diana dzukaevi')
-console.log('diana dzukaevi')
-console.log('diana dzukaevi')
-console.log('diana dzukaevi')
-console.log('diana dzukaevi')
-console.log('diana dzukaevi')
-console.log('diana dzukaevi')
-console.log('diana dzukaevi')
 console.log('diana dzukaevi')
 // 2)კომენტარის სახით ჩამოწერეთ რამდენი გზით შეგვიძლია რომ შევქმნათ ცვვლადები და ჩამოწერე რა განსხვავებაა მათ შორის
 // სამი  გზით: var ,let, const.  var შედარებით ძველი მეთოდია რომელსაც დღესდღეობით იშვიათდ თუ გამოვიყენებთ პრაქტიკაში, ცვლადს ნებუისმიერ დროს შეგვიძლია შევუცვალოთ მუინიჭბული მნიშვნელობა.(reassign) let თანამედროვე მეთოდია,  also possible to reassign  the assigned value. const  აუცილებლად უჰნდა მიენიჭოს მნიშვნელობა ცვლადის შექმნისთანავე. ამ მნიშვნელობას ვერ შევძვლოთ.

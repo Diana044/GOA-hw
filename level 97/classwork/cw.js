@@ -1,10 +1,16 @@
-// 1)შექმენით ჯავასკრიპტის ფაილი და კონსოლში გამოიტანეთ  განსხვავებული სახელი და გვარიე++ები 15 ჯერ,გახსენით კონსოლი და ნახეთ შედეგი
 
-
-// მომხმარებელს შემოატანინეთ რაიმე რიცხვი(გადააქცეიიეთ მთლიანი prompt number ტიპის მონაცემად
-//  რომ მომხმარებლის მიერ შემოტანილი მნშვნელობა იყოს number ტიპის)შემდეგ შეადარეთ, თუ მომხმარებლის 
-// მიერ შემოტანილი რიცხვი არის მეტი 0 ზე და არის ლუწი მაშინ დაუკონსოლლოგეთ --> "this number is 
-// positive and Even" ,შემდეგ შეამოწმეთ თუ მომხმარებლის შემოტანილი რიცხვი არის ნაკლები 0 ზე და არის 
-// კენტი მაშინ დაუკონსოლლოგეთ ---> "this number is Odd" , სხვა შემთხვევაში დაუკონსოლლოგეეთ "This 
-// number is zero"
-
+// 1)შექმენით ჯავასკრიპტის ფაილი ,დააკავშირე html ის ფაილთან,ჯს ის ფაილში console.log()ის გამოყენებით დაბეჭდეთ 10 ჯერ განსხვავებული ცხოველის სახელი,გახსენით კონსოლი და ნახეთ შედეგი
+console.log('diana dzukaevi')
+console.log('avto gulashvili')
+console.log('girorgi gelashvili')
+console.log('natela nateladze')
+console.log('giorgi shukakidze')
+console.log('diana sdadd')
+console.log('saqlome zurabishvili')
+console.log('avto nachyepia')
+console.log('batoni daviti')
+console.log('erea dueasvhilii')
+console.log('dianea evadze')
+console.log('dia enekaevishvili')
+console.log('di eaevi')
+console.log('diae nakeaevadze')
