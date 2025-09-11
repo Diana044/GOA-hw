@@ -115,6 +115,7 @@ header ul li a {
   font-weight: 500;
   max-width: 700px;
   line-height: 150%;
+  color: rgb(255, 255, 255);
 }
 .hero-left h1 span {
   color: #caff33;
@@ -208,6 +209,7 @@ header ul li a {
   font-size: 17.34px;
   line-height: 150%;
   letter-spacing: 0%;
+  
 }
 .exchange {
   background-color: #22251b;
