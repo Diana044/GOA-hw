@@ -42,10 +42,12 @@ header {
   display: flex;
   align-items: center;
   gap: 5px;
+  cursor: pointer;
 }
 .header-logo h1 {
   font-size: 26px;
   font-weight: 300;
+  cursor: pointer;
 }
 header ul {
   display: flex;
@@ -70,14 +72,15 @@ header ul li a {
   display: flex;
   gap: 30px;
   align-items: center;
-  cursor: pointer;
 }
+
 .headerebtn1 {
   font-weight: 400;
   font-size: 18px;
   border: none;
   background-color: transparent;
   color: white;
+  cursor: pointer;
 }
 .headerebtn2 {
   font-weight: 400;
@@ -87,6 +90,7 @@ header ul li a {
   padding: 14px 30px;
   border-radius: 82px;
   border: none;
+  cursor: pointer;
 }
 
 /*/////////////////// hero////////////////*/
@@ -289,7 +293,6 @@ header ul li a {
   width: 376px;
   opacity: 0.25;
   transform: translate(0px, -46px);
-  z-index: 99;
 }
 
 .Money-Exchange {
@@ -386,8 +389,6 @@ header ul li a {
   display: flex;
   flex-direction: column;
   gap: 90px;
-    flex-wrap: wrap;
-
 }
 .our-products {
   display: flex;
@@ -406,20 +407,21 @@ header ul li a {
 }
 .our-products-text p {
   color: #b3b3b3;
-  width: 910px;
+  max-width: 910px;
   font-weight: 300;
   font-size: 18px;
   line-height: 150%;
   letter-spacing: 0%;
+  min-width: 430px;
 }
 .our-products-btn {
   background-color: #1c1c1c;
   border-radius: 82px;
-  padding: 14px;
-  width: 386px;
-  height: 83px;
+  max-width: 386px;
+  max-height: 83px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  align-items: center;
 }
 .our-products-btn1 {
   background-color: #caff33;
@@ -432,7 +434,10 @@ header ul li a {
   line-height: 150%;
   letter-spacing: 0%;
   text-align: center;
-  text-align: center;
+  max-width: 181px;
+  max-height: 55px;
+  min-width: 139px;
+  min-height: 41px;
 }
 .our-products-btn2 {
   padding: 14px 24px;
@@ -444,22 +449,20 @@ header ul li a {
   letter-spacing: 0%;
   text-align: center;
   background-color: transparent;
-  color: WHITE;
+  color: white;
+  max-width: 181px;
+  max-height: 55px;
+  min-width: 139px;
+  min-height: 41px;
 }
-.lines {
-  height: 0px;
-  width: 709px;
-  border: 1px solid #262626;
-  transform: rotate(-90deg);
-}
+
 .products-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
-    flex-wrap: wrap; 
-    justify-content: center;
-
+  flex-wrap: wrap;
 }
+
 .products-lists {
   display: flex;
   flex-direction: column;
@@ -467,6 +470,7 @@ header ul li a {
   text-align: center;
   gap: 20px;
 }
+
 .products-lists h4 {
   font-weight: 400;
   font-size: 24px;
@@ -479,7 +483,8 @@ header ul li a {
   line-height: 150%;
   letter-spacing: 0%;
   color: #b3b3b3;
-  width: 465px;
+  max-width: 465px;
+  min-width: 388px;
 }
 .products-lists img {
   width: 95px;
@@ -505,6 +510,15 @@ header ul li a {
   .hero-right {
     margin-top: 50px;
   }
+
+  /* -----------products------------ */
+  .products-list {
+    justify-content: center;
+    gap: 30px;
+  }
+  .our-products {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1158px) {
@@ -525,43 +539,53 @@ header ul li a {
   #hero {
     margin: 40px;
   }
-  .hero-left{
-    padding: 15px 70px;
-
+  .hero-left {
+    padding: 15px;
   }
   .hero-left h1 {
-    font-size: 38px;
+    font-size: 41px;
   }
   .hero-left p {
     font-size: 17px;
   }
-  .hero-left_p {
-    min-width: 440px;
-  }
+
   .hero-left button {
     padding: 14px 22px;
+  }
+  /* --------PRODUCTS------------ */
+  #products {
+    margin-top: 90px;
+  }
+  .our-products {
+    text-align: center;
   }
 }
 
 @media (max-width: 1024px) {
-  .hero-right2 {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-  }
-
   .joel-kanley,
   .mark,
-  .lenen,
-  .exchange {
+  .lenen {
     width: 100%;
   }
 
   .Supported-Currency {
-    width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     flex-wrap: wrap;
     gap: 12px;
+  }
+  /* ---------PROCUSTS---------- */
+  .our-products-text h1 {
+    font-size: 43px;
+  }
+  .our-products-text p {
+    font-size: 17px;
+  }
+  .our-products-btn {
+    margin-top: 30px;
+  }
+  .our-products-btn1,
+  .our-products-btn2 {
+    font-size: 14px;
   }
 }
 
@@ -616,26 +640,39 @@ header ul li a {
   }
   .Supported-Currency {
     width: 100%;
+    max-width: 260px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    align-items: center;
+    gap: 3px;
+    padding: 0px;
   }
   .money-icons {
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 10px;
   }
-}
-
-@media (max-width: 480px) {
-  .monthly-income {
-    max-width: 100%;
-  }
-  .Supported-Currency {
-    gap: 8px;
-  }
   .money-icons {
-    flex-wrap: wrap;
+    background-color: transparent;
+  }
+  /* ===================products============== */
 
+  .our-products-text h1 {
+    font-weight: 500;
+    font-size: 33px;
+  }
+  #products p {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 17px;
+  }
+  .products-lists h4 {
+    font-size: 22px;
+  }
+  .our-products-btn {
+    min-width: 139px;
+  }
+  .our-products-btn1,
+  .our-products-btn2 {
+    padding: 4px 10px;
   }
 }
