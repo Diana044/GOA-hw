@@ -542,11 +542,9 @@ header ul li a {
   gap: 20px;
   flex-wrap: wrap;
   z-index: 9999999999;
-
-
 }
-.list1 div , 
-.list2 div{
+.list1 div,
+.list2 div {
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -564,54 +562,74 @@ header ul li a {
   cursor: pointer;
   transition: 1s;
 }
-.list1 div:hover , 
-.list2 div:hover{
+.list1 div:hover,
+.list2 div:hover {
   border: 1px solid silver;
 }
 
-.list1 div p ,
-.list2 div p{
+.list1 div p,
+.list2 div p {
   max-width: 254px;
   text-align: center;
   font-size: 20px;
 }
 /* ==============second part============== */
-.use-cases-info{
+.use-cases-info {
   display: flex;
   flex-direction: column;
-  gap: 62px;
+  gap: 58px;
 }
 .for-individuals-text {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-.for-individuals-text h3{
+.for-individuals-text h3 {
   font-weight: 500;
-  font-size:30px;
+  font-size: 30px;
 }
 
-.for-individuals-text p{
+.for-individuals-text p {
   font-weight: 300;
   max-width: 748px;
   font-size: 18px;
-  color: #B3B3B3;
+  color: #b3b3b3;
 }
 
-.procentage{
-  display:flex;
+.procentage {
+  display: flex;
   gap: 50px;
 }
-.procentages{
-
+.procentages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.procentages h1{
-  color: #CAFF33;
+.procentages h1 {
+  color: #caff33;
+  font-size: 58px;
+  font-weight: 500;
 }
-.procentages p{
-  color:#B3B3B3;
+.procentages p {
+  color: #b3b3b3;
   font-size: 18px;
   font-weight: 300;
+  max-width: 182px;
+}
+.use-cases-info button {
+  padding: 18px 24px;
+  border-radius: 82px;
+  border: 1px solid #262626;
+  background-color: #1c1c1c;
+  max-width: 148px;
+  max-height: 63px;
+  min-width: 139px;
+  min-height: 41px;
+}
+.use-cases-info button a {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
 }
 /* ----------------------------media---------------- */
 
@@ -641,6 +659,13 @@ header ul li a {
   }
   .our-products {
     justify-content: center;
+  }
+
+  /* ============USER CASES============= */
+  #Use-Cases , .use-cases2{
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
   }
 }
 
@@ -686,6 +711,9 @@ header ul li a {
   /*-------------------- user cases----------------------- */
   .use-cases1 {
     text-align: center;
+  }
+  .use-cases-list{
+    flex-wrap: nowrap;
   }
 }
 
@@ -802,5 +830,32 @@ header ul li a {
   .our-products-btn1,
   .our-products-btn2 {
     padding: 4px 10px;
+  }  
+
+  /* -------use cases----------- */
+  #Use-Cases{
+      margin: 80px 70px;
+
+  }
+  .use-cases1 h1{
+    font-size: 32px;
+  }
+   .use-cases1 p{
+    font-size: 14px;
+    max-width: 358px;
+  }
+
+  .list1 div, .list2 div{
+    padding: 20px 14px;
+    max-width: 154px;
+    max-height: 160px;
+  }
+  
+  .list1 div p, .list2 div p{
+    font-size: 15px;
+  }
+    
+  .list1 div img, .list2 div img{
+    width: 60px;
   }
 }
