@@ -846,16 +846,28 @@ header ul li a {
   }
 
   .list1 div, .list2 div{
-    padding: 20px 14px;
+    padding: 25px 19px;
     max-width: 154px;
     max-height: 160px;
   }
   
   .list1 div p, .list2 div p{
-    font-size: 15px;
+    font-size: 14px;
   }
     
   .list1 div img, .list2 div img{
-    width: 60px;
+    width: 58px;
   }
+  .use-cases-info{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .procentage{
+    flex-direction: column;
+
+  }
+   .procentage p{
+    max-width:308px;
+   }
 }
