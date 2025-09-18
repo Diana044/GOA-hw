@@ -20,9 +20,9 @@ let y=0
 while(y<=evenNum){
     if (y %2=== 0){
         console.log(y)
-        y++
-
     }
+    y++
+
 }
 
 
@@ -31,8 +31,8 @@ let  a=0
 while(a<=oddNum){
     if (a%2!=0){
         console.log(a)
-        a++
-
     }
+    a++
+
 }
 
