@@ -824,11 +824,14 @@ header ul li a {
 
 /* =====================TESTIMON8ALS========================= */
 
-#testimonials{
-  margin: 50px 162px;
+#Testimonials {
+  margin: 100px 162px;
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
 }
 
-.testimonials-text-btn{
+.testimonials-text-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -852,7 +855,7 @@ header ul li a {
   letter-spacing: 0%;
   min-width: 430px;
 }
-.testimonials-btn{
+.testimonials-btn {
   background-color: #1c1c1c;
   border-radius: 82px;
   max-width: 386px;
@@ -861,7 +864,7 @@ header ul li a {
   justify-content: center;
   align-items: center;
 }
-.testimonials-btn1{
+.testimonials-btn1 {
   background-color: #caff33;
   color: #1c1c1c;
   padding: 14px 24px;
@@ -894,24 +897,39 @@ header ul li a {
   min-height: 41px;
 }
 
+/* =====second part================= */
+.testimonials-slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.testimonials-slides img {
+  cursor: pointer;
+}
+.testimonials-list {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 90px;
+}
+.testimonials-list div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.testimonials-list div p {
+  max-width: 404px;
+  font-size: 18px;
+  line-height: 150%;
+}
+.testimonials-list div h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #caff33;
+}
 
 /* ----------------------------media---------------- */
 
@@ -970,6 +988,16 @@ header ul li a {
   .infos1 div,
   .infos2 div {
     padding: 20px;
+  }
+  /* ----------------------------trstimonials--------------------- */
+  .testimonials-text-btn{
+    justify-content: center;
+    gap: 30px;
+  }
+  .testimonials-list {
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -1043,6 +1071,14 @@ header ul li a {
   .FAQ-column {
     flex-direction: column;
   }
+  /* ------------------testimonials-----= */
+  .display-none{
+    display: none;
+  }
+    #Testimonials{
+    margin: 40px 60px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1077,6 +1113,11 @@ header ul li a {
     margin: 50px 80px;
     align-items: center;
     gap: 50px;
+  }
+  /* ---------------------TESTIMONIALS------------------- */
+  #Testimonials{
+    margin: 40px 60px;
+    text-align: center;
   }
 }
 
