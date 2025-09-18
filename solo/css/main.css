@@ -821,6 +821,98 @@ header ul li a {
 .FAQ-column2 {
   background: linear-gradient(#19191900 0%, #191919);
 }
+
+/* =====================TESTIMON8ALS========================= */
+
+#testimonials{
+  margin: 50px 162px;
+}
+
+.testimonials-text-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.testimonials-text h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.testimonials-text h1 span {
+  color: #caff33;
+}
+.testimonials-text p {
+  color: #b3b3b3;
+  max-width: 910px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  min-width: 430px;
+}
+.testimonials-btn{
+  background-color: #1c1c1c;
+  border-radius: 82px;
+  max-width: 386px;
+  max-height: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials-btn1{
+  background-color: #caff33;
+  color: #1c1c1c;
+  padding: 14px 24px;
+  border-radius: 140px;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  max-width: 181px;
+  max-height: 55px;
+  min-width: 139px;
+  min-height: 41px;
+}
+.testimonials-btn2 {
+  padding: 14px 24px;
+  border-radius: 140px;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  max-width: 181px;
+  max-height: 55px;
+  min-width: 139px;
+  min-height: 41px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------media---------------- */
 
 @media (max-width: 1821px) {
