@@ -461,7 +461,6 @@ header ul li a {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-
 }
 
 .products-lists {
@@ -470,10 +469,10 @@ header ul li a {
   align-items: center;
   text-align: center;
   gap: 20px;
-  padding: 40px 24px
+  padding: 40px 24px;
 }
-.border-right{
-    border-right: 1px solid #262626; 
+.border-right {
+  border-right: 1px solid #262626;
 }
 .products-lists h4 {
   font-weight: 400;
@@ -535,11 +534,11 @@ header ul li a {
   flex-wrap: wrap;
   position: relative;
 }
-.bg-img2{
+.bg-img2 {
   position: absolute;
   width: 228px;
   top: 0;
-  left:0;
+  left: 0;
 }
 .list2,
 .list1 {
@@ -637,18 +636,191 @@ header ul li a {
   font-size: 18px;
 }
 
-/* for business */
+/* --for business --*/
 .use-cases-business {
   display: flex;
   justify-content: space-around;
 }
-.bg-img3{
+.bg-img3 {
   position: absolute;
   width: 228px;
   top: 0;
-  right:0;
+  right: 0;
 }
 
+/* ========================OUR FEATURES================== */
+#our-features {
+  margin: 60px 162px;
+}
+.our-features-grid {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+.our-features-text1 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.our-features-text1 h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+.our-features-text1 h1 span {
+  color: #caff33;
+}
+.our-features-text1 p {
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 1296px;
+  color: #b3b3b3;
+}
+.infos1,
+.infos2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  max-width: 614px;
+  max-height: 272px;
+  gap: 30px;
+  padding: 50px;
+  border-radius: 12px;
+  border: 1px solid #262626;
+  background-color: #1c1c1c;
+  margin-top: 30px;
+}
+.infos div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infos div h2 {
+  font-weight: 400;
+  font-size: 22px;
+}
+.infos p {
+  font-weight: 300;
+  font-size: 18px;
+  /* max-width: 514px;
+  width: 100%; */
+  line-height: 150%;
+  color: #b3b3b3;
+}
+.our-features-grid-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  max-width: 308px;
+  max-height: 337px;
+  padding: 50px;
+  border-radius: 12px;
+  background-color: #1c1c1c;
+}
+.our-features-grid-btn button {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 24px;
+  border: 1px solid #262626;
+  background-color: #1c1c1c;
+  font-size: 18px;
+  color: white;
+  border-radius: 100px;
+  min-width: 140px;
+  max-width: 200px;
+  text-align: start;
+  cursor: pointer;
+  transition: 1s;
+}
+.our-features-grid-btn button:hover {
+  border: 1px solid #b3b3b3;
+}
+
+/* -----------------------FAQ's------------------------------ */
+#FAQ {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin: 60px 165px;
+}
+.FAQ-text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.FAQ-text h1 {
+  font-size: 48px;
+  font-weight: 400;
+}
+.FAQ-text h1 span {
+  color: #caff33;
+}
+.FAQ-text p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+.FAQ-info {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.FAQ-column {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.FAQ-column div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid #262626;
+  padding: 50px;
+  border-radius: 14px;
+  max-width: 782.5px;
+  min-width: 357px;
+  width: 100%;
+}
+.FAQ-column div h3 {
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid #262626;
+  padding: 12px 3px;
+}
+.FAQ-column div p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #b3b3b3;
+}
+.faq-btn {
+  display: flex;
+  justify-content: center;
+}
+.faq-btn button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 100px;
+  color: #fff;
+  max-width: 193px;
+  min-width: 155px;
+  padding: 18px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #1c1c1c;
+  border: 1px solid #262626;
+}
+
+.FAQ-column2 {
+  background: linear-gradient(#19191900 0%, #191919);
+}
 /* ----------------------------media---------------- */
 
 @media (max-width: 1821px) {
@@ -678,20 +850,34 @@ header ul li a {
   .our-products {
     justify-content: center;
   }
-  .border-right{
+  .border-right {
     border: none;
   }
 
   /* ============USER CASES============= */
-  #Use-Cases , .use-cases2{
+  #Use-Cases,
+  .use-cases2 {
     justify-content: center;
     align-items: center;
     gap: 60px;
   }
 
   /* ==========FOR BUSIESS----- */
-  .use-cases-business{
+  .use-cases-business {
     flex-direction: column;
+  }
+}
+@media (max-width: 1560px) {
+  /* -----------our features------------ */
+  .infos1,
+  .infos2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .infos1 div,
+  .infos2 div {
+    padding: 20px;
   }
 }
 
@@ -738,8 +924,32 @@ header ul li a {
   .use-cases1 {
     text-align: center;
   }
-  .use-cases-list{
+  .use-cases-list {
     flex-wrap: nowrap;
+  }
+  /* ---------our features------------- */
+  #our-features {
+    margin: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-features-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* -----------------FAQ-------------------- */
+  .FAQ-text h1 {
+    font-size: 38px;
+  }
+  .FAQ-text p {
+    font-size: 16px;
+  }
+  .FAQ-column {
+    flex-direction: column;
   }
 }
 
@@ -768,6 +978,13 @@ header ul li a {
   .our-products-btn1,
   .our-products-btn2 {
     font-size: 14px;
+  }
+
+  /* ////////////////////////faq/////////////////////////' */
+  #FAQ {
+    margin: 50px 80px;
+    align-items: center;
+    gap: 50px;
   }
 }
 
@@ -856,55 +1073,118 @@ header ul li a {
   .our-products-btn1,
   .our-products-btn2 {
     padding: 4px 10px;
-  }  
+  }
 
   /* -------use cases----------- */
-  #Use-Cases{
+  #Use-Cases {
     margin: 80px 70px;
   }
-  .use-cases1 h1{
+  .use-cases1 h1 {
     font-size: 32px;
   }
-   .use-cases1 p{
+  .use-cases1 p {
     font-size: 14px;
     max-width: 358px;
   }
 
-  .list1 div, .list2 div{
+  .list1 div,
+  .list2 div {
     padding: 10px;
     max-width: 154px;
     max-height: 160px;
   }
-  
-  .list1 div p, .list2 div p{
+
+  .list1 div p,
+  .list2 div p {
     font-size: 14px;
   }
-    
-  .list1 div img, .list2 div img{
+
+  .list1 div img,
+  .list2 div img {
     width: 58px;
   }
-  .use-cases-info{
+  .use-cases-info {
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  .for-individuals-text{
+  .for-individuals-text {
     padding: 10px;
   }
-  .for-individuals-text h1{
+  .for-individuals-text h1 {
     font-size: 20px;
   }
-   .for-individuals-text p{
+  .for-individuals-text p {
     font-size: 14px;
   }
-  .procentage{
+  .procentage {
     flex-direction: column;
   }
-  .procentages  h1{
-    font-size:40px;
+  .procentages h1 {
+    font-size: 40px;
   }
-   .procentage p{
-    max-width:308px;
+  .procentage p {
+    max-width: 308px;
     font-size: 14px;
-   }
+  }
+
+  /* =================our features----------- */
+
+  .our-features-text1 {
+    text-align: center;
+  }
+  .our-features-text1 h1 {
+    font-size: 28px;
+  }
+  .our-features-text1 p {
+    font-size: 14px;
+    line-height: 150%;
+    min-width: 366px;
+  }
+
+  .infos {
+    gap: 5px;
+  }
+  .infos div h2 {
+    font-size: 18px;
+  }
+  .infos p {
+    font-size: 14px;
+  }
+  .button3 {
+    display: none;
+  }
+  .our-features-grid-btn {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 16px;
+    width: 370px;
+    height: 89px;
+    padding: 12px;
+    overflow: hidden;
+  }
+
+  .our-features-grid-btn button {
+    flex: 0 0 auto;
+    width: auto;
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+  /* =================faq====================== */
+  .FAQ-text h1 {
+    font-size: 28px;
+  }
+  .FAQ-text p {
+    font-size: 14px;
+  }
+  .FAQ-column div h3 {
+    font-size: 18px;
+  }
+  .FAQ-column div p {
+    font-size: 13px;
+  }
+  .faq-btn button {
+    font-size: 14px;
+    padding: 14px 20px;
+  }
 }
