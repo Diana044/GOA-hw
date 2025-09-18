@@ -459,8 +459,9 @@ header ul li a {
 .products-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+
 }
 
 .products-lists {
@@ -469,8 +470,11 @@ header ul li a {
   align-items: center;
   text-align: center;
   gap: 20px;
+  padding: 40px 24px
 }
-
+.border-right{
+    border-right: 1px solid #262626; 
+}
 .products-lists h4 {
   font-weight: 400;
   font-size: 24px;
@@ -514,15 +518,10 @@ header ul li a {
 }
 .use-cases2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
-.bg-img2 {
-  position: absolute;
-  width: 228px;
-  top: 0;
-  left: 0;
-}
+
 .use-cases-list {
   display: flex;
   max-width: 748px;
@@ -535,6 +534,12 @@ header ul li a {
   padding: 50px;
   flex-wrap: wrap;
   position: relative;
+}
+.bg-img2{
+  position: absolute;
+  width: 228px;
+  top: 0;
+  left:0;
 }
 .list2,
 .list1 {
@@ -631,6 +636,19 @@ header ul li a {
   font-weight: 400;
   font-size: 18px;
 }
+
+/* for business */
+.use-cases-business {
+  display: flex;
+  justify-content: space-around;
+}
+.bg-img3{
+  position: absolute;
+  width: 228px;
+  top: 0;
+  right:0;
+}
+
 /* ----------------------------media---------------- */
 
 @media (max-width: 1821px) {
@@ -660,12 +678,20 @@ header ul li a {
   .our-products {
     justify-content: center;
   }
+  .border-right{
+    border: none;
+  }
 
   /* ============USER CASES============= */
   #Use-Cases , .use-cases2{
     justify-content: center;
     align-items: center;
     gap: 60px;
+  }
+
+  /* ==========FOR BUSIESS----- */
+  .use-cases-business{
+    flex-direction: column;
   }
 }
 
@@ -834,8 +860,7 @@ header ul li a {
 
   /* -------use cases----------- */
   #Use-Cases{
-      margin: 80px 70px;
-
+    margin: 80px 70px;
   }
   .use-cases1 h1{
     font-size: 32px;
@@ -846,7 +871,7 @@ header ul li a {
   }
 
   .list1 div, .list2 div{
-    padding: 25px 19px;
+    padding: 10px;
     max-width: 154px;
     max-height: 160px;
   }
@@ -863,11 +888,23 @@ header ul li a {
     justify-content: center;
     text-align: center;
   }
+  .for-individuals-text{
+    padding: 10px;
+  }
+  .for-individuals-text h1{
+    font-size: 20px;
+  }
+   .for-individuals-text p{
+    font-size: 14px;
+  }
   .procentage{
     flex-direction: column;
-
+  }
+  .procentages  h1{
+    font-size:40px;
   }
    .procentage p{
     max-width:308px;
+    font-size: 14px;
    }
 }
