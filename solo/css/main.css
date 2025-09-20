@@ -819,7 +819,7 @@ header ul li a {
 }
 
 .FAQ-column2 {
-  background: linear-gradient(#19191900 0%, #191919);
+  opacity:1 ;
 }
 
 /* =====================TESTIMON8ALS========================= */
@@ -1319,5 +1319,17 @@ header ul li a {
   .faq-btn button {
     font-size: 14px;
     padding: 14px 20px;
+  }
+
+  /* ------------------testimonials-------------------- */
+
+  .testimonials-text h1{
+    font-size: 28px;
+  }
+   .testimonials-text p{
+    font-size: 14px;
+  }
+  .testimonials-list div p{
+    font-size: 14px;
   }
 }
