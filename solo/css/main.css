@@ -819,7 +819,7 @@ header ul li a {
 }
 
 .FAQ-column2 {
-  opacity:1 ;
+  opacity:0.6;
 }
 
 /* =====================TESTIMON8ALS========================= */
@@ -930,6 +930,89 @@ header ul li a {
   font-weight: 500;
   color: #caff33;
 }
+
+/* --------------startYourJurney"--------------------- */
+
+.startYourJurney{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #1C1C1C;
+  border: 1px solid #262626;
+  max-width: 1596px;
+  padding: 80px;
+  gap: 150px;
+  position: relative;
+}
+
+
+.desgin6{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.startYourJurney div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.startYourJurney div h1{
+  font-size: 40px;
+  font-weight: 400;
+
+}
+.startYourJurney div h1 span{
+  color: #caff33;
+  
+}
+
+.startYourJurney div p{
+  color: #B3B3B3;
+  font-weight: 300;
+  font-size: 18px;
+  max-width: 1103px;
+  
+}
+
+.startYourJurney button{
+  background-color: #caff33;
+  font-weight: 400;
+  padding: 18px 30px;
+  border-radius: 82px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+  font-size: 14px;
+
+}
+.startYourJurney button:hover {
+  background-color: #cbf653d5;
+}
+
+
+.startYourJurney button a{
+  color:#1C1C1C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ----------------------------media---------------- */
 
@@ -1118,6 +1201,13 @@ header ul li a {
   #Testimonials{
     margin: 40px 60px;
     text-align: center;
+  }
+
+  /* --------------------------.startyour jusrnay--------------------- */
+  .startYourJurney{
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
   }
 }
 
@@ -1331,5 +1421,22 @@ header ul li a {
   }
   .testimonials-list div p{
     font-size: 14px;
+  }
+
+
+    /* --------------------------.startyour jusrnay--------------------- */
+  .startYourJurney{
+    gap: 50px;
+    padding: 30px;
+    min-width: 358px;
+  }
+    .startYourJurney div h1{
+      font-size: 24px;
+  }
+     .startYourJurney div p{
+      font-size: 14px;
+  }
+  .startYourJurney div p{
+    min-width: 298px;
   }
 }
