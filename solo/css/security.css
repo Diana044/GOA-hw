@@ -1,66 +1,322 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header{
-    display: flex;
-    justify-content: space-between;
+.burger-menu {
+  display: none;
+}
+.body-topleftcorner {
+  position: fixed;
+  width: 690px;
+  height: 500px;
+  top: 0;
+  left: 0;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  height: 100vh;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 34px 20px 34px;
+  font-weight: 400;
+  border: 1px solid #262626;
+  border-radius: 100px;
+  background-color: #1c1c1c;
+  margin: 50px 140px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.header-logo h1 {
+  font-size: 26px;
+  font-weight: 300;
+  cursor: pointer;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+header ul li a {
+  color: white;
+  font-size: 18px;
+}
+.ul-li {
+  background-color: #262626;
+  padding: 12px 24px;
+  border-radius: 82px;
+  transition: 1s;
+}
+.ul-li:hover {
+  background-color: #474747;
+}
+.header-buttons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.headerebtn1 {
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+.headerebtn2 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #1c1c1c;
+  background-color: #caff33;
+  padding: 14px 30px;
+  border-radius: 82px;
+  border: none;
+  cursor: pointer;
+}
+
+/* =========---overview------------------ */
+
+#overview{
+  position: relative;
+  display: flex;
+  background-color: #1C1C1C;
+  border-radius: 20px;
+  padding: 50px;
+  margin:10px 159px ;
+  height: 800px;
+
+}
+.overview-bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.overview-text{
+  display: flex;
+  flex-direction: column;
+  gap:23px ;
+  padding: 80px;
+  background-color: #1A1A1A;
+  max-width: 791px;
+  max-height: 441px;
+  gap: 23px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 20px;
+  position: absolute;
+  z-index: 99999999999;
+}
+.overview-text h1{
+  font-size: 58px;
+  font-weight: 500;
+}
+.overview-text h1 span{
+  color: #CAFF33;
+}
+.overview-text p{
+  font-size: 18px;
+  font-weight: 300;
+  color: #B3B3B3;
+}
+.overview-img img{
+  position: absolute;
+  border-radius: 16px;
+  filter: grayscale();
+
+  right: 40px;
+}
+.overview-img2{
+  opacity: 0.12;
+}
+
+/* ---------------how we protect your-------------- */
+
+#How-We-Protect-You{
+  margin: 140px 157px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.howweprotectyou-text{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.howweprotectyou-text h1{
+  font-size: 48px;
+  font-weight: 500;
+}
+.howweprotectyou-text h1 span{
+  color: #CAFF33;
+}
+.howweprotectyou-text p{
+  max-width: 1306px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #B3B3B3;
+}
+
+.howweprotectyou-list{
+  display:flex;
+  gap: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.info-div div{
+  display: flex;
+  align-items: center;
+  gap: 20px;  
+}
+.info-div div h2{
+  font-size: 24px;
+  font-weight: 400;
+}
+.info-div div img{
+  width:90px;
+}
+.info-div{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid #262626;
+  padding: 50px;
+  border-radius: 50px;
+  background-image: url(/solo/images/0e607c746b30b27cab7c9900893ffc3643e48cbd.png ) ;
+}
+.info-div p{
+  color: #B3B3B3;
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 588px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------media----------------------- */
+
+
+@media(max-width:1440px){
+  #overview{
+    margin: 10px 50px;
+  }
+}
+@media(max-width:1234px){
+  #overview{
+    flex-direction: column;  
     align-items: center;
-    padding:20px 34px 20px 34px;
-    font-weight: 400;
-    border: 1px solid #262626;
-    border-radius: 100px;
-    background-color: #1C1C1C;
-    margin: 50px 140px ;
+    padding: 14px;
+    height: 500px            
+  }
+  .overview-text{
+    position: static;        
+    padding: 20px;
+  }
+    .overview-text h1{
+    font-size: 28px;
+  }
+     .overview-text p{
+    font-size: 14px;
+  }
+  .overview-img img{
+    width: 100%;            
+    max-width: 400px;        
+    height: auto;
+  }
 }
-.header-logo{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+@media (max-width: 1158px) {
+  header {
+    margin: 30px 80px;
+    padding: 14px 24px;
+  }
+  .header-logo h1 {
+    font-size: 23px;
+  }
+  header ul,
+  .header-buttons {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+  #hero {
+    margin: 40px;
+  }
+  .hero-left {
+    padding: 15px;
+  }
+  .hero-left h1 {
+    font-size: 41px;
+  }
+  .hero-left p {
+    font-size: 17px;
+  }
+
+  .hero-left button {
+    padding: 14px 22px;
+  }
 }
-.header-logo h1{
-    font-size: 26px;
-    font-weight: 300;
-}
-header ul{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 30px;
-}
-header ul li{
-    color: white;
-    font-size: 18px;
-    
-}
-.li-home{
-    background-color: #262626 ;
-    padding: 12px 24px;
-    border-radius: 82px;
-    transition: 1s;
-}
-.li-home:hover{
-    background-color: #474747;
-}
-.header-buttons{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    cursor: pointer;
-}
-.headerebtn1{
-    font-weight: 400;
-    font-size: 18px;
-    border: none;
-    background-color: transparent;
-    color: white;
-}
-.headerebtn2{
-    font-weight: 400;
-    font-size: 18px;
-    color: #1C1C1C;
-    background-color: #CAFF33;
-    padding: 14px 30px;
-    border-radius: 82px;
+
+@media (max-width: 768px) {
+  .burger-menu {
+    width: 50px;
+  }
+  header {
+    margin: 40px 16px;
+    padding: 14px 14px;
+  }
+  .header-logo img {
+    width: 30px;
+  }
+
+  /* ------------overview------------- */
+  #overview{
+    margin: 10px 20px;
+
+  }
+  .overview-text{
+    border-radius: 20px;
+    gap: 14px;
+    padding: 24px;
+  }
+   .overview-text h1{
+    font-size: 25px;
+  }
+    .hero-left p {
+    font-size: 14px;
+  }
+
 }
