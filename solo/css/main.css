@@ -230,10 +230,11 @@ header ul li a {
 .exchange {
   background-color: #22251b;
   color: #d1ff4d;
-  width: 445.6565246582031px;
-  height: 50.74515151977539px;
+  width: 445px;
+  height: 50px;
   border-radius: 71.1px;
   border: none;
+  cursor: pointer;
 }
 .names p {
   font-weight: 300;
@@ -304,7 +305,6 @@ header ul li a {
 .countries {
   display: flex;
   flex-direction: column;
-
   padding: 10px;
   border-radius: 10.4px;
 }
@@ -381,6 +381,7 @@ header ul li a {
   display: flex;
   align-items: center;
   padding: 3px;
+  cursor: pointer;
 }
 
 /* =============our products============= */
@@ -819,7 +820,7 @@ header ul li a {
 }
 
 .FAQ-column2 {
-  opacity:0.6;
+  opacity: 0.6;
 }
 
 /* =====================TESTIMON8ALS========================= */
@@ -933,12 +934,12 @@ header ul li a {
 
 /* --------------startYourJurney"--------------------- */
 
-.startYourJurney{
+.startYourJurney {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 20px;
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
   border: 1px solid #262626;
   max-width: 1596px;
   padding: 80px;
@@ -946,8 +947,7 @@ header ul li a {
   position: relative;
 }
 
-
-.desgin6{
+.desgin6 {
   position: absolute;
   top: 0;
   left: 0;
@@ -958,25 +958,22 @@ header ul li a {
   flex-direction: column;
   gap: 14px;
 }
-.startYourJurney div h1{
+.startYourJurney div h1 {
   font-size: 40px;
   font-weight: 400;
-
 }
-.startYourJurney div h1 span{
+.startYourJurney div h1 span {
   color: #caff33;
-  
 }
 
-.startYourJurney div p{
-  color: #B3B3B3;
+.startYourJurney div p {
+  color: #b3b3b3;
   font-weight: 300;
   font-size: 18px;
   max-width: 1103px;
-  
 }
 
-.startYourJurney button{
+.startYourJurney button {
   background-color: #caff33;
   font-weight: 400;
   padding: 18px 30px;
@@ -986,33 +983,106 @@ header ul li a {
   cursor: pointer;
   transition: 1s;
   font-size: 14px;
-
 }
 .startYourJurney button:hover {
   background-color: #cbf653d5;
 }
 
-
-.startYourJurney button a{
-  color:#1C1C1C;
+.startYourJurney button a {
+  color: #1c1c1c;
 }
 
+/* ==================================FOOTER================== */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1c;
+  gap: 50px;
+  padding-top: 100px;
+  padding-right: 162px;
+  padding-bottom: 50px;
+  padding-left: 162px;
+}
+.footer-logo-links {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.footer-logo h1 {
+  font-size: 22px;
+  font-weight: 300;
+  cursor: pointer;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+footer ul li a {
+  color: #e4e4e7;
+  font-size: 18px;
+}
 
+.footer-contacts {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+  padding: 50px;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-contacts div {
+  display: flex;
+  gap: 6px;
+  border-radius: 8px;
+}
+.footer-contacts div p {
+  font-size: 18px;
+  color: #e4e4e7;
+}
+.footer-socials-privacyPolicy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  border-radius: 100px;
+  padding: 16px 30px 16px 16px;
+}
+.ARR {
+  color: #b3b3b3;
+  font-weight: 300;
+  font-size: 18px;
+}
+.socials {
+  display: flex;
+  gap: 14px;
+}
+.socials img {
+  cursor: pointer;
+}
+.policy {
+  display: flex;
+}
+.policy p a {
+  color: #b3b3b3;
+  font-weight: 300;
+  font-size: 18px;
+}
 
 /* ----------------------------media---------------- */
 
@@ -1073,7 +1143,7 @@ header ul li a {
     padding: 20px;
   }
   /* ----------------------------trstimonials--------------------- */
-  .testimonials-text-btn{
+  .testimonials-text-btn {
     justify-content: center;
     gap: 30px;
   }
@@ -1155,12 +1225,22 @@ header ul li a {
     flex-direction: column;
   }
   /* ------------------testimonials-----= */
-  .display-none{
+  .display-none {
     display: none;
   }
-    #Testimonials{
-    margin: 40px 60px;
+  #Testimonials {
+    margin: 40px 40px;
     text-align: center;
+  }
+  /* -----------footer-------------------- */
+  .footer-socials-privacyPolicy {
+    flex-direction: column;
+
+    padding-left: 50px 24px 30px 12px;
+    gap: 20px;
+    opacity: 1;
+    border-width: 1px;
+    border-radius: 12px;
   }
 }
 
@@ -1198,13 +1278,13 @@ header ul li a {
     gap: 50px;
   }
   /* ---------------------TESTIMONIALS------------------- */
-  #Testimonials{
+  #Testimonials {
     margin: 40px 60px;
     text-align: center;
   }
 
   /* --------------------------.startyour jusrnay--------------------- */
-  .startYourJurney{
+  .startYourJurney {
     flex-direction: column;
     justify-content: center;
     gap: 60px;
@@ -1395,10 +1475,13 @@ header ul li a {
   }
   /* =================faq====================== */
   .FAQ-text h1 {
-    font-size: 28px;
+    font-size: 23px;
+    text-align: center;
   }
   .FAQ-text p {
-    font-size: 14px;
+    font-size: 13px;
+    text-align: center;
+    min-width: 357px;
   }
   .FAQ-column div h3 {
     font-size: 18px;
@@ -1412,31 +1495,56 @@ header ul li a {
   }
 
   /* ------------------testimonials-------------------- */
-
-  .testimonials-text h1{
-    font-size: 28px;
+  #Testimonials {
+    align-items: center;
   }
-   .testimonials-text p{
+  .testimonials-text h1 {
+    font-size: 25px;
+  }
+  .testimonials-text p {
+    font-size: 13px;
+    min-width: 360px;
+  }
+  .testimonials-list div p {
     font-size: 14px;
   }
-  .testimonials-list div p{
+  .testimonials-btn1,
+  .testimonials-btn2 {
+    padding: 20px;
     font-size: 14px;
   }
 
-
-    /* --------------------------.startyour jusrnay--------------------- */
-  .startYourJurney{
+  /* --------------------------.startyour jusrnay--------------------- */
+  .startYourJurney {
     gap: 50px;
     padding: 30px;
-    min-width: 358px;
+    min-width: 340px;
   }
-    .startYourJurney div h1{
-      font-size: 24px;
+  .startYourJurney div h1 {
+    font-size: 24px;
   }
-     .startYourJurney div p{
-      font-size: 14px;
+  .startYourJurney div p {
+    font-size: 14px;
   }
-  .startYourJurney div p{
+  .startYourJurney div p {
     min-width: 298px;
+  }
+  /* -----------footer------------- */
+  footer {
+    min-width: 390px;
+    min-height: 503;
+
+    padding: 50px   16px 30px 16px;
+    gap: 30px;
+    opacity: 1;
+  }
+
+  .footer-socials-privacyPolicy {
+    min-width: 358px;
+    min-height: 142px;
+  }
+  .footer-contacts {
+    gap: 20px;
+    padding: 20px;
   }
 }
