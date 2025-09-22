@@ -1,70 +1,125 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:20px 34px 20px 34px;
-    font-weight: 400;
-    border: 1px solid #262626;
-    border-radius: 100px;
-    background-color: #1C1C1C;
-    margin: 50px 140px ;
+.burger-menu {
+  display: none;
 }
-.header-logo{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.body-topleftcorner {
+  position: fixed;
+  width: 690px;
+  height: 500px;
+  top: 0;
+  left: 0;
 }
-.header-logo h1{
-    font-size: 26px;
-    font-weight: 300;
+
+body {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  height: 100vh;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  position: relative;
 }
-header ul{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 30px;
+a {
+  text-decoration: none;
 }
-header ul li{
-    color: white;
-    font-size: 18px;
-    
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 34px 20px 34px;
+  font-weight: 400;
+  border: 1px solid #262626;
+  border-radius: 100px;
+  background-color: #1c1c1c;
+  margin: 50px 140px;
 }
-.li-home{
-    background-color: #262626 ;
-    padding: 12px 24px;
-    border-radius: 82px;
-    transition: 1s;
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
 }
-.li-home:hover{
-    background-color: #474747;
+.header-logo h1 {
+  font-size: 26px;
+  font-weight: 300;
+  cursor: pointer;
 }
-.header-buttons{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    cursor: pointer;
+header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
 }
-.headerebtn1{
-    font-weight: 400;
-    font-size: 18px;
-    border: none;
-    background-color: transparent;
-    color: white;
+header ul li a {
+  color: white;
+  font-size: 18px;
 }
-.headerebtn2{
-    font-weight: 400;
-    font-size: 18px;
-    color: #1C1C1C;
-    background-color: #CAFF33;
-    padding: 14px 30px;
-    border-radius: 82px;
+.ul-li {
+  background-color: #262626;
+  padding: 12px 24px;
+  border-radius: 82px;
+  transition: 1s;
+}
+.ul-li:hover {
+  background-color: #474747;
+}
+.header-buttons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.headerebtn1 {
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+.headerebtn2 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #1c1c1c;
+  background-color: #caff33;
+  padding: 14px 30px;
+  border-radius: 82px;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1158px) {
+  header {
+    margin: 30px 80px;
+    padding: 14px 24px;
+  }
+  .header-logo h1 {
+    font-size: 23px;
+  }
+  header ul,
+  .header-buttons {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .burger-menu {
+    width: 50px;
+  }
+  header {
+    margin: 40px 16px;
+    padding: 14px 14px;
+  }
+  .header-logo img {
+    width: 30px;
+  }
 }

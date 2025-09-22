@@ -1,30 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="/solo/css/login.css">
-</head>
-<body>
-      <header>
+    <link rel="stylesheet" href="/solo/css/login.css" />
+    <link rel="icon" type="image/png" href="/solo/images/logo_img.png" />
+
+  </head>
+  <body>
+    <header>
       <div class="header-logo">
         <img src="/solo/images/logo_img.png" alt="" />
         <h1>YourBanK</h1>
       </div>
       <nav>
         <ul>
-          <a href="main.html"><li class="ul-li">Home</li></a>
-          <a href="careers.html" target="_blank"><li>Careers</li></a>
-          <a href="about.html" target="_blank"><li>About</li></a>
-          <a href="security.html" target="_blank"><li>Security</li></a>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="careers.html" target="_blank">Careers</a></li>
+          <li><a href="about.html" target="_blank">About</a></li>
+          <li>
+            <a class="ul-li" href="security.html" target="_blank">Security</a>
+          </li>
         </ul>
       </nav>
       <div class="header-buttons">
-        <a href="signup.html"  target="_blank"><button class="headerebtn1">Sign Up</button></a>
-        <a href="login.html"  target="_blank"><button class="headerebtn2">Login</button></a>
+        <a href="signup.html" target="_blank"
+          ><button class="headerebtn1">Sign Up</button>
+        </a>
+        <a href="login.html " target="_blank">
+          <button class="headerebtn2">Login</button>
+        </a>
       </div>
+      <img class="burger-menu" src="/solo/images/Button.png" alt="" />
     </header>
-    
-</body>
+    <main>
+      <section id="login">
+        <img class="abstract-design" src="/solo/images/security-bg.png " />
+        <img class="login-bg" src="/solo/images/security-img2.png" alt="" />
+        <div class="login-part1">
+          <h1>login</h1>
+          <p>Welcome back! Please log in to access your account.</p>
+        </div>
+        <div class="login-part2">
+          <div class="login-inputs">
+            <form action="/solo/html/login.html">
+              <input type="text" placeholder="Enter your Email" />
+              <div class="password-container">
+                <input type="password" placeholder="Enter your Password" />
+                <span class="eye-icon">👁️</span>
+              </div>
+            </form>
+          </div>
+          <a href="security.html" class="forgot-pass">forgot password?</a>
+        </div>
+
+        <div class="login-options">
+          <button class="btn1 btns"><a href="login.html">Login</a></button>
+          <button class="btn2 btns"><a href="signup.html">Sign Up</a></button>
+          <div class="divider">
+            <img src="/solo/images/Line.png" alt="" />
+            <span>Or Continue with</span>
+            <img src="/solo/images/Line.png" alt="" />
+          </div>
+          <div class="login-socials">
+            <img src="/solo/images/google.png" alt="" />
+            <img src="/solo/images/fb2.png" alt="" />
+            <img src="/solo/images/apple.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="Testimonials">
+        <div class="testimonials-text-btn">
+          <div class="testimonials-text">
+            <h1>Our <span>Testimonials</span></h1>
+            <p>
+              Discover how YourBank has transformed lives with innovative
+              digital solutions and personalized customer service. See why our
+              clients trust us for a secure and prosperous financial journey
+            </p>
+          </div>
+          <div class="testimonials-btn">
+            <button class="testimonials-btn1">For Individuals</button>
+            <button class="testimonials-btn2">For Businesses</button>
+          </div>
+        </div>
+        <div class="testimonials-slides">
+          <img class="display-none" src="/solo/images/Button (1).png" alt="" />
+          <div class="testimonials-list">
+            <div>
+              <img src="/solo/images/Icon (5).png" alt="" />
+              <p>
+                I recently started my own business, and YourBank has been
+                instrumental in helping me set up my business accounts and
+                secure the financing I needed. Their expert guidance and
+                tailored solutions have been invaluable.
+              </p>
+              <h4>John D</h4>
+            </div>
+            <div>
+              <img src="/solo/images/Icon (5).png" alt="" />
+              <p>
+                YourBank has been my trusted financial partner for years. Their
+                personalized service and innovative digital banking solutions
+                have made managing my finances a breeze.
+              </p>
+              <h4>Sara T</h4>
+            </div>
+            <div>
+              <img src="/solo/images/Icon (5).png" alt="" />
+              <p>
+                I love the convenience of YourBank's m banking app. It allows me
+                to stay on my finances and make transactions on The opp is
+                user-friendly and secure, giv peace of mind.
+              </p>
+              <h4>Emily G</h4>
+            </div>
+          </div>
+          <img class="display-none" src="/solo/images/Button (2).png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo-links">
+        <div class="footer-logo">
+          <img src="/solo/images/logo_img.png" alt="" />
+          <h1 class="footer-h1">YourBanK</h1>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="careers.html" target="_blank">Careers</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="security.html" target="_blank">Security</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-contacts">
+        <div>
+          <img src="/solo/images/mail.png" alt="" />
+          <p>hello@skillbirdge.com</p>
+        </div>
+        <div>
+          <img src="/solo/images/phone.png" alt="" />
+
+          <p>+91 91813 23 2309</p>
+        </div>
+        <div>
+          <img src="/solo/images/loation.png" alt="" />
+
+          <p>Somewhere in the World</p>
+        </div>
+      </div>
+
+      <div class="footer-socials-privacyPolicy">
+        <div class="socials">
+          <img src="/solo/images/fb.png" alt="" />
+          <img src="/solo/images/twt.png" alt="" />
+          <img src="/solo/images/in.png" alt="" />
+        </div>
+        <div class="ARR">
+          <p>YourBank All Rights Reserved</p>
+        </div>
+        <div class="policy">
+          <p><a href="security.html">Privacy Policy | </a></p>
+          <p><a href="security.html"> Terms of Service</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
