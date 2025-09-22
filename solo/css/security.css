@@ -95,27 +95,26 @@ header ul li a {
 
 /* =========---overview------------------ */
 
-#overview{
+#overview {
   position: relative;
   display: flex;
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
   border-radius: 20px;
   padding: 50px;
-  margin:10px 159px ;
+  margin: 10px 159px;
   height: 800px;
-
 }
-.overview-bg{
+.overview-bg {
   position: absolute;
   top: 0;
   right: 0;
 }
-.overview-text{
+.overview-text {
   display: flex;
   flex-direction: column;
-  gap:23px ;
+  gap: 23px;
   padding: 80px;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   max-width: 791px;
   max-height: 441px;
   gap: 23px;
@@ -125,136 +124,336 @@ header ul li a {
   position: absolute;
   z-index: 99999999999;
 }
-.overview-text h1{
+.overview-text h1 {
   font-size: 58px;
   font-weight: 500;
 }
-.overview-text h1 span{
-  color: #CAFF33;
+.overview-text h1 span {
+  color: #caff33;
 }
-.overview-text p{
+.overview-text p {
   font-size: 18px;
   font-weight: 300;
-  color: #B3B3B3;
+  color: #b3b3b3;
 }
-.overview-img img{
+.overview-img img {
   position: absolute;
   border-radius: 16px;
   filter: grayscale();
 
   right: 40px;
 }
-.overview-img2{
+.overview-img2 {
   opacity: 0.12;
 }
 
 /* ---------------how we protect your-------------- */
 
-#How-We-Protect-You{
+#How-We-Protect-You {
   margin: 140px 157px;
   display: flex;
   flex-direction: column;
-  gap: 200px;
+  gap: 150px;
 }
-.howweprotectyou-text{
+.howweprotectyou-text {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-.howweprotectyou-text h1{
+.howweprotectyou-text h1 {
   font-size: 48px;
   font-weight: 500;
 }
-.howweprotectyou-text h1 span{
-  color: #CAFF33;
+.howweprotectyou-text h1 span {
+  color: #caff33;
 }
-.howweprotectyou-text p{
+.howweprotectyou-text p {
   max-width: 1306px;
   font-size: 18px;
   font-weight: 300;
-  color: #B3B3B3;
+  color: #b3b3b3;
 }
 
-.howweprotectyou-list{
-  display:flex;
+.howweprotectyou-list {
+  display: flex;
   gap: 30px;
   padding-right: 100px;
   padding-left: 100px;
 }
 
-.info-div div{
+.info-div div {
   display: flex;
   align-items: center;
-  gap: 20px;  
+  gap: 20px;
 }
-.info-div div h2{
+.info-div div h2 {
   font-size: 24px;
   font-weight: 400;
 }
-.info-div div img{
-  width:90px;
+.info-div div img {
+  width: 90px;
 }
-.info-div{
+.info-div {
   display: flex;
   flex-direction: column;
   gap: 24px;
   border: 1px solid #262626;
   padding: 50px;
   border-radius: 50px;
-  background-image: url(/solo/images/0e607c746b30b27cab7c9900893ffc3643e48cbd.png ) ;
+  margin-top: 30px;
 }
-.info-div p{
-  color: #B3B3B3;
+.info-div p {
+  color: #b3b3b3;
   font-size: 18px;
   font-weight: 300;
   max-width: 588px;
   width: 100%;
 }
 
+/* --------------------------------------FAQ---------------------------------- */
 
+#FAQ {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin: 60px 165px;
+}
+.FAQ-text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.FAQ-text h1 {
+  font-size: 48px;
+  font-weight: 400;
+}
+.FAQ-text h1 span {
+  color: #caff33;
+}
+.FAQ-text p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+.FAQ-info {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.FAQ-column {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.FAQ-column div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid #262626;
+  padding: 50px;
+  border-radius: 14px;
+  max-width: 782.5px;
+  min-width: 357px;
+  width: 100%;
+}
+.FAQ-column div h3 {
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid #262626;
+  padding: 12px 3px;
+}
+.FAQ-column div p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #b3b3b3;
+}
+.faq-btn {
+  display: flex;
+  justify-content: center;
+}
+.faq-btn button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 100px;
+  color: #fff;
+  max-width: 193px;
+  min-width: 155px;
+  padding: 18px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #1c1c1c;
+  border: 1px solid #262626;
+}
 
+.FAQ-column2 {
+  opacity: 0.6;
+}
 
+/* ==================================FOOTER================== */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1c;
+  gap: 50px;
+  padding-top: 100px;
+  padding-right: 162px;
+  padding-bottom: 50px;
+  padding-left: 162px;
+}
+.footer-logo-links {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.footer-logo h1 {
+  font-size: 22px;
+  font-weight: 300;
+  cursor: pointer;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+footer ul li a {
+  color: #e4e4e7;
+  font-size: 18px;
+}
 
+.footer-contacts {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+  padding: 50px;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-
-
-
-
-
-
-
-
-
+.footer-contacts div {
+  display: flex;
+  gap: 6px;
+  border-radius: 8px;
+}
+.footer-contacts div p {
+  font-size: 18px;
+  color: #e4e4e7;
+}
+.footer-socials-privacyPolicy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #1a1a1a;
+  border: 1px solid #262626;
+  border-radius: 100px;
+  padding: 16px 30px 16px 16px;
+}
+.ARR {
+  color: #b3b3b3;
+  font-weight: 300;
+  font-size: 18px;
+}
+.socials {
+  display: flex;
+  gap: 14px;
+}
+.socials img {
+  cursor: pointer;
+}
+.policy {
+  display: flex;
+}
+.policy p a {
+  color: #b3b3b3;
+  font-weight: 300;
+  font-size: 18px;
+}
 
 /* ------------------media----------------------- */
 
-
-@media(max-width:1440px){
-  #overview{
+@media (max-width: 1440px) {
+  /* -------------HERO-overview--------------------- */
+  #overview {
     margin: 10px 50px;
   }
+  /* -------------???????????????????????how we protect yoU?????????????????????------------------- */
+  #How-We-Protect-You {
+    margin: 20px 50px;
+    gap: 100px;
+  }
+  .howweprotectyou-list {
+    flex-direction: column;
+  }
+  .howweprotectyou-list {
+    gap: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }
-@media(max-width:1234px){
-  #overview{
-    flex-direction: column;  
+@media (max-width: 1234px) {
+  /* ---------------------------------HERO-overview----------------------------- */
+
+  #overview {
+    flex-direction: column;
     align-items: center;
     padding: 14px;
-    height: 500px            
+    height: 500px;
   }
-  .overview-text{
-    position: static;        
+  .overview-text {
+    position: static;
     padding: 20px;
   }
-    .overview-text h1{
+  .overview-text h1 {
     font-size: 28px;
   }
-     .overview-text p{
+  .overview-text p {
     font-size: 14px;
   }
-  .overview-img img{
-    width: 100%;            
-    max-width: 400px;        
+  .overview-img img {
+    width: 100%;
+    max-width: 400px;
     height: auto;
+  }
+  /* -------------???????????????????????how we protect yoU?????????????????????------------------- */
+  #How-We-Protect-You {
+    margin: 20px 50px;
+    gap: 100px;
+  }
+  .howweprotectyou-list {
+    flex-direction: column;
+  }
+  .howweprotectyou-list {
+    gap: 20px;
+    padding-right: 40px;
+  }
+  .howweprotectyou-text h1 {
+    font-size: 35px;
+  }
+
+  .howweprotectyou-text p {
+    font-size: 16px;
+  }
+  .info-div div h2 {
+    font-size: 23px;
+  }
+  .info-div div img {
+    width: 80px;
+  }
+  .info-div p {
+    font-size: 16px;
   }
 }
 @media (max-width: 1158px) {
@@ -288,6 +487,36 @@ header ul li a {
   .hero-left button {
     padding: 14px 22px;
   }
+
+  /* ---------------------------FAQ---------------------------------- */
+  .FAQ-text h1 {
+    font-size: 38px;
+  }
+  .FAQ-text p {
+    font-size: 16px;
+  }
+  .FAQ-column {
+    flex-direction: column;
+  }
+
+  /* -----------------------footer---------------------- */
+  .footer-socials-privacyPolicy {
+    flex-direction: column;
+
+    padding-left: 50px 24px 30px 12px;
+    gap: 20px;
+    opacity: 1;
+    border-width: 1px;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  /* --------------------faq--------------------------- */
+  #FAQ {
+    margin: 50px 80px;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -303,20 +532,92 @@ header ul li a {
   }
 
   /* ------------overview------------- */
-  #overview{
+  #overview {
     margin: 10px 20px;
-
   }
-  .overview-text{
+  .overview-text {
     border-radius: 20px;
     gap: 14px;
     padding: 24px;
   }
-   .overview-text h1{
+  .overview-text h1 {
     font-size: 25px;
   }
-    .hero-left p {
+  .hero-left p {
+    font-size: 14px;
+  }
+  /* --------------?????????????????how we protect you?????????????????--------------?*/
+  #How-We-Protect-You {
+    margin: 30px;
+    margin-top: 110px;
+    gap: 60px;
+  }
+  .howweprotectyou-text {
+    text-align: center;
+  }
+  .howweprotectyou-text h1 {
+    font-size: 28px;
+  }
+  .howweprotectyou-text p {
+    font-size: 14px;
+  }
+  .howweprotectyou-list {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .info-div {
+    padding: 30px;
+    width: 100%;
+  }
+  .info-div div h2 {
+    font-size: 18px;
+    min-width: 228px;
+  }
+  .info-div div img {
+    width: 68;
+  }
+  .info-div p {
     font-size: 14px;
   }
 
+  /* =================faq====================== */
+
+  .FAQ-text h1 {
+    font-size: 23px;
+    text-align: center;
+  }
+  .FAQ-text p {
+    font-size: 13px;
+    text-align: center;
+    min-width: 357px;
+  }
+  .FAQ-column div h3 {
+    font-size: 18px;
+  }
+  .FAQ-column div p {
+    font-size: 13px;
+  }
+  .faq-btn button {
+    font-size: 14px;
+    padding: 14px 20px;
+  }
+
+  /* -----------footer------------- */
+  footer {
+    min-width: 390px;
+    min-height: 503;
+    padding: 50px 16px 30px 16px;
+    gap: 30px;
+    opacity: 1;
+  }
+
+  .footer-socials-privacyPolicy {
+    min-width: 358px;
+    min-height: 142px;
+  }
+  .footer-contacts {
+    gap: 20px;
+    padding: 20px;
+  }
 }
