@@ -3,8 +3,8 @@
 // გამოიყენე for ციკლი, რომ გაიარო ყველა რიცხვი start-იდან end-მდე.
 // დაითვალე ცალ–ცალკე რამდენია ლუწი და რამდენია კენტი.
 // ბოლოს დაბეჭდე: "ლუწების რაოდენობა: X, კენტების რაოდენობა: Y".
-let evenCount = 0
-let oddCount = 0
+// let evenCount = 0
+// let oddCount = 0
 
 let start = Number(prompt("Enter start number"))
 let end = Number(prompt("Enter end number"))
@@ -19,5 +19,4 @@ for (let i = start; i <= end; i++) {
 
 console.log("ლუწების რაოდენობა:", evenCount)
 console.log("კენტების რაოდენობა:", oddCount)
-
 
