@@ -534,6 +534,10 @@ footer ul li a {
   /* ------------overview------------- */
   #overview {
     margin: 10px 20px;
+    flex-direction: column-reverse;
+  }
+  .overview-img2{
+    display: none;
   }
   .overview-text {
     border-radius: 20px;
@@ -545,6 +549,10 @@ footer ul li a {
   }
   .hero-left p {
     font-size: 14px;
+  }
+  .overview-img img {
+    position: static;
+    border-radius: 20px;
   }
   /* --------------?????????????????how we protect you?????????????????--------------?*/
   #How-We-Protect-You {
