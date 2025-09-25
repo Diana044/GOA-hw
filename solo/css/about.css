@@ -149,7 +149,6 @@ header ul li a {
   display: flex;
   flex-direction: column;
   gap: 80px;
-
 }
 
 .div-mission {
@@ -391,21 +390,19 @@ footer ul li a {
   }
 
   /* ---------------------mission & vision----------------------- */
-    #missionAndVision {
+  #missionAndVision {
     margin: 100px 20px;
     text-align: center;
-   
   }
-  .mission-text h1{
+  .mission-text h1 {
     font-size: 28px;
   }
   .mission-content {
     gap: 60px;
   }
 
-  .imgs-div img{
+  .imgs-div img {
     width: 318px;
- 
   }
   .div-mission-text {
     text-align: center;
@@ -417,14 +414,14 @@ footer ul li a {
     border-right: none;
     border-top: 1px solid #caff33;
   }
-  .text{
-      padding-left: 0px;
-
+  .text {
+    padding-left: 0px;
   }
-  .text h3{
+  .text h3 {
     font-size: 26px;
   }
-   .text p,   .mission-text p{
+  .text p,
+  .mission-text p {
     font-size: 14px;
   }
 
@@ -438,6 +435,7 @@ footer ul li a {
   }
 
   .footer-socials-privacyPolicy {
+    flex-direction: column;
     min-width: 358px;
     min-height: 142px;
   }
