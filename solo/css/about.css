@@ -196,6 +196,82 @@ header ul li a {
 .div-vision-text {
   border-right: 1px solid #caff33;
 }
+/* ---------------press releases---------------- */
+
+#PressReleases {
+  margin: 150px 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.PressReleases-name {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.PressReleases-name h1 {
+  font-size: 48px;
+  color: #caff33;
+  font-weight: 400;
+}
+.PressReleases-name p {
+  font-size: 18px;
+  color: #b3b3b3;
+}
+.PressReleases-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container {
+  display: flex;
+  gap: 30px;
+}
+.PressReleases-text p{
+  color: #B3B3B3;
+}
+.PressReleases-text{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.PressReleases-divs {
+  display: flex;
+  flex-direction: column;
+  /* width: 783;
+  height: 798; */
+  gap: 51px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding: 30px;
+  background-color: #1c1c1c;
+  border: 1px solid #262626;
+}
+.PressReleases-divs img {
+  max-width: 723px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  filter: grayscale();
+}
+.p-tags {
+  display: flex;
+  gap: 10px;
+}
+.p-tags p {
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  border-radius: 68px;
+  background-color: #1A1A1A;
+  border: 1px solid #262626;
+  color: #B3B3B3;
+}
+
 /* ==================================FOOTER================== */
 footer {
   display: flex;
@@ -288,6 +364,21 @@ footer ul li a {
   font-size: 18px;
 }
 
+@media (max-width: 1800px) {
+   /* -----------------------PressReleases-------------------------------- */
+  #PressReleases{
+    margin: 130px 50px;
+  }
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .PressReleases-content{
+    align-items: center;
+    justify-content: center;
+  }
+  
+}
 /* ------------------------------------------media----------------------------------------- */
 
 @media (max-width: 1440px) {
@@ -300,6 +391,7 @@ footer ul li a {
   #missionAndVision {
     margin: 100px 50px;
   }
+
 }
 
 @media (max-width: 1234px) {

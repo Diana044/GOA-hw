@@ -1529,11 +1529,18 @@ footer ul li a {
   .startYourJurney div p {
     min-width: 298px;
   }
+  .PressReleases-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
   /* -----------footer------------- */
   footer {
     min-width: 390px;
     min-height: 503;
-    padding: 50px   16px 30px 16px;
+    padding: 50px 16px 30px 16px;
     gap: 30px;
     opacity: 1;
   }
