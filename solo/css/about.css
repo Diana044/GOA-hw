@@ -146,29 +146,57 @@ header ul li a {
 
 #missionAndVision {
   margin: 150px 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
 }
 
-.div-mission , .div-vision {
+.div-mission {
   display: flex;
-}
-.div-mission-img{
-  width: 634px;
-}
-.div-mission-img img, .div-vision-img  img{
-  max-width: 100%;
-  width: 544px;
+  align-items: center;
+  justify-content: center;
 }
 .div-mission-text {
+  border-left: 1px solid #caff33;
+}
+.mission-text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.mission-text h1 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #caff33;
+}
+.mission-text p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #b3b3b3;
+}
+.mission-content {
+  display: flex;
+  flex-direction: column;
+}
+.text {
   display: flex;
   flex-direction: column;
   gap: 14px;
   padding-left: 50px;
-  border-left-width: 1px;
 }
-
-
-
-
+.text h3 {
+  font-weight: 500;
+  font-size: 38px;
+}
+.text p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #b3b3b3;
+}
+.div-vision-text {
+  border-right: 1px solid #caff33;
+}
 /* ==================================FOOTER================== */
 footer {
   display: flex;
@@ -268,6 +296,11 @@ footer ul li a {
   #overview {
     margin: 10px 50px;
   }
+
+  /* ---------------------mission & vision----------------------- */
+  #missionAndVision {
+    margin: 100px 50px;
+  }
 }
 
 @media (max-width: 1234px) {
@@ -311,6 +344,16 @@ footer ul li a {
   .burger-menu {
     display: block;
   }
+  /* ---------------------mission & vision----------------------- */
+  #missionAndVision {
+    margin: 100px 60px;
+  }
+  .div-mission {
+    flex-direction: column;
+  }
+  .mission-content {
+    gap: 60px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -345,6 +388,44 @@ footer ul li a {
   .overview-img img {
     position: static;
     border-radius: 20px;
+  }
+
+  /* ---------------------mission & vision----------------------- */
+    #missionAndVision {
+    margin: 100px 20px;
+    text-align: center;
+   
+  }
+  .mission-text h1{
+    font-size: 28px;
+  }
+  .mission-content {
+    gap: 60px;
+  }
+
+  .imgs-div img{
+    width: 318px;
+ 
+  }
+  .div-mission-text {
+    text-align: center;
+    border-left: none;
+    border-top: 1px solid #caff33;
+  }
+  .div-vision-text {
+    text-align: center;
+    border-right: none;
+    border-top: 1px solid #caff33;
+  }
+  .text{
+      padding-left: 0px;
+
+  }
+  .text h3{
+    font-size: 26px;
+  }
+   .text p,   .mission-text p{
+    font-size: 14px;
   }
 
   /* -----------footer------------- */
