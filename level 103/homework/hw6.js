@@ -5,5 +5,10 @@
 // ---ამ ყველა ელემენტის შეცვლის შემდეგ დააკონსოლლოგეთ საბოლოო სია 
 
 function array(arr){
-    
+    for(i=0; i<arr.length; i++){
+        arr[3]==10.89
+        arr[arr.length-1]=false
+        arr[1]='irakli'
+    }console.log(arr)
 }
+array( ["გიორგი" , 14 , "საბა" , 90.5 , "ირაკლი" , true])
