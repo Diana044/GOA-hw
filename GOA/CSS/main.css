@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.font1 {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.sora {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* .gradient-border {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: #fff;
+  background: #000; 
+  cursor: pointer;
+  border: 2px solid ; 
+  border-image: linear-gradient(90deg, #51ff00, #376145) 1 ;
+  transition: 1s;
+}
+
+.gradient-border:hover {
+  box-shadow: 0 0 8px rgba(119, 231, 233, 0.7);
+      
+} */
