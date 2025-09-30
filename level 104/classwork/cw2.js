@@ -6,13 +6,13 @@
 
 // // 3)შექმენი ფუნქცია,გადაეცი ორი სია,ერთი სტრინგების ერთ რიცხვების,შენი დავალებაა რომ გააერთიანო ეს ორი სია ერთმანეთში და მასე დააბრუნო
 function list1(arr) {
-    console.log( arr.length)
+    console.log(arr.length)
     console.log(arr.slice(3, 9))
     console.log(arr.splice(4, 3))
 }
 
 
-list1( ["a232","b2312323","23123c","333","dsadsa","fsadasda","ffffg","lll","eewe","fdsfj"])
+list1( ["a232","b23123,umsdwefir23","23123c","333","dsadsa","fsadasda","ffffg","lll","eewe","fdsfj"])
 console.log('<--------------------------------------->')
 
 function lists(strs, nums) {
