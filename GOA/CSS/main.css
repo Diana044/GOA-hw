@@ -19,63 +19,57 @@
 body {
   background-color: #000a14;
 }
-header{
+header {
   display: flex;
-  border: 2px solid #d3cfcf ;
+  border: 2px solid #d3cfcf;
   border-radius: 24px;
   color: white;
+  margin: 60px 80px;
 }
-.header-links{
-  display: flex;
+.header-img-div {
+  border-right: 2px solid #d3cfcf;
+  width: 194;
+  height: 112;
+  padding: 25px 78px;
 }
-.header-nav-menu{
-  display: flex;
-  justify-content: space-between;
-}
-header nav{
-  display: flex;
-}
-
-
 .header-img {
-  width: 50px;
+  width: 65px;
 }
+.header-links {
+  display: flex;
+  flex-direction: column;
+}
+.header-nav-menu nav{
+  width: 854px;
+  height: 56px;
+  border-right: 2px solid #d3cfcf;
+}
+header nav ul {
+  padding:15px 20px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.header-nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom:2px solid #d3cfcf ;
+}
+.header-services-GIT {
+  display: flex;
+}
+
 .menu-btn-div {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 232px;
   height: 56px;
   cursor: pointer;
-  transition: all .5s ease-in-out;
-  border: 3px solid #d3cfcf;;
+  border: 3px solid #d3cfcf;
 }
 
-.menu-btn {
-  position: relative;
-  width: 40%;
-  height: 3px;
-  background-color: #d3cfcf;
-  border-radius: 5px;
-}
-
-.menu-btn::before,
-.menu-btn::after {
-  content: '';
-  position: absolute;
-  width: 99%;
-   height: 3px;
-  background-color: #d3cfcf;;
-  border-radius: 5px;
-}
-.menu-btn::before {
-  transform: translateY(-16px);
-}
-
-.menu-btn::after {
-  transform: translateY(16px);
-}
 /* .gradient-border {
   padding: 10px 20px;
   font-size: 16px;

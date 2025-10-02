@@ -36,9 +36,7 @@ concatFunc2(['lasha','evriko', 'zauri'] ,['--------Surnames----------','xmaladze
 
 // push + pop----
 // ფუნქციამ მიიღოს სია.
-
 // დაამატოს "test" ბოლოში,
-
 // შემდეგ მოაშოროს ბოლო ელემენტი.
 // ბოლოს დააბრუნოს მიღებული სია.
 function pushPop(array3){
@@ -46,7 +44,7 @@ function pushPop(array3){
     array3.pop()
     return  array3
 }
-console.log(pushPop(['medicine','analitics','text2']))
+console.log(pushPop(['medicine','gfgh','text2']))
 
 
 
