@@ -23,3 +23,7 @@ function func (arr1, arr2){
 
 console.log(func([5,5,5,5],[110,10,10]))
 console.log(func([2,1,2,4],[5,0,1]))
+
+number=3
+console.log(String(number))
+consoole.log(typeof(number))
