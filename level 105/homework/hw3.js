@@ -2,7 +2,7 @@
 
 
 function stList(studentsList){ 
-    for(i=0; i< studentsList.length; i++){
+    for(let i=0; i< studentsList.length; i++){
         if (studentsList[i][0] === 'გ'){
             studentsList[i]=false
         }
