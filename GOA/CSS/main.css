@@ -2,113 +2,158 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.font1 {
-  font-family: "Source Code Pro", monospace;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-.sora {
-  font-family: "Sora", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
+
 body {
-  background-color: #000a14;
+    font-family: "Sora", sans-serif;
+    background-color: #000a14;
+    color: white;
 }
+
+.font1 {
+    font-family: "Source Code Pro", monospace;
+}
+
+/* -------------------- VIDEO -------------------- */
+.hero-video {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
+}
+
+/* -------------------- HEADER -------------------- */
 header {
-  display: flex;
-  border: 2px solid #d3cfcf;
-  border-radius: 24px;
-  color: white;
-  margin: 60px 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #d3cfcf;
+    border-radius: 24px;
+    color: white;
+    margin: 40px 80px;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.4);
 }
+
 .header-img-div {
-  border-right: 2px solid #d3cfcf;
-  padding: 25px 100px;
+    border-right: 2px solid #d3cfcf;
+    padding: 25px 100px;
 }
+
 .header-img {
-  width: 65px;
+    width: 65px;
 }
+
 .header-links {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
+
 .header-nav-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom:2px solid #d3cfcf ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d3cfcf;
 }
-.header-nav-menu nav{
-  max-width: 1190px;
-  width: 100%;
-  height: 56px;
-  border-right: 2px solid #d3cfcf;
-  
+
+header nav {
+    max-width: 1190px;
+    width: 100%;
+    height: 56px;
+    border-right: 2px solid #d3cfcf;
 }
+
 header nav ul {
-  padding:15px 20px;
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 }
+
 .burger-menu-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 300px;
-  height: 56px;
-  cursor: pointer;
-  border: 1px solid #d3cfcf;
-  border-top-right-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    height: 56px;
+    cursor: pointer;
+    border: 1px solid #d3cfcf;
+    border-top-right-radius: 24px;
 }
-/*header  second row */
-.header-row2{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  max-width: 1400px;
-  justify-content: space-between;
-  align-items: center;
+
+.header-row2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    justify-content: space-between;
+    align-items: center;
 }
-.header-services{
-  display: flex;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
-}
-.header-services div {
-  display: flex;
-  align-items: center;
-}
+
 .header-services {
-  width: 50%;
-}
-.border-right{
-  border-right: 2px solid #d3cfcf;
-
-}
-
-/* .gradient-border {
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 8px;
-  color: #fff;
-  background: #000; 
-  cursor: pointer;
-  border: 2px solid ; 
-  border-image: linear-gradient(90deg, #51ff00, #376145) 1 ;
-  transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
 }
 
-.gradient-border:hover {
-  box-shadow: 0 0 8px rgba(119, 231, 233, 0.7);
-      
-} */
+.header-services div {
+    display: flex;
+    align-items: center;
+}
+
+.border-right {
+    border-right: 2px solid #d3cfcf;
+}
+
+/* -------------------- HERO TEXT -------------------- */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-text span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.hero-text h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
