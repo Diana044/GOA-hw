@@ -8,12 +8,6 @@
   </head>
   <body>
 
-    <video autoplay muted loop class="hero-video">
-      <source src="/GOA/images/main/videobg.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    <div class="hero-overlay"></div>
-
     <header class="font1">
       <div class="header-img-div">
         <a href="main.html">
@@ -54,13 +48,48 @@
 
     <!-------------- Hero --------- -->
     <section id="hero">
-      <div class="hero-text">
-        <div><span>GOA</span> – Escape the Matrix</div>
-        <h1>Be the Glitch in the System</h1>
-        <h3>01000111 01001111 01000001</h3>
-        <p>Programming, design, filmmaking — your potential, unlocked.</p>
+      <div class="hero-text ">
+         <!-- <div class="hero-left1">
+            <img src="/solo/images/Icon.png" alt="" />
+            <p><span>GOA</span> – Escape the Matrix</p>
+          </div> -->
+        <h1 class="Orbitronj">Be the Glitch in the System</h1>
+        <h3 class="Orbitronj">01000111 01001111 01000001</h3>
+        <p class="sans">Programming, design, filmmaking — <span>your potential, unlocked.</span></p>
+       <div class="hero-btns">
+        <button>Explore</button>
+        <button><a href="/GOA/HTML/contactus.html" target="_blank">Join us</a></button>
+       </div>
       </div>
-    </section>
+        <div class="hero-right">
+    <div class="code-editor">
+      <div class="editor-header">
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+      </div>
+      <div class="editor-body">
+        <code>
+          // GOA — Goal Oriented Academy
+          // Learn. Build. Create. 
 
+          function startJourney() {
+            let skills = ["Programming", "Design", "Filmmaking"];
+            let mindset = "Goal Oriented";
+            let output = [];
+
+            for (let i = 0; i < skills.length; i++) {
+              output.push("Mastering " + skills[i] + " with " + mindset);
+            }
+
+              return output;
+            }
+
+            console.log(startJourney());
+        </code>
+      </div>
+    </div>
+  </div>
+    </section>
   </body>
 </html>
