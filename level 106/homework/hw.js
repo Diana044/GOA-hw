@@ -31,3 +31,20 @@ function countSheep(num){
   }
   return num1
 }
+function removeExclamationMarks(s) {
+  let mark=''
+  for(let i=0;i <s.length;i++){
+    if(s[i]!='!'){
+      mark+=s[i]
+    }
+  }
+  return mark
+}
+
+function sumMix(x){
+  let sum=0
+  for(i=0; i<x.length; i++){
+    sum=sum+Number(x[i])
+  }
+  return sum
+}
