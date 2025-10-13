@@ -38,3 +38,22 @@ function findAverage(array) {
   let average = sum / array.length
   return 0
 }
+function howMuchILoveYou(nbPetals) {
+  for (let i = 1; i <= nbPetals; i++) {
+    if (i === nbPetals) {
+      if (i % 6 === 1) {
+        return "I love you";
+      } else if (i % 6 === 2) {
+        return "a little";
+      } else if (i % 6 === 3) {
+        return "a lot";
+      } else if (i % 6 === 4) {
+        return "passionately";
+      } else if (i % 6 === 5) {
+        return "madly";
+      } else if (i % 6 === 0) {
+        return "not at all";
+      }
+    }
+  }
+}

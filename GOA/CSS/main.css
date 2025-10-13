@@ -38,14 +38,12 @@ a {
   font-optical-sizing: auto;
   font-style: normal;
 }
-.top-left{
+.top-left {
   position: fixed;
   width: 690px;
   height: 500px;
   top: 0;
   left: 0;
-
-
 }
 /* -------------------- HEADER -------------------- */
 header {
@@ -309,7 +307,6 @@ header nav ul {
   transition: 0.3s ease-out;
 }
 
-
 .team-card:hover img {
   filter: grayscale(0%) brightness(1);
   transform: scale(1.05);
@@ -343,7 +340,6 @@ header nav ul {
   color: #ddd;
   text-align: center;
 }
-
 
 .button-wrapper {
   margin-top: 50px;
@@ -442,13 +438,47 @@ header nav ul {
   gap: 16px;
   margin-top: 10px;
 }
-.main-dot  {
+.main-dot {
   border: 1px solid rgb(0, 213, 255);
   width: 24px;
   height: 24px;
   border-radius: 24px;
   padding: 7px;
 }
+
+/* --------------------coursews------------------- */
+
+#course-preview {
+  margin: 100px 130px;
+}
+
+.course-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.course-text h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+.course-text p {
+  font-size: 17px;
+  font-weight: 300;
+  color: #bfc7d5;
+}
+.course-details{
+  display: flex;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  height: 660px;
+  gap: 24px;
+  border-radius: 32px;
+  padding: 32px;
+}
+
 /* ----------join------------------ */
 
 #Join {
@@ -466,10 +496,12 @@ header nav ul {
 #Join h1 {
   color: #00bfff;
   font-size: 40px;
+  font-weight: 500;
 }
 #Join p {
-  color: #e3fafc;
+  color: #bfc7d5;
   font-size: 18px;
+  font-weight: 400;
 }
 #Join button {
   padding: 8px 35px;
