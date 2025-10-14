@@ -46,19 +46,34 @@ a {
   left: 0;
 }
 /* -------------------- HEADER -------------------- */
+body {
+  position: relative;
+  font-family: "Sora", sans-serif;
+  background-color: #050910; /* darker navy instead of plain black */
+  color: white;
+  overflow-x: hidden;
+}
+
+/* -------------------- HEADER -------------------- */
 header {
   display: flex;
-  border: 2px solid #ffffff;
+  border: 2px solid #00ffcc; 
   border-radius: 24px;
   color: rgb(255, 255, 255);
   margin: 60px 80px;
   position: relative;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #000000; 
+  transition: background-color 0.3s ease;
+}
+
+
+header:hover {
+  background-color: #000a1b;
 }
 
 .header-img-div {
-  border-right: 2px solid #d3cfcf;
+  border-right: 2px solid #00ffcc;
   padding: 25px 100px;
 }
 
@@ -72,18 +87,20 @@ header {
   width: 100%;
 }
 
+
 .header-nav-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #d3cfcf;
+  border-bottom: 2px solid #00ffcc;
 }
+
 
 header nav {
   max-width: 1190px;
   width: 100%;
   height: 56px;
-  border-right: 2px solid #d3cfcf;
+  border-right: 2px solid #00ffcc;
 }
 
 header nav ul {
@@ -93,6 +110,20 @@ header nav ul {
   list-style: none;
 }
 
+
+header nav ul li a {
+  font-family: "Orbitron", sans-serif;
+  color: #bfc7d5;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+header nav ul li a:hover {
+  color: #00ffcc;
+}
+
+/*------------ burger menu ----------------*/
 .burger-menu-div {
   display: flex;
   justify-content: center;
@@ -101,10 +132,11 @@ header nav ul {
   max-width: 300px;
   height: 56px;
   cursor: pointer;
-  border: 1px solid #d3cfcf;
+  border-left: 2px solid #00ffcc;
   border-top-right-radius: 24px;
 }
 
+/* -------------second row socials andn joinus -------------------*/
 .header-row2 {
   display: flex;
   width: 100%;
@@ -114,24 +146,31 @@ header nav ul {
   align-items: center;
 }
 
+/* joins us and socials divs */
 .header-services {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 50%;
+  font-family: "Source Code Pro", monospace;
 }
 
 .header-services div {
   display: flex;
   align-items: center;
+  gap: 8px;
+  color: #00ffcc;
 }
 
+.header-services div a {
+  color: #00ffcc;
+}
 .border-right {
-  border-right: 2px solid #d3cfcf;
+  border-right: 2px solid #00ffcc;
 }
 
-/* -------------------- HERO TEXT -------------------- */
+/* -------------------- HERO -------------------- */
 #hero {
   width: 100%;
   display: flex;
@@ -446,40 +485,143 @@ header nav ul {
   padding: 7px;
 }
 
-/* --------------------coursews------------------- */
-
+/* --------------------courses------------------- */
+/* ------mtliani seqcia------------ */
 #course-preview {
   margin: 100px 130px;
-}
-
-.course-text {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  text-align: center;
 }
 
 .course-text h2 {
-  font-size: 40px;
-  font-weight: 100;
+  font-size: 48px;
+  font-weight: 700;
+  color: #00ffcc;
+  margin-bottom: 20px;
 }
+
 .course-text p {
-  font-size: 17px;
-  font-weight: 300;
   color: #bfc7d5;
+  font-size: 18px;
+  margin-top: 10px;
 }
-.course-details{
+/*-----second paart- cards------------- */
+.course-details {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 80px;
 }
+/* -------------each card------------- */
 .infos {
   display: flex;
   flex-direction: column;
-  height: 660px;
   gap: 24px;
-  border-radius: 32px;
-  padding: 32px;
+  border-radius: 24px;
+  padding: 40px;
+  width: 340px;
+  background-color: #0f1423;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+/*  kkuriss shesaxeb cardebis css */
+.info1 {
+  border: 1px solid #00ff88;
+  box-shadow: 0 0 15px #00ff8833;
+}
+/* -------on hover card moves 16px  on y gerdzi------ */
+.info1:hover {
+  box-shadow: 0 0 25px #00ff88aa;
+  transform: translateY(-10px);
 }
 
-/* ----------join------------------ */
+.info2 {
+  border: 1px solid #00bfff;
+  box-shadow: 0 0 15px #00bfff33;
+}
+.info2:hover {
+  box-shadow: 0 0 25px #00bfffaa;
+  transform: translateY(-10px);
+}
+
+.info3 {
+  border: 1px solid #ff33cc;
+  box-shadow: 0 0 15px #ff33cc33;
+}
+.info3:hover {
+  box-shadow: 0 0 25px #ff33ccaa;
+  transform: translateY(-10px);
+}
+
+.infos h2 {
+  font-size: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 1px;
+  border-bottom: 1px dashed #555;
+  padding-bottom: 10px;
+}
+
+.infos ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.li-s {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: start;
+}
+
+.li-s img {
+  width: 26px;
+  filter: brightness(1.3);
+}
+
+.li-s li {
+  list-style: none;
+  font-family: "DM Sans", sans-serif;
+  color: #bfc7d5;
+  font-size: 16px;
+}
+
+.li-s li:hover {
+  color: #00ff88;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.infos:hover h2 {
+  text-shadow: 0 0 8px;
+}
+/* -----button---------- */
+#course-preview button{
+  margin-top: 30px;
+  padding: 10px 40px;
+  background-color: #00ff88;
+  border:none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.7s ease-in-out;
+}
+#course-preview button:hover{
+  box-shadow: 0px 0px 20px #00a76ad2;
+  transform: translateY(-2px);
+}
+#course-preview button a{
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-family: "orbitronj";
+  transition: 0.5s ease;
+  font-weight: 700;
+}
+#course-preview button:hover a{
+  text-shadow:0px 0px 7px gainsboro;
+}
+/* ------------join our courses------------------ */
 
 #Join {
   display: flex;
@@ -511,6 +653,88 @@ header nav ul {
   color: #00bfff;
 }
 
+
+/* ------------footerr----------- */
+/* ----------------------------- */
+footer {
+  border: 2px solid #00ffcc;
+  border-radius: 24px;
+  background-color: #0b1322;
+  color: white;
+  margin: 60px 80px;
+  padding: 40px 60px;
+  font-family: "Sora", sans-serif;
+}
+
+/* footer top  logo with text and navigation*/
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #00ffcc;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+/* logo */
+.footer-logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #00ffcc;
+  letter-spacing: 1px;
+}
+
+/* navigation */
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-nav ul li a {
+  color: #bfc7d5;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+  color: #00ffcc;
+}
+
+/* footer second row2 with socials adn all rigth reserrved */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  border-top: 2px solid #00ffcc;
+  padding-top: 20px;
+  color: #bfc7d5;
+}
+
+/* social links */
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socails a {
+  mix-blend-mode: difference;
+  background-color: white; 
+
+}
+
+
+
+
+
+
+
+
+
+/* ---------------media------------------------- */
 @media (max-width: 1200px) {
   /* -------------header------------- */
   header nav {
