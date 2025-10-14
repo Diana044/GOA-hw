@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Sora", sans-serif;
+  background-color: #0a0f1e;
+  color: white;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+.font1 {
+  font-family: "Source Code Pro", monospace;
+}
+.sora {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.Orbitronj {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.top-left {
+  position: fixed;
+  width: 690px;
+  height: 500px;
+  top: 0;
+  left: 0;
+}
+/* -------------------- HEADER -------------------- */
+body {
+  position: relative;
+  font-family: "Sora", sans-serif;
+  background-color: #050910;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  display: flex;
+  border: 2px solid #00ffcc;
+  border-radius: 24px;
+  color: rgb(255, 255, 255);
+  margin: 60px 80px;
+  position: relative;
+  z-index: 1;
+  background-color: #02463d76;
+  transition: background-color 0.3s ease;
+}
+
+header:hover {
+  background-color: #000a1b;
+}
+
+.header-img-div {
+  border-right: 2px solid #1acfab;
+  padding: 25px 100px;
+}
+
+.header-img {
+  width: 65px;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #00ffcc;
+}
+
+header nav {
+  max-width: 1190px;
+  width: 100%;
+  height: 56px;
+  border-right: 2px solid #00ffcc;
+}
+
+header nav ul {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.main-li{
+  background-color: #06da77bc;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  box-shadow: 0px 0px 15px #05ff8abc;
+}
+.main-li:hover{
+  background-color: #05b6633c;
+
+
+}
+header nav ul li a {
+  font-family: "Orbitron", sans-serif;
+  color: #bfc7d5;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+header nav ul li a:hover {
+  color: #00ffcc;
+}
+
+/*------------ burger menu ----------------*/
+.burger-menu-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  height: 56px;
+  cursor: pointer;
+  border-left: 2px solid #00ffcc;
+  border-top-right-radius: 24px;
+}
+
+/* -------------second row socials andn joinus -------------------*/
+.header-row2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* joins us and socials divs */
+.header-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  font-family: "Source Code Pro", monospace;
+}
+
+.header-services div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #00ffcc;
+}
+
+.header-services div a {
+  color: #00ffcc;
+}
+.border-right {
+  border-right: 2px solid #00ffcc;
+}
+
+
+
+
+
+/* ---------------media------------------------- */
+@media (max-width: 1340px) {
+
+  /* -------------header------------- */
+  header {
+    margin: 60px 30px;
+  }
+  .header-img-div {
+    padding: 20px 60px;
+  }
+  header nav {
+    display: none;
+    border-right: none;
+  }
+  .header-img img {
+    width: 120%;
+  }
+  .header-nav-menu {
+    justify-content: end;
+  }
+  .burger-menu-div {
+    border: none;
+  }
+}
+
+@media (max-width: 576px) {
+  /* --------header----------- */
+  header{
+    margin: 20px 20px;
+  }
+   .header-img-div {
+    padding: 10px 40px;
+  }
+   .header-services img{
+    display: none;
+  }
+  .header-services a{
+    font-size: 14px;
+  }
+}

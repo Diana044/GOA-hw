@@ -1,0 +1,433 @@
+/* ------------------- GENERAL ------------------- */
+body {
+  font-family: "Sora", sans-serif;
+  background-color: #000000;
+  color: white;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-family: "Orbitron", sans-serif;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  display: flex;
+  border: 2px solid #00ffcc;
+  border-radius: 24px;
+  color: rgb(255, 255, 255);
+  margin: 60px 80px;
+  position: relative;
+  z-index: 1;
+  background-color: #02463d76;
+  transition: background-color 0.3s ease;
+}
+
+header:hover {
+  background-color: #000a1b;
+}
+
+.header-img-div {
+  border-right: 2px solid #1acfab;
+  padding: 25px 100px;
+}
+
+.header-img {
+  width: 65px;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #00ffcc;
+}
+
+header nav {
+  max-width: 1190px;
+  width: 100%;
+  height: 56px;
+  border-right: 2px solid #00ffcc;
+}
+
+header nav ul {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.main-li{
+  background-color: #06da77bc;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  box-shadow: 0px 0px 15px #05ff8abc;
+}
+.main-li:hover{
+  background-color: #05b6633c;
+
+
+}
+header nav ul li a {
+  font-family: "Orbitron", sans-serif;
+  color: #bfc7d5;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+header nav ul li a:hover {
+  color: #00ffcc;
+}
+
+/*------------ burger menu ----------------*/
+.burger-menu-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  height: 56px;
+  cursor: pointer;
+  border-left: 2px solid #00ffcc;
+  border-top-right-radius: 24px;
+}
+
+/* -------------second row socials andn joinus -------------------*/
+.header-row2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* joins us and socials divs */
+.header-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  font-family: "Source Code Pro", monospace;
+}
+
+.header-services div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #00ffcc;
+}
+
+.header-services div a {
+  color: #00ffcc;
+}
+.border-right {
+  border-right: 2px solid #00ffcc;
+}
+
+
+
+
+/* ------------------- HERO ------------------- */
+#about-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 100px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+#about-hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+}
+
+#about-hero .hero-text h1 {
+  font-size: 60px;
+  color: #00ff88;
+}
+
+#about-hero .hero-text p {
+  font-size: 20px;
+  color: #bfc7d5;
+  line-height: 1.6;
+}
+
+#about-hero .hero-text button {
+  padding: 12px 30px;
+  border: 2px dashed #00ff88;
+  border-radius: 12px;
+  background: transparent;
+  color: #00ff88;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#about-hero .hero-text button:hover {
+  box-shadow: 0 0 25px #00ff88;
+  transform: translateY(-3px);
+}
+
+#about-hero .hero-text button a {
+  color: #00ff88;
+  text-decoration: none;
+}
+
+#about-hero .hero-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #00ff88aa;
+}
+
+/* ------------------- OUR STORY ------------------- */
+#our-story {
+  margin: 80px 100px;
+  text-align: center;
+}
+
+#our-story h2 {
+  font-size: 48px;
+  color: #00ff88;
+  margin-bottom: 20px;
+}
+
+#our-story p {
+  font-size: 18px;
+  color: #bfc7d5;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ------------------- MISSION & VISION ------------------- */
+#mission-vision {
+  margin: 80px 100px;
+  text-align: center;
+}
+
+#mission-vision h2 {
+  font-size: 48px;
+  color: #00ff88;
+  margin-bottom: 40px;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-box {
+  background-color: #0f1423;
+  padding: 30px 20px;
+  border-radius: 20px;
+  border: 1px solid #00ff88;
+  box-shadow: 0 0 20px #00ff8833;
+  transition: 0.3s ease;
+}
+
+.mission-box h3 {
+  font-size: 24px;
+  color: #00ff88;
+  margin-bottom: 15px;
+}
+
+.mission-box p {
+  font-size: 16px;
+  color: #bfc7d5;
+  line-height: 1.5;
+}
+
+.mission-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px #00ff88aa;
+}
+
+/* ------------------- WHY CHOOSE GOA ------------------- */
+#why-choose-goa {
+  margin: 80px 100px;
+  text-align: center;
+}
+
+#why-choose-goa h2 {
+  font-size: 48px;
+  color: #00bfff;
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-box {
+  background-color: #0f1423;
+  padding: 30px 20px;
+  border-radius: 20px;
+  border: 1px solid #00bfff;
+  box-shadow: 0 0 20px #00bfff33;
+  transition: 0.3s ease;
+}
+
+.feature-box h3 {
+  font-size: 24px;
+  color: #00bfff;
+  margin-bottom: 15px;
+}
+
+.feature-box p {
+  font-size: 16px;
+  color: #bfc7d5;
+  line-height: 1.5;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px #00bfffaa;
+}
+
+/* ------------------- CTA ------------------- */
+#about-cta {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+#about-cta .join-btn {
+  padding: 15px 40px;
+  border: 2px dashed #00ff88;
+  border-radius: 12px;
+  background: transparent;
+  color: #00ff88;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#about-cta .join-btn:hover {
+  box-shadow: 0 0 25px #00ff88;
+  transform: translateY(-3px);
+}
+
+#about-cta .join-btn a {
+  color: #00ff88;
+  text-decoration: none;
+}
+
+/* ------------------- FOOTER ------------------- */
+/* Assuming same footer as main page, but responsive tweaks */
+footer {
+  border: 2px solid #00ffcc;
+  border-radius: 24px;
+  background-color: #0b1322;
+  color: white;
+  margin: 60px 80px;
+  padding: 40px 60px;
+  font-family: "Sora", sans-serif;
+}
+
+footer .footer-top,
+footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .footer-logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #00ffcc;
+  letter-spacing: 1px;
+}
+
+footer .footer-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer .footer-nav ul li a:hover {
+  color: #00ffcc;
+}
+
+footer .footer-socials {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+@media (max-width: 1340px) {
+  #about-hero {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 40px;
+  }
+  #our-story, #mission-vision, #why-choose-goa {
+    margin: 50px 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  #about-hero .hero-text h1 {
+    font-size: 45px;
+  }
+  #about-hero .hero-text p {
+    font-size: 18px;
+  }
+  .mission-box h3, .feature-box h3 {
+    font-size: 20px;
+  }
+  .mission-box p, .feature-box p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  #about-hero .hero-text h1 {
+    font-size: 35px;
+  }
+  #about-hero .hero-text p {
+    font-size: 16px;
+  }
+  #mission-vision h2, #why-choose-goa h2 {
+    font-size: 35px;
+  }
+  .mission-box, .feature-box {
+    padding: 20px 15px;
+  }
+  footer {
+    margin: 20px 15px;
+    padding: 25px 20px;
+  }
+}
