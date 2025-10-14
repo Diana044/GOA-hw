@@ -49,7 +49,7 @@ a {
 body {
   position: relative;
   font-family: "Sora", sans-serif;
-  background-color: #050910; /* darker navy instead of plain black */
+  background-color: #050910;
   color: white;
   overflow-x: hidden;
 }
@@ -57,23 +57,22 @@ body {
 /* -------------------- HEADER -------------------- */
 header {
   display: flex;
-  border: 2px solid #00ffcc; 
+  border: 2px solid #00ffcc;
   border-radius: 24px;
   color: rgb(255, 255, 255);
   margin: 60px 80px;
   position: relative;
   z-index: 1;
-  background-color: #000000; 
+  background-color: #02463d76;
   transition: background-color 0.3s ease;
 }
-
 
 header:hover {
   background-color: #000a1b;
 }
 
 .header-img-div {
-  border-right: 2px solid #00ffcc;
+  border-right: 2px solid #1acfab;
   padding: 25px 100px;
 }
 
@@ -87,14 +86,12 @@ header:hover {
   width: 100%;
 }
 
-
 .header-nav-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #00ffcc;
 }
-
 
 header nav {
   max-width: 1190px;
@@ -109,8 +106,20 @@ header nav ul {
   justify-content: space-around;
   list-style: none;
 }
+.main-li{
+  background-color: #06da77bc;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  box-shadow: 0px 0px 15px #05ff8abc;
+}
+.main-li:hover{
+  background-color: #05b6633c;
 
 
+}
 header nav ul li a {
   font-family: "Orbitron", sans-serif;
   color: #bfc7d5;
@@ -573,7 +582,6 @@ header nav ul li a:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-  justify-content: start;
 }
 
 .li-s img {
@@ -598,61 +606,70 @@ header nav ul li a:hover {
   text-shadow: 0 0 8px;
 }
 /* -----button---------- */
-#course-preview button{
+#course-preview button {
   margin-top: 30px;
   padding: 10px 40px;
   background-color: #00ff88;
-  border:none;
+  border: none;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.7s ease-in-out;
 }
-#course-preview button:hover{
+#course-preview button:hover {
   box-shadow: 0px 0px 20px #00a76ad2;
   transform: translateY(-2px);
 }
-#course-preview button a{
+#course-preview button a {
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   font-family: "orbitronj";
   transition: 0.5s ease;
   font-weight: 700;
 }
-#course-preview button:hover a{
-  text-shadow:0px 0px 7px gainsboro;
+#course-preview button:hover a {
+  text-shadow: 0px 0px 7px gainsboro;
 }
 /* ------------join our courses------------------ */
-
 #Join {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
+  background-color: #131622;
+  border: 1px solid #00ff88;
   text-align: center;
-  margin: 130px 190px;
   padding: 70px 50px;
-  background-color: #131622;
-  border: 1px solid #00bfff;
-}
-#Join h1 {
-  color: #00bfff;
-  font-size: 40px;
-  font-weight: 500;
-}
-#Join p {
-  color: #bfc7d5;
-  font-size: 18px;
-  font-weight: 400;
-}
-#Join button {
-  padding: 8px 35px;
-  background-color: #131622;
-}
-#Join button a {
-  color: #00bfff;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #00ff88aa;
+  margin: 130px 40px;
 }
 
+#Join .join-text {
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+
+#Join .join-btn {
+  padding: 12px 40px;
+  background-color: #000;
+  border: 2px dashed #00ff88;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 25px;
+}
+
+#Join .join-btn:hover {
+  box-shadow: 0 0 25px #00ff88;
+  transform: translateY(-3px);
+}
+
+#Join .join-btn a {
+  color: #00ff88;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+}
 
 /* ------------footerr----------- */
 /* ----------------------------- */
@@ -722,34 +739,41 @@ footer {
 
 .footer-socails a {
   mix-blend-mode: difference;
-  background-color: white; 
-
+  background-color: white;
 }
 
-
-
-
-
-
-
-
-
 /* ---------------media------------------------- */
-@media (max-width: 1200px) {
+@media (max-width: 1340px) {
+
   /* -------------header------------- */
+  header {
+    margin: 60px 30px;
+  }
+  .header-img-div {
+    padding: 20px 60px;
+  }
   header nav {
     display: none;
+    border-right: none;
   }
   .header-img img {
     width: 120%;
   }
+  .header-nav-menu {
+    justify-content: end;
+  }
+  .burger-menu-div {
+    border: none;
+  }
   /* <-----hero---------- */
   #hero {
-    margin: 30px 60px;
+    margin: 30px 30px;
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    padding: 40px 20px;
   }
+
   .hero-text {
     text-align: center;
   }
@@ -758,10 +782,60 @@ footer {
   }
   .hero-btns {
     justify-content: center;
+    gap: 20px;
   }
 }
 
 @media (max-width: 992px) {
+  /* -----------------hero------------ */
+  .hero-text {
+    gap: 0px;
+  }
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  .hero-text p {
+    font-size: 17px;
+  }
+  .hero-text p span {
+    font-size: 18px;
+  }
+
+  .hero-text h3 {
+    font-size: 18px;
+  }
+  .hero-btns button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .hero-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .code-editor{
+    max-width: 80%;
+    min-width: 60%;
+
+  }
+  .editor-body{
+    font-size: 14px;
+  }
+  /* -------------------- Why GOA -------------------- */
+  #why-goa {
+    margin: 20px 10px;
+  }
+  #why-goa h1 {
+    font-size: 40px;
+  }
+  .why-goa-p1 {
+    font-size: 16px;
+  }
+  #why-goa p span {
+    font-size: 16px;
+  }
+  /* -------------mentors----------------- */
   .team-grid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
@@ -770,9 +844,96 @@ footer {
 }
 
 @media (max-width: 576px) {
+  /* --------header----------- */
+  header{
+    margin: 20px 20px;
+  }
+   .header-img-div {
+    padding: 10px 40px;
+  }
+   .header-services img{
+    display: none;
+  }
+  .header-services a{
+    font-size: 14px;
+  }
+  /* -------------hero------------ */
+  #hero{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .hero-text{
+    margin: 10px 40px;
+  }
+  .hero-text h1{
+    font-size: 26px;
+  }
+   .hero-text h3{
+    font-size: 16px;
+  }
+  .hero-text p , .hero-text p span{
+    font-size: 15px;
+  }
+  
+  /* -------------mentors----------------- */
+  #our-team h2{
+    font-size: 20px;
+  }
   .team-grid {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 15px;
     padding: 0 10px;
   }
+  /* -----------review--------------- */
+  #reviews{
+    margin: 20px 40px;
+  }
+  #reviews h1{
+    font-size: 25px;
+  }
+  .review-box{
+    padding: 20px;
+    font-size: 14px;
+  }
+  /*  ------------------course preview---------- */
+  #course-preview{
+    margin: 80px 20px;
+  }
+  .course-text h2{
+    font-size: 28px;
+  }
+   #course-preview p{
+    font-size: 14px;
+    margin: 10px;
+   }
+    /* ------courses-------------- */
+   .infos h2{
+    font-size: 23px;
+   }
+   /* ----------join goas academy------------- */
+   #Join{
+    margin: 50px 30px;
+    padding: 40px;
+   }
+   #Join h1{
+    font-size: 23px;
+   }
+   #Join  p{
+    font-size: 14px;
+   }
+   /* -----foter---------- */
+   footer{
+    margin: 40px 20px;
+    padding: 40px;
+    text-align: start;
+   }
+   .footer-top,
+   .footer-nav ul,
+   .footer-bottom{
+    flex-direction: column;
+    gap: 15px;
+   }
+
 }
