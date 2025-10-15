@@ -1,0 +1,139 @@
+/* ---- GENERAL ---- */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- HEADER ---- */
+header {
+  background-color: #111;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ff2ecb; /* hot pink accent */
+}
+
+header h1 {
+  font-family: "Orbitron", sans-serif;
+  color: #ff2ecb;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #bb00ff; /* purple hover */
+}
+
+/* ---- CONTACT SECTION ---- */
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 20px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 60px;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-info h2 {
+  font-family: "Orbitron", sans-serif;
+  color: #bb00ff; /* purple accent */
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.info-box {
+  margin-top: 20px;
+  border-left: 3px solid #ff2ecb; /* hot pink */
+  padding-left: 15px;
+}
+
+/* ---- FORM ---- */
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #111;
+  color: #f0f0f0;
+  font-size: 15px;
+  resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.contact-form button {
+  background-color: #ff2ecb; /* hot pink button */
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.contact-form button:hover {
+  background-color: #bb00ff; /* purple on hover */
+  transform: translateY(-2px);
+}
+
+/* ---- FOOTER ---- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #888;
+  font-size: 14px;
+  border-top: 2px solid #ff2ecb;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    width: 95%;
+    gap: 40px;
+  }
+}
