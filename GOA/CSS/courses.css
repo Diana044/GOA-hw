@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Sora", sans-serif;
+  background-color: #050910;
+  color: white;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+.font1 {
+  font-family: "Source Code Pro", monospace;
+}
+.sora {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.Orbitronj {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.top-left {
+  position: fixed;
+  width: 690px;
+  height: 500px;
+  top: 0;
+  left: 0;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  display: flex;
+  border: 2px solid #00ffcc;
+  border-radius: 24px;
+  color: rgb(255, 255, 255);
+  margin: 60px 80px;
+  position: relative;
+  z-index: 1;
+  background-color: #02463d76;
+  transition: background-color 0.3s ease;
+}
+
+header:hover {
+  background-color: #000a1b;
+}
+
+.header-img-div {
+  border-right: 2px solid #1acfab;
+  padding: 25px 100px;
+}
+
+.header-img {
+  width: 65px;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #00ffcc;
+}
+
+header nav {
+  max-width: 1190px;
+  width: 100%;
+  height: 56px;
+  border-right: 2px solid #00ffcc;
+}
+
+header nav ul {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.main-li{
+  background-color: #06da77bc;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  box-shadow: 0px 0px 15px #05ff8abc;
+}
+.main-li:hover{
+  background-color: #05b6633c;
+
+
+}
+header nav ul li a {
+  font-family: "Orbitron", sans-serif;
+  color: #bfc7d5;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+header nav ul li a:hover {
+  color: #00ffcc;
+}
+
+/*------------ burger menu ----------------*/
+.burger-menu-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  height: 56px;
+  cursor: pointer;
+  border-left: 2px solid #00ffcc;
+  border-top-right-radius: 24px;
+}
+
+/* -------------second row socials andn joinus -------------------*/
+.header-row2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* joins us and socials divs */
+.header-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  font-family: "Source Code Pro", monospace;
+}
+
+.header-services div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #00ffcc;
+}
+
+.header-services div a {
+  color: #00ffcc;
+}
+.border-right {
+  border-right: 2px solid #00ffcc;
+}
+
+
+/* ------------footerr----------- */
+/* ----------------------------- */
+footer {
+  border: 2px solid #00ffcc;
+  border-radius: 24px;
+  background-color: #0b1322;
+  color: white;
+  margin: 60px 80px;
+  padding: 40px 60px;
+  font-family: "Sora", sans-serif;
+}
+
+/* footer top  logo with text and navigation*/
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #00ffcc;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+/* logo */
+.footer-logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #00ffcc;
+  letter-spacing: 1px;
+}
+
+/* navigation */
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-nav ul li a {
+  color: #bfc7d5;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+  color: #00ffcc;
+}
+
+/* footer second row2 with socials adn all rigth reserrved */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  border-top: 2px solid #00ffcc;
+  padding-top: 20px;
+  color: #bfc7d5;
+}
+
+/* social links */
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socails a {
+  mix-blend-mode: difference;
+  background-color: white;
+}
+
+/* ---------------media------------------------- */
+/* ---------------media------------------------- */
+@media (max-width: 1340px) {
+
+  /* -------------header------------- */
+  header {
+    margin: 60px 30px;
+  }
+  .header-img-div {
+    padding: 20px 60px;
+  }
+  header nav {
+    display: none;
+    border-right: none;
+  }
+  .header-img img {
+    width: 120%;
+  }
+  .header-nav-menu {
+    justify-content: end;
+  }
+  .burger-menu-div {
+    border: none;
+  }
+}
+@media (max-width: 576px) {
+  /* --------header----------- */
+  header{
+    margin: 20px 20px;
+  }
+   .header-img-div {
+    padding: 10px 40px;
+  }
+   .header-services img{
+    display: none;
+  }
+  .header-services a{
+    font-size: 14px;
+  }
+
+     /* -----foter---------- */
+   footer{
+    margin: 40px 20px;
+    padding: 40px;
+    text-align: start;
+   }
+   .footer-top,
+   .footer-nav ul,
+   .footer-bottom{
+    flex-direction: column;
+    gap: 15px;
+   }
+
+}

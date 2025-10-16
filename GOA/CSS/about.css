@@ -1,41 +1,48 @@
-/* ------------------- GENERAL ------------------- */
-body {
-  font-family: "Sora", sans-serif;
-  background-color: #000000;
-  color: white;
-  overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
 a {
   text-decoration: none;
-  color: inherit;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: "Sora", sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Orbitron", sans-serif;
 }
 
 /* -------------------- HEADER -------------------- */
 header {
   display: flex;
-  border: 2px solid #00ffcc;
+  border: 2px solid #7b3ff1;
   border-radius: 24px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   margin: 60px 80px;
   position: relative;
   z-index: 1;
-  background-color: #02463d76;
-  transition: background-color 0.3s ease;
+  background-color: #0f0f1f;
+  transition: 0.3s ease;
 }
 
 header:hover {
-  background-color: #000a1b;
+  background-color: #1a1a2e;
 }
 
 .header-img-div {
-  border-right: 2px solid #1acfab;
+  border-right: 2px solid #7b3ff1;
   padding: 25px 100px;
 }
 
@@ -53,14 +60,14 @@ header:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #00ffcc;
+  border-bottom: 2px solid #7b3ff1;
 }
 
 header nav {
   max-width: 1190px;
   width: 100%;
   height: 56px;
-  border-right: 2px solid #00ffcc;
+  border-right: 2px solid #7b3ff1;
 }
 
 header nav ul {
@@ -69,32 +76,27 @@ header nav ul {
   justify-content: space-around;
   list-style: none;
 }
-.main-li{
-  background-color: #06da77bc;
-  color: rgb(0, 0, 0);
+.main-li {
+  background-color: #7b3ff1; 
+  color: white;
   padding: 10px;
   border-radius: 20px;
   cursor: pointer;
-  transition: 0.5s ease-out;
-  box-shadow: 0px 0px 15px #05ff8abc;
+  transition: 0.3s;
+  box-shadow: 0px 0px 15px #7b3ff1a8;
 }
-.main-li:hover{
-  background-color: #05b6633c;
 
-
+.main-li:hover {
+  background-color: #5a2dbb;
 }
+
 header nav ul li a {
-  font-family: "Orbitron", sans-serif;
-  color: #bfc7d5;
-  letter-spacing: 1px;
-  transition: color 0.3s ease;
-  cursor: pointer;
+  color: #bdb8ff;
 }
 
 header nav ul li a:hover {
-  color: #00ffcc;
+  color: #ff66c4;
 }
-
 /*------------ burger menu ----------------*/
 .burger-menu-div {
   display: flex;
@@ -104,7 +106,7 @@ header nav ul li a:hover {
   max-width: 300px;
   height: 56px;
   cursor: pointer;
-  border-left: 2px solid #00ffcc;
+  border-left: 2px solid #7b3ff1;
   border-top-right-radius: 24px;
 }
 
@@ -131,269 +133,275 @@ header nav ul li a:hover {
 .header-services div {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  color: #00ffcc;
+  color: #87ff66; 
 }
 
 .header-services div a {
-  color: #00ffcc;
+  color: #ff66c4;
 }
+
 .border-right {
-  border-right: 2px solid #00ffcc;
+  border-right: 2px solid #7b3ff1;
 }
-
-
-
 
 /* ------------------- HERO ------------------- */
-#about-hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 80px 100px;
-  gap: 50px;
-  flex-wrap: wrap;
+.container{
+  margin: 10px 180px;
 }
-
-#about-hero .hero-text {
+/* -------HERO -----------*/
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: center;
+  padding: 50px 0;
+}
+.hero-left {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 600px;
+  justify-content: center; 
+  align-items: flex-start; 
+  gap: 20px; 
 }
 
-#about-hero .hero-text h1 {
-  font-size: 60px;
-  color: #00ff88;
-}
-
-#about-hero .hero-text p {
-  font-size: 20px;
-  color: #bfc7d5;
-  line-height: 1.6;
-}
-
-#about-hero .hero-text button {
-  padding: 12px 30px;
-  border: 2px dashed #00ff88;
+.hero-video {
+  width: 100%;      
+  max-width: 600px; 
   border-radius: 12px;
-  background: transparent;
-  color: #00ff88;
-  cursor: pointer;
-  transition: 0.3s ease;
+  object-fit: cover; 
 }
 
-#about-hero .hero-text button:hover {
-  box-shadow: 0 0 25px #00ff88;
-  transform: translateY(-3px);
+.hero-text {
+  margin-top: 10px;
+}
+.hero-img {
+  width: 500px;
+}
+.joingoa-small{
+  color: #ff66c4;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
-#about-hero .hero-text button a {
-  color: #00ff88;
-  text-decoration: none;
-}
-
-#about-hero .hero-image img {
-  max-width: 500px;
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 0 25px #00ff88aa;
-}
-
-/* ------------------- OUR STORY ------------------- */
-#our-story {
-  margin: 80px 100px;
-  text-align: center;
-}
-
-#our-story h2 {
-  font-size: 48px;
-  color: #00ff88;
-  margin-bottom: 20px;
-}
-
-#our-story p {
-  font-size: 18px;
-  color: #bfc7d5;
-  max-width: 900px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* ------------------- MISSION & VISION ------------------- */
-#mission-vision {
-  margin: 80px 100px;
-  text-align: center;
-}
-
-#mission-vision h2 {
-  font-size: 48px;
-  color: #00ff88;
-  margin-bottom: 40px;
-}
-
-.mission-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.mission-box {
-  background-color: #0f1423;
-  padding: 30px 20px;
-  border-radius: 20px;
-  border: 1px solid #00ff88;
-  box-shadow: 0 0 20px #00ff8833;
-  transition: 0.3s ease;
-}
-
-.mission-box h3 {
-  font-size: 24px;
-  color: #00ff88;
-  margin-bottom: 15px;
-}
-
-.mission-box p {
-  font-size: 16px;
-  color: #bfc7d5;
-  line-height: 1.5;
-}
-
-.mission-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 25px #00ff88aa;
-}
-
-/* ------------------- WHY CHOOSE GOA ------------------- */
-#why-choose-goa {
-  margin: 80px 100px;
-  text-align: center;
-}
-
-#why-choose-goa h2 {
-  font-size: 48px;
-  color: #00bfff;
-  margin-bottom: 40px;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.feature-box {
-  background-color: #0f1423;
-  padding: 30px 20px;
-  border-radius: 20px;
-  border: 1px solid #00bfff;
-  box-shadow: 0 0 20px #00bfff33;
-  transition: 0.3s ease;
-}
-
-.feature-box h3 {
-  font-size: 24px;
-  color: #00bfff;
-  margin-bottom: 15px;
-}
-
-.feature-box p {
-  font-size: 16px;
-  color: #bfc7d5;
-  line-height: 1.5;
-}
-
-.feature-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 25px #00bfffaa;
-}
-
-/* ------------------- CTA ------------------- */
-#about-cta {
-  display: flex;
-  justify-content: center;
-  margin: 100px 0;
-}
-
-#about-cta .join-btn {
-  padding: 15px 40px;
-  border: 2px dashed #00ff88;
-  border-radius: 12px;
-  background: transparent;
-  color: #00ff88;
-  font-family: "Orbitron", sans-serif;
+.title {
+  font-size: 32px;
   font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s ease;
+  margin-top: 10px;
 }
 
-#about-cta .join-btn:hover {
-  box-shadow: 0 0 25px #00ff88;
-  transform: translateY(-3px);
-}
-
-#about-cta .join-btn a {
-  color: #00ff88;
-  text-decoration: none;
-}
-
-/* ------------------- FOOTER ------------------- */
-/* Assuming same footer as main page, but responsive tweaks */
-footer {
-  border: 2px solid #00ffcc;
-  border-radius: 24px;
-  background-color: #0b1322;
-  color: white;
-  margin: 60px 80px;
-  padding: 40px 60px;
-  font-family: "Sora", sans-serif;
-}
-
-footer .footer-top,
-footer .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-footer .footer-logo {
-  font-family: "Orbitron", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: #00ffcc;
-  letter-spacing: 1px;
-}
-
-footer .footer-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-footer .footer-nav ul li a:hover {
-  color: #00ffcc;
-}
-
-footer .footer-socials {
-  display: flex;
-  gap: 20px;
+.joingoa-big{
+  color: #bdb8ff;
   margin-top: 15px;
 }
 
-/* ------------------- RESPONSIVE ------------------- */
+.join-btns {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn.first {
+  background: #7b3ff1;
+  color: #ffffff;
+}
+
+.btn.primary:hover {
+  background: #ff66c4;
+}
+
+.btn.second {
+  border: 1px solid #7b3ff1;
+  color: #7b3ff1;
+}
+
+.btn.second:hover {
+  border-color: #ff66c4;
+  color: #ff66c4;
+}
+
+/*--------- other sections ---------------*/
+.card {
+  background: #0f0f1f;
+  padding: 40px;
+  border-radius: 12px;
+  margin-top: 50px;
+}
+
+.card h2 {
+  color: #7b3ff1;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin-bottom: 15px;
+}
+.quote{
+  color: #ff66c4;
+  font-style: italic;
+  border-left: 3px solid #ff66c4;
+  padding-left: 12px;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #bdb8ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.gallery {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.join-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.contactus{
+  margin-top: 60px;
+  background: #7b3ff1;
+  color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactus a {
+  color: #ffffff;
+  font-weight: 600;
+  background: #ff66c4;
+  padding: 8px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-strip {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* ------------footerr----------- */
+/* ----------------------------- */
+footer {
+  border: 2px solid #7b3ff1;
+  border-radius: 24px;
+  background-color: #0f0f1f; /* match cards */
+  color: #ffffff;
+  margin: 60px 80px;
+  padding: 40px 60px;
+}
+/* footer top  logo with text and navigation*/
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #7b3ff1;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+/* logo */
+.footer-logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #ff66c4; 
+  letter-spacing: 1px;
+}
+
+/* navigation */
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-nav ul li a {
+  color: #bdb8ff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+  color: #bdb8ff;
+}
+
+/* footer second row2 with socials adn all rigth reserrved */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  border-top: 2px solid #7b3ff1;
+  color: #bdb8ff; 
+  border-top: 2px solid #7b3ff1;
+  padding-top: 20px;
+  color: #bfc7d5;
+}
+
+/* social links */
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socails a {
+  mix-blend-mode: difference;
+  background-color: white;
+}
+
 @media (max-width: 1340px) {
   #about-hero {
     flex-direction: column;
     align-items: center;
     margin: 50px 40px;
   }
-  #our-story, #mission-vision, #why-choose-goa {
+  #our-story,
+  #mission-vision,
+  #why-choose-goa {
     margin: 50px 30px;
   }
 }
@@ -405,10 +413,12 @@ footer .footer-socials {
   #about-hero .hero-text p {
     font-size: 18px;
   }
-  .mission-box h3, .feature-box h3 {
+  .mission-box h3,
+  .feature-box h3 {
     font-size: 20px;
   }
-  .mission-box p, .feature-box p {
+  .mission-box p,
+  .feature-box p {
     font-size: 15px;
   }
 }
@@ -420,14 +430,79 @@ footer .footer-socials {
   #about-hero .hero-text p {
     font-size: 16px;
   }
-  #mission-vision h2, #why-choose-goa h2 {
+  #mission-vision h2,
+  #why-choose-goa h2 {
     font-size: 35px;
   }
-  .mission-box, .feature-box {
+  .mission-box,
+  .feature-box {
     padding: 20px 15px;
   }
   footer {
     margin: 20px 15px;
     padding: 25px 20px;
+  }
+  /* -----foter---------- */
+  footer {
+    margin: 40px 20px;
+    padding: 40px;
+    text-align: start;
+  }
+  .footer-top,
+  .footer-nav ul,
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+/* ---------------media------------------------- */
+@media (max-width: 1340px) {
+  /* -------------header------------- */
+  header {
+    margin: 60px 30px;
+  }
+  .header-img-div {
+    padding: 20px 60px;
+  }
+  header nav {
+    display: none;
+    border-right: none;
+  }
+  .header-img img {
+    width: 120%;
+  }
+  .header-nav-menu {
+    justify-content: end;
+  }
+  .burger-menu-div {
+    border: none;
+  }
+}
+@media (max-width: 576px) {
+  /* --------header----------- */
+  header {
+    margin: 20px 20px;
+  }
+  .header-img-div {
+    padding: 10px 40px;
+  }
+  .header-services img {
+    display: none;
+  }
+  .header-services a {
+    font-size: 14px;
+  }
+
+  /* -----foter---------- */
+  footer {
+    margin: 40px 20px;
+    padding: 40px;
+    text-align: start;
+  }
+  .footer-top,
+  .footer-nav ul,
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
   }
 }
