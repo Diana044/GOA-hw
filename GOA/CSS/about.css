@@ -12,7 +12,6 @@ a {
   text-decoration: none;
 }
 body {
-  font-family: "Poppins", sans-serif;
   background-color: #0a0a0a;
   color: #ffffff;
   font-family: "Sora", sans-serif;
@@ -77,7 +76,7 @@ header nav ul {
   list-style: none;
 }
 .main-li {
-  background-color: #7b3ff1; 
+  background-color: #7b3ff1;
   color: white;
   padding: 10px;
   border-radius: 20px;
@@ -135,7 +134,7 @@ header nav ul li a:hover {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: #87ff66; 
+  color: #87ff66;
 }
 
 .header-services div a {
@@ -145,12 +144,16 @@ header nav ul li a:hover {
 .border-right {
   border-right: 2px solid #7b3ff1;
 }
+/* -------HERO -----------*/
 
-/* ------------------- HERO ------------------- */
-.container{
+.container {
   margin: 10px 180px;
 }
-/* -------HERO -----------*/
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .hero {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -158,19 +161,12 @@ header nav ul li a:hover {
   align-items: center;
   padding: 50px 0;
 }
-.hero-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: flex-start; 
-  gap: 20px; 
-}
 
 .hero-video {
-  width: 100%;      
-  max-width: 600px; 
+  width: 100%;
+  max-width: 600px;
   border-radius: 12px;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .hero-text {
@@ -179,7 +175,7 @@ header nav ul li a:hover {
 .hero-img {
   width: 500px;
 }
-.joingoa-small{
+.joingoa-small {
   color: #ff66c4;
   font-weight: 600;
   text-transform: uppercase;
@@ -192,12 +188,12 @@ header nav ul li a:hover {
   margin-top: 10px;
 }
 
-.joingoa-big{
+.joingoa-big {
   color: #bdb8ff;
   margin-top: 15px;
 }
 
-.join-buttons {
+.join-btns {
   margin-top: 20px;
   display: flex;
   gap: 15px;
@@ -231,28 +227,28 @@ header nav ul li a:hover {
 }
 
 /*--------- other sections ---------------*/
-.card {
+#about {
   background: #0f0f1f;
   padding: 40px;
   border-radius: 12px;
   margin-top: 50px;
 }
 
-.card h2 {
+#about h2 {
   color: #7b3ff1;
   font-size: 26px;
   margin-bottom: 15px;
 }
 
-.card p {
+#about p {
   margin-bottom: 15px;
 }
-.quote{
+.quote {
   color: #ff66c4;
   font-style: italic;
   border-left: 3px solid #ff66c4;
   padding-left: 12px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 ul {
@@ -271,6 +267,7 @@ ul {
   display: flex;
   gap: 40px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .gallery img {
@@ -278,7 +275,22 @@ ul {
   max-width: 400px;
   border-radius: 12px;
 }
+#community {
+  background: #0f0f1f;
+  padding: 40px;
+  border-radius: 12px;
+  margin-top: 50px;
+}
 
+#community h2 {
+  color: #7b3ff1;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+#community p {
+  margin-bottom: 15px;
+}
 .join-content {
   display: flex;
   flex-wrap: wrap;
@@ -287,7 +299,7 @@ ul {
   gap: 30px;
 }
 
-.contactus{
+.contactus {
   margin-top: 60px;
   background: #7b3ff1;
   color: #ffffff;
@@ -307,27 +319,12 @@ ul {
   text-decoration: none;
 }
 
-
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
-  .cta-strip {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-}
-
 /* ------------footerr----------- */
 /* ----------------------------- */
 footer {
   border: 2px solid #7b3ff1;
   border-radius: 24px;
-  background-color: #0f0f1f; /* match cards */
+  background-color: #0f0f1f;
   color: #ffffff;
   margin: 60px 80px;
   padding: 40px 60px;
@@ -347,11 +344,10 @@ footer {
   font-family: "Orbitron", sans-serif;
   font-size: 26px;
   font-weight: 700;
-  color: #ff66c4; 
+  color: #ff66c4;
   letter-spacing: 1px;
 }
 
-/* navigation */
 .footer-nav ul {
   list-style: none;
   display: flex;
@@ -376,7 +372,7 @@ footer {
   align-items: center;
   font-size: 14px;
   border-top: 2px solid #7b3ff1;
-  color: #bdb8ff; 
+  color: #bdb8ff;
   border-top: 2px solid #7b3ff1;
   padding-top: 20px;
   color: #bfc7d5;
@@ -393,71 +389,9 @@ footer {
   background-color: white;
 }
 
-@media (max-width: 1340px) {
-  #about-hero {
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 40px;
-  }
-  #our-story,
-  #mission-vision,
-  #why-choose-goa {
-    margin: 50px 30px;
-  }
-}
-
-@media (max-width: 992px) {
-  #about-hero .hero-text h1 {
-    font-size: 45px;
-  }
-  #about-hero .hero-text p {
-    font-size: 18px;
-  }
-  .mission-box h3,
-  .feature-box h3 {
-    font-size: 20px;
-  }
-  .mission-box p,
-  .feature-box p {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 576px) {
-  #about-hero .hero-text h1 {
-    font-size: 35px;
-  }
-  #about-hero .hero-text p {
-    font-size: 16px;
-  }
-  #mission-vision h2,
-  #why-choose-goa h2 {
-    font-size: 35px;
-  }
-  .mission-box,
-  .feature-box {
-    padding: 20px 15px;
-  }
-  footer {
-    margin: 20px 15px;
-    padding: 25px 20px;
-  }
-  /* -----foter---------- */
-  footer {
-    margin: 40px 20px;
-    padding: 40px;
-    text-align: start;
-  }
-  .footer-top,
-  .footer-nav ul,
-  .footer-bottom {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
 /* ---------------media------------------------- */
+
 @media (max-width: 1340px) {
-  /* -------------header------------- */
   header {
     margin: 60px 30px;
   }
@@ -477,11 +411,26 @@ footer {
   .burger-menu-div {
     border: none;
   }
+  .container {
+    margin: 10px 100px;
+  }
 }
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .contactus {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
 @media (max-width: 576px) {
   /* --------header----------- */
   header {
-    margin: 20px 20px;
+    margin: 20px 30px;
   }
   .header-img-div {
     padding: 10px 40px;
@@ -492,7 +441,35 @@ footer {
   .header-services a {
     font-size: 14px;
   }
-
+  /* ---hero------- */
+  .container {
+    margin: 10px 60px;
+  }
+  /* --h1 title in hero left div--- */
+  .title {
+    font-size: 20px;
+  }
+  /* ---o tag below hq hero left div -- */
+  .joingoa-big {
+    font-size: 16px;
+  }
+  .join-btns {
+    flex-direction: column;
+  }
+  /* ---about mission section---------- */
+  #about {
+    margin: 10px 0px;
+    min-width: 330px;
+    align-items: center;
+    justify-content: center;
+  }
+  #about h2 {
+    font-size: 21px;
+  }
+  #about p {
+    font-size: 14px;
+  }
+  /* -----community------------ */
   /* -----foter---------- */
   footer {
     margin: 40px 20px;
@@ -504,5 +481,34 @@ footer {
   .footer-bottom {
     flex-direction: column;
     gap: 15px;
+  }
+}
+
+/* Extra responsive tweaks for small phones */
+@media (max-width: 480px) {
+  .title {
+    font-size: 18px;
+  }
+  .joingoa-small {
+    font-size: 10px;
+  }
+  .hero-left {
+    gap: 5px;
+  }
+  .join-btns a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  .container {
+    margin: 5px 15px;
+  }
+  .header-services div a {
+    font-size: 12px;
+  }
+  .footer-logo {
+    font-size: 20px;
+  }
+  footer {
+    padding: 15px;
   }
 }
