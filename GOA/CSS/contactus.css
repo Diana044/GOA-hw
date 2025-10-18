@@ -3,10 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
-
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -239,7 +235,7 @@ header nav ul li a:hover {
   box-shadow: 0 0 15px #bb00ff80;
 }
 
-/* -------------COMMUNITY SECTION ------------ */
+/* ------------------------ */
 .community {
   text-align: center;
   padding: 80px 20px;

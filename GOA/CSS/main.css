@@ -12,7 +12,7 @@
 body {
   position: relative;
   font-family: "Sora", sans-serif;
-  background-color: #050910;
+  background-color: #000000;
   color: white;
   overflow-x: hidden;
 }
@@ -312,7 +312,7 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #050b14;
+  background-color: #00060f60;
   color: #fff;
   padding: 60px 20px;
   margin-top: 90px;
