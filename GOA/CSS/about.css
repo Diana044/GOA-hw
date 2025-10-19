@@ -470,7 +470,6 @@ footer {
   #about p {
     font-size: 14px;
   }
-  /* -----community------------ */
   /* -----foter---------- */
   footer {
     margin: 40px 20px;
@@ -485,8 +484,7 @@ footer {
   }
 }
 
-/* Extra responsive tweaks for small phones */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .title {
     font-size: 18px;
   }

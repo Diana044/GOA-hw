@@ -99,7 +99,7 @@ header nav ul {
   justify-content: space-around;
   list-style: none;
 }
-.main-li{
+.main-li {
   background-color: #06da77bc;
   color: rgb(0, 0, 0);
   padding: 10px;
@@ -108,10 +108,8 @@ header nav ul {
   transition: 0.5s ease-out;
   box-shadow: 0px 0px 15px #05ff8abc;
 }
-.main-li:hover{
+.main-li:hover {
   background-color: #05b6633c;
-
-
 }
 header nav ul li a {
   font-family: "Orbitron", sans-serif;
@@ -413,6 +411,8 @@ header nav ul li a:hover {
 #reviews {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 100px 260px;
   gap: 50px;
 }
@@ -423,19 +423,34 @@ header nav ul li a:hover {
 #reviews h1 span {
   color: #00bfff;
 }
+.rbb-p{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.review-box-box {
+  border: 2px solid rgb(160, 240, 240);
+  border-radius: 20px;
+  display: flex;
+  width: 1000px;
+  overflow: hidden;
+  flex-direction: row;
+}
 .review-box {
+  width: 1000px;
+  flex-shrink: 0;
+  height: 300px;
+  padding: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  border: 2px solid;
-  border-image: linear-gradient(90deg, #0af7ff, #030027,#0af7ff);
-  border-image-slice: 1;
-  border-radius: 20px;
-  padding: 60px;
   background-color: #0000005e;
   position: relative;
+}
+.top-left{
+  display: none;
 }
 .swipe {
   border-radius: 50%;
@@ -444,14 +459,8 @@ header nav ul li a:hover {
   align-items: center;
   justify-content: center;
   padding: 16px;
-}
-.swipe-left {
-  position: absolute;
-  left: -25px;
-}
-.swipe-right {
-  position: absolute;
-  right: -25px;
+  width: 50px;
+  height: 50px;
 }
 .profile img {
   width: 50px;
@@ -685,7 +694,6 @@ footer {
   margin-bottom: 25px;
 }
 
-/* logo */
 .footer-logo {
   font-family: "Orbitron", sans-serif;
   font-size: 26px;
@@ -694,7 +702,6 @@ footer {
   letter-spacing: 1px;
 }
 
-/* navigation */
 .footer-nav ul {
   list-style: none;
   display: flex;
@@ -723,7 +730,6 @@ footer {
   color: #bfc7d5;
 }
 
-/* social links */
 .footer-socials {
   display: flex;
   gap: 20px;
@@ -736,7 +742,6 @@ footer {
 
 /* ---------------media------------------------- */
 @media (max-width: 1340px) {
-
   /* -------------header------------- */
   header {
     margin: 60px 30px;
@@ -800,18 +805,17 @@ footer {
     padding: 10px 20px;
     font-size: 14px;
   }
-  .hero-right{
+  .hero-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .code-editor{
+  .code-editor {
     max-width: 80%;
     min-width: 60%;
-
   }
-  .editor-body{
+  .editor-body {
     font-size: 14px;
   }
   /* -------------------- Why GOA -------------------- */
@@ -833,44 +837,46 @@ footer {
     gap: 20px;
     padding: 0 15px;
   }
+  /* --review----- */
+ 
 }
 
 @media (max-width: 576px) {
   /* --------header----------- */
-  header{
+  header {
     margin: 20px 20px;
   }
-   .header-img-div {
+  .header-img-div {
     padding: 10px 40px;
   }
-   .header-services img{
+  .header-services img {
     display: none;
   }
-  .header-services a{
+  .header-services a {
     font-size: 14px;
   }
   /* -------------hero------------ */
-  #hero{
+  #hero {
     margin: 0;
     justify-content: center;
     align-items: center;
-
   }
-  .hero-text{
+  .hero-text {
     margin: 10px 40px;
   }
-  .hero-text h1{
+  .hero-text h1 {
     font-size: 26px;
   }
-   .hero-text h3{
+  .hero-text h3 {
     font-size: 16px;
   }
-  .hero-text p , .hero-text p span{
+  .hero-text p,
+  .hero-text p span {
     font-size: 15px;
   }
-  
+
   /* -------------mentors----------------- */
-  #our-team h2{
+  #our-team h2 {
     font-size: 20px;
   }
   .team-grid {
@@ -879,53 +885,76 @@ footer {
     padding: 0 10px;
   }
   /* -----------review--------------- */
-  #reviews{
+  #reviews {
     margin: 20px 40px;
   }
-  #reviews h1{
-    font-size: 25px;
+  #reviews h1 {
+    font-size: 20px;
   }
-  .review-box{
+  .review-box {
     padding: 20px;
     font-size: 14px;
   }
   /*  ------------------course preview---------- */
-  #course-preview{
+  #course-preview {
     margin: 80px 20px;
   }
-  .course-text h2{
+  .course-text h2 {
     font-size: 28px;
   }
-   #course-preview p{
+  #course-preview p {
     font-size: 14px;
     margin: 10px;
-   }
-    /* ------courses-------------- */
-   .infos h2{
+  }
+  /* ------courses-------------- */
+  .infos h2 {
     font-size: 23px;
-   }
-   /* ----------join goas academy------------- */
-   #Join{
+  }
+  /* ----------join goas academy------------- */
+  #Join {
     margin: 50px 30px;
     padding: 40px;
-   }
-   #Join h1{
+  }
+  #Join h1 {
     font-size: 23px;
-   }
-   #Join  p{
+  }
+  #Join p {
     font-size: 14px;
-   }
-   /* -----foter---------- */
-   footer{
+  }
+  /* -----foter---------- */
+  footer {
     margin: 40px 20px;
     padding: 40px;
     text-align: start;
-   }
-   .footer-top,
-   .footer-nav ul,
-   .footer-bottom{
+  }
+  .footer-top,
+  .footer-nav ul,
+  .footer-bottom {
     flex-direction: column;
     gap: 15px;
-   }
+  }
+}
 
+@media (max-width: 1157px){
+  .review-box-box, .review-box {
+    width: 600px;
+    height: 400px;
+  }
+  .review-box-box{
+    overflow: scroll;
+  }
+
+  #left, #right{
+    display: none;
+  }
+  
+}
+@media (max-width: 644px){
+  .review-box-box, .review-box{
+    width: 100%;
+    height: 700px;
+  }
+  .rbb-p {
+    width: 100%;
+  }
 }
