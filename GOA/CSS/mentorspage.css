@@ -236,7 +236,8 @@ header nav ul li a:hover {
 
 .mentor-info h2 {
   margin: 10px 0 5px;
-  font-size: 1.3rem;
+  font-size: 20px;
+  text-transform: uppercase;
   font-weight: 600;
   color: #fff;
 }
