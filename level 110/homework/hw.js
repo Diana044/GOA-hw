@@ -24,4 +24,5 @@ function validParentheses(parenStr) {
 }
 
 console.log(validParentheses('((())()((()()('))
-console.log(validParentheses('()()'))
+console.log(validParentheses('()()')) 
+
