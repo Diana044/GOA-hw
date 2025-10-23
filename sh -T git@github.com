@@ -1,0 +1,9 @@
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=Diana
+user.email=dzukaevadiana3@gmail.com
+safe.directory=C:/Users/Administrator/Documents/GitHub/GOA-hw
+safe.directory=C:/Users/Administrator/Documents/GitHub/Projects
+safe.directory=C:/Users/Administrator/Documents/GitHub/GOAhomeworks
