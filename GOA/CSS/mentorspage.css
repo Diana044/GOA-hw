@@ -371,6 +371,11 @@ footer {
     font-size: 14px;
   }
 
+  /* mentors */
+  #mentors{
+    padding: 10px;
+  }
+
   /* -----foter---------- */
   footer {
     margin: 40px 20px;
