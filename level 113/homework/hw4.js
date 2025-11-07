@@ -2,17 +2,16 @@
 // Object.keys() მეთოდის გამოყენებით გამოიტანე ყველა key.
 // ასევე
 // Object.values() მეთოდის გამოყენებით გამოიტანე ყველა value.
-let  book1 ={
+let  book ={
     title :'VEFXISTYAOSANI',
     author :'SHOTA RUSTAVELI',
-    pages : 800
+    pages : 234
 }
-let book1Keys = Object.keys(book1)
-let book1Values = Object.values(book1)
+let bookKeys = Object.keys(book)
+let bookValues = Object.values(book)
 
 console.log(
-    'keys',book1Keys,
-    'values', book1Values
+    'keys',bookKeys, 'values', bookValues
 )
 
 console.log('------------------------')

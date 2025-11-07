@@ -3,10 +3,10 @@
 // ასევე
 // Object.values() მეთოდის გამოყენებით გამოიტანე ყველა value ცალ ცალკე ხაზზე (for loop)
 
-let movie= {
+let movie= {    
     name :'mentalist',
     ganre : 'crime',
-    'the rating' :8.2,
+    'the rat ing' :8.2,
 }
 let keys=''
 for(let i=0; i<Object.keys(movie).length; i++){
@@ -17,8 +17,10 @@ for(let i=0; i<Object.keys(movie).length; i++){
 console.log('--------')
 
 let movieValuesList=Object.values(movie)
+
 for(let i in movieValuesList){
     console.log(movieValuesList[i])
 }
 
 console.log('------------------------')
+

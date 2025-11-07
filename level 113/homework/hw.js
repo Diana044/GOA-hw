@@ -8,5 +8,4 @@ let person ={
 }
 
 console.log(person.name, person.city)
-
 console.log('---------------------------')
