@@ -1,7 +1,7 @@
 // ```
 // 1)შექმენი ობიექტი person, რომელსაც ექნება შემდეგი ველები: "first name", "last name", "age".
 // კონსოლში გამოიტანე "first name" და "age".
-console.log('----------------1-------------------')
+console.log('---------------1-----------------')
 
 let person={
     'first name':'lana',
@@ -23,10 +23,10 @@ console.log(
 
 // 2)შექმენი ობიექტი car, რომელსაც ექნება "car brand", "model name" და "year".
 // კონსოლში გამოიტანე "car brand" და "model name" მნიშვნელობები.
-
+console.log('---------------2-----------------')
 let car={
     "car brand":'Mercedes-Benz,',
-    "model name":'C-CLASS.',
+    "model name":'C-CLASS',
     "year":1993
 }
 
@@ -39,9 +39,28 @@ console.log(
 
 // 3)შექმენი ობიექტი book, რომელსაც ექნება "book title", "author name" და "page count".
 // კონსოლში გამოიტანე "book title" და "author name".
+console.log('---------------3-----------------')
+
+let book={
+  "book title":'merandcle', 
+  "author name":'thebotlest',
+  "page count":435
+}
+console.log(
+  book["book title"],
+  book['author name']
+)
 
 // 4)შექმენი ობიექტი student, რომელსაც ექნება "full name", "grade level" და "favorite subject".
 // კონსოლში გამოიტანე "favorite subject" მნიშვნელობა.
+console.log('---------------4-----------------')
+let student={ 
+  "full name":'george lortiqfanidze',
+  "grade level":11, 
+  "favorite subject":'Biology'
+}
+
+console.log(students['favorite subject'])
 
 // 5)შექმენი ობიექტი movie, რომელსაც ექნება "name, "release year" და "main actor".
 // კონსოლში გამოიტანე name და "main actor" მნიშვნელობები.
