@@ -4,9 +4,10 @@ console.log('---------------12-----------------')
 let person3={
   name:'ana',
   age:20,
-  func: function showInfo(){
+}
+
+person3.func= function showInfo(){
     return `ჩემი სახელია ${this.name} და მე ვარ ${this.age} წლის `
   }
-}
 console.log(person3.func())
   
