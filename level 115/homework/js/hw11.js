@@ -4,7 +4,7 @@
 // თუ მომხმარებლის რიცხვი დაემთხვა დაგენერირებულს — გამოიტანე "სწორია!",
 // სხვა შემთხვევაში "ცდები!".
 
-let random=Math.floor(Math.random())
+let random=Math.floor(Math.random()*10)
 
 let userNum=Number(prompt('enter numberrr'))
 if(userNum===random){
