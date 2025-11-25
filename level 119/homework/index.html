@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>counter</title>
     <style>
       body {
         background-color: rgb(5, 29, 50);
@@ -40,7 +40,8 @@
         gap: 20px;
       }
       #plus,
-      #minus {
+      #minus,
+      #square {
         background-color: rgb(6, 120, 242);
         border: none;
         color: white;
@@ -82,12 +83,12 @@
           height: 50px;
           font-size: 20px;
         }
-         #reset img{
-            width: 30px;
-         }
-         #number{
-            font-size: 40px;
-         }
+        #reset img {
+          width: 30px;
+        }
+        #number {
+          font-size: 40px;
+        }
       }
     </style>
   </head>
@@ -97,6 +98,8 @@
         <p id="number">0</p>
         <div id="buttons">
           <button id="minus">-</button>
+          <button id="square">**</button>
+
           <button id="reset">
             <img src="icons8-reset-64.png" alt="reset" />
           </button>
