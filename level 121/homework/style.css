@@ -23,6 +23,8 @@ body{
     box-shadow: 0px 0px 30px  mediumturquoise ;
     cursor: pointer;
     transition: 1s;
+    height: 400px;
+    overflow-y: scroll;
 }
 #form-div{
     flex-direction:column;

@@ -4,6 +4,8 @@ let form=document.getElementById('form')
 let div=document.getElementById('list-div')
 
 
+let ul=document.createElement('ul')
+div.appendChild(ul)
 
 form.addEventListener('submit', function(e){
     e.preventDefault()
@@ -11,13 +13,11 @@ form.addEventListener('submit', function(e){
     let surname=e.target.surname.value
     let age=e.target.age.value
 
-    let ul=document.createElement('ul')
-    ul.innerHTML= `
+    ul.innerHTML+= `
           <li>user name ${name}</li>
           <li>user surname ${surname}</li>
           <li>user age ${age}</li>
      `
-   div.appendChild(ul)
 
     console.log('username',name)
     console.log('user surname',surname)
