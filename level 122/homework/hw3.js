@@ -20,8 +20,6 @@ form.addEventListener('submit', function(e){
     let emailiscorrect=false
     let passiscorrect=false
 
-
-
     let nameInput= e.target.name.value
     let emailInput=e.target.email.value
     let passInput=e.target.password.value
