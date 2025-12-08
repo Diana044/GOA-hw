@@ -1,64 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="main-div">
-      <div id="form-div">
-        <form id="form">
-          <div>
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="enter your name"
-            />
-            <p id="nameP"></p>
-          </div>
-          <div>
-            <label for="surname">surname:</label>
-            <input
-              type="text"
-              name="surname"
-              id="surname"
-              placeholder="enter your surname"
-            />
-            <p  id="surnameP"></p>
-          </div>
-          <div>
-            <label for="age">age:</label>
-            <input
-              type="number"
-              name="age"
-              id="age"
-              placeholder="enter your age"
-            />
-            <p  id="ageP"></p>
-          </div>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+            background-color: rgb(222, 238, 252);
+            color: hsl(0, 0%, 0%);
+        }
+        #form{
+            border: 1px dotted rgb(116, 116, 198);
+            box-shadow: 0px 0px 40px   rgb(116, 116, 198);
+            border-radius: 10px;
+            display: flex;
+            flex-direction:column;
+            justify-content:center; 
+            align-items:center;
+            padding: 20px;
+            gap: 15px;
+        }
+        #form input{
+            width: 200px;
+            padding: 5px;
+            border: 2px solid rgb(116, 116, 198);
+            background-color: #dce0ff;
+            color: rgb(0, 43, 107);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
 
-          <input type="submit" name="submit" id="submit" />
-          <div>
-            <p class="p">Forgot your age?   
-                <span>Click here</span>
-            </p>
-            <p class="p">Don't have an accaunt?   
-                <span>Click here</span>
-            </p>
-          </div>
-        </form>
-      </div>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
 
-      <div id="list-div">
-      
-      </div>
-    
-    </div>
+    <form id="form">
+        <input type="text" id="name"name="name" placeholder="enter your name">
+        <span id="nameSpan"></span>
+        <input type="email" id="email"name="email" placeholder="enter your email">
+        <span id="emailSpan"></span>
+        <input type="password" id="password" name="password" placeholder="enter your password">
+        <span id="passSpan"></span>
+        <input type="submit" id="submit" name="submit" >
+    </form>
 
-    <script src="hw.js"></script>
-  </body>
+    <script src="hw3.js"></script>
+
+</body>
 </html>
