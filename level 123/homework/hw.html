@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+            background-color: rgb(222, 238, 252);
+            color: hsl(0, 0%, 0%);
+        }
+        #form{
+            border: 1px dotted rgb(116, 116, 198);
+            box-shadow: 0px 0px 40px   rgb(116, 116, 198);
+            border-radius: 10px;
+            display: flex;
+            flex-direction:column;
+            justify-content:center; 
+            align-items:center;
+            padding: 20px;
+            gap: 15px;
+        }
+        #form input{
+            width: 200px;
+            padding: 5px;
+            border: 2px solid rgb(116, 116, 198);
+            background-color: #dce0ff;
+            color: rgb(0, 43, 107);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+           #form label{
+           
+            background-color: #dce0ff;
+            color: rgb(0, 0, 0);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+      
+    </style>
 </head>
 <body>
+
+    <form id="form">
+        <label for="userName">Enter your name</label>
+        <input type="text" name="userName" id="userName">
+        <span id="nameSp"></span>
+        <label for="userAge">Enter your age</label>
+        <input type="number" name="userAge" id="userAge">
+        <span id="ageSp"></span>
+        <label for="userPof">Enter your proffesion</label>
+        <input type="text" name="userProf" id="userProf">
+        <span id="profSp"></span>
+        <button type="submit" name="submit" id="submit">Submit</button>
+    </form>
+
+
     <script src="hw.js"></script>
 </body>
 </html>
