@@ -18,9 +18,9 @@ function Person(userName, userAge, userProfession) {
 form.addEventListener('submit', function (e) {
     e.preventDefault()
 
-    let nameValue = e.target.userName.value.trim()
+    let nameValue = e.target.userName.value
     let ageValue = Number(e.target.userAge.value)
-    let profValue = e.target.userProf.value.trim()
+    let profValue = e.target.userProf.value
 
     let nameCorrect = false
     if (nameValue === "") {
@@ -34,7 +34,7 @@ form.addEventListener('submit', function (e) {
     if (e.target.userAge.value === "") {
         ageSp.innerHTML = "Input must be filled!"
     } else if (ageValue < 18) {
-        ageSp.innerHTML = `${nameValue} unfortunately, you are under 18`
+        ageSp.innerHTML = `${nameValue} unfortunately, you are under 18 <br> come back in ${18-ageValue} years`
     } else {
         ageSp.innerHTML = ""
         ageCorrect = true
