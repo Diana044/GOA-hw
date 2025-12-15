@@ -1,5 +1,7 @@
 // დაამატეთ ინფუთი საიდანაც მომხმარებელი შეიყვანს ფერს და როდესაც ღილაკს დააჭერს რაფერიც იქნება შეყვანილი იმფრად შეიღებოს ყველაფერი, ასევე ინფუთს დაამატეთ ვალიდაციები,რომ თუ ისეთ რამეს შემოიყვან რაც არ არის ფერის გამომხატველი  მოუფიქრრთ ვალიდაცია რომ არასწორად შეიყვანა მომხმარებელმა ფერი და თავიდან ცადოს
 // create
+
+
 let body=document.body
 let form = document.createElement("form")
 let mainDiv=document.createElement('div')
@@ -50,18 +52,6 @@ bnt.style.backgroundColor='rgb(35, 154, 100)'
 bnt.style.border='2px solid black'
 bnt.style.fontSize='17px'
 
-// js
-
-inp.addEventListener('input', function(){
-
-})
-
-
-
-
-
-
-
 
 
 
@@ -73,6 +63,8 @@ div.appendChild(label)
 div.appendChild(form)
 form.appendChild(inp)
 form.appendChild(bnt)
+
+
 form.addEventListener("submit", function(e){
     e.preventDefault()
     let inpColor = e.target.color.value
@@ -82,9 +74,12 @@ form.addEventListener("submit", function(e){
         e.target.color.style.border = "1px solid black"
     }else{
         e.target.color.style.border = "1px solid red"
+
+
+
     }
 })
 
-mainDiv.appendChild(div)
 
+mainDiv.appendChild(div)
 body.appendChild(mainDiv)
