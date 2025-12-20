@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20241122/pngtree-happy-new-year-lettering-with-lights-garland-clock-bell-bule-background-image_16608995.jpg');
+    background-size:cover ;
+    background-position: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+.text{
+    font-size: 60px;
+    color: yellow;
+    font-weight: 600;
+}
+#main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    border: 2px solid yellow;
+    border-radius: 25px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: rgba(0, 0, 0, 0.243) ;
+    backdrop-filter: blur(10px);
+
+}
+.counter-divs{
+    display: flex;
+    gap: 40px;
+    text-align: center;
+
+}
+.counter-divs h1{
+    font-size: 70px;
+}
+.counter-divs p{
+    color: yellow;
+}
