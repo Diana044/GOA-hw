@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    background-color: rgb(33, 33, 52);
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amazon-logo{
+    width: 130px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+    gap: 60px;
+}
+.watch-div{
+    position: relative;
+}
+.watch{
+    width: 430px;
+    max-width: 100%;
+    height: auto;
+}
+#clock{
+    position: absolute;
+    top: 193px;
+    left: 160px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+#heartRate-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 170px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+#heartRate-div img{
+   width: 80px;
+   animation: heartbeat 1s ease  infinite ;
+}
+#heartRate-div p{
+  font-size: 20px;
+  color: white;
+}
+.info-div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-text,
+.select-color,
+.features-div{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.info-text h1{
+    font-size: 40px;
+}
+
+.info-text p{
+    font-size: 14px;
+    color: rgb(141, 140, 140);
+    max-width: 500px;
+}
+
+.info-div h2{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+#colors-div{
+    display: flex;
+    gap: 10px;
+}
+
+#colors-div div{
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#red{ background-color: red; }
+#purple{ background-color: purple; }
+#black{ background-color: black; }
+#blue{ background-color: blue; }
+#pink{ background-color: pink; }
+
+#choices{
+    display: flex;
+    gap: 16px;
+}
+
+#choices button{
+    padding: 7px 12px;
+    border: none;
+    font-weight: 800;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#buy-button{
+    width: 130px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 3px;
+    border: none;
+    text-transform: uppercase;
+    background-color: rgb(255, 165, 0);
+    cursor: pointer;
+}
+
+@media (max-width: 1020px){
+    main{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .watch{
+        width: 300px;
+        transform: none;
+    }
+
+    .info-text h1{
+        font-size: 30px;
+    }
+
+    .info-div h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px){
+    .amazon-logo{
+        width: 100px;
+    }
+    main{
+        align-items: flex-start;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .watch{
+        width: 260px;
+    }
+
+    .info-text h1{
+        font-size: 25px;
+    }
+
+    .info-text p{
+        font-size: 14px;
+    }
+
+    .info-div h2{
+        font-size: 18px;
+    }
+
+    #colors-div div{
+        width: 50px;
+        height: 30px;
+    }
+
+    #buy-button{
+        width: 100px;
+        font-size: 14px;
+    }
+}
+
+
+@keyframes heartbeat{
+    0%{
+        transform: scale(1);
+    }
+    23%{
+        transform: scale(1.3);
+    }
+    30%{
+        transform: scale(1);
+    }
+    44%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
