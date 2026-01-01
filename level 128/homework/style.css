@@ -10,8 +10,24 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
+#message{
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    display: none;
+    top:10%;
+    padding: 10px;
+    width: 400px;
+    height: 100px;
+    border: 1px double rgb(0, 255, 191);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px rgb(0, 255, 149);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+}
 header{
     background-color: rgb(33, 33, 52);
     width: 100%;
@@ -163,6 +179,10 @@ main{
     .info-div h2{
         font-size: 20px;
     }
+    #heartRate-div  {
+        left: 110px;
+        top: 90px;
+    }
 }
 
 @media (max-width: 600px){
@@ -199,6 +219,16 @@ main{
     #buy-button{
         width: 100px;
         font-size: 14px;
+    }
+      #heartRate-div  {
+        left: 100px;
+        top: 80px;
+    }
+      #heartRate-div  {
+     font-size: 20px;
+    }
+      #heartRate-div img  {
+       width: 60px;
     }
 }
 

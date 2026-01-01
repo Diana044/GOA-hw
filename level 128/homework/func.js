@@ -7,7 +7,14 @@ let heartRateButton=document.getElementById('changing-heartRate')
 
 let heartRateRandom=document.getElementById('random-heartRate')
 
+let red=document.getElementById('red')
+let blue=document.getElementById('blue')
+let black=document.getElementById('black')
+let purple=document.getElementById('purple')
+let pink=document.getElementById('pink')
 
+let buyButton=document.getElementById('buy-button')
+let message= document.getElementById('message')
 
 
 function currentTime(){
@@ -50,3 +57,31 @@ function heartBeatChanger(){
 }
 heartBeatChanger()
 setInterval(heartBeatChanger, 20000)
+
+
+
+
+red.addEventListener('click',function(){
+    watch.src="imgs/red.png"
+})
+
+black.addEventListener('click',function(){
+    watch.src="imgs/black.png"
+})
+
+purple.addEventListener('click',function(){
+    watch.src="imgs/purple.png"
+})
+
+blue.addEventListener('click',function(){
+    watch.src="imgs/blue.png"
+})
+
+pink.addEventListener('click',function(){
+    watch.src="imgs/pink.png"
+})
+
+buyButton.addEventListener('click', function(){
+    message.style.display='flex'
+    
+})
