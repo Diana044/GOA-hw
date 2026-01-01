@@ -183,6 +183,11 @@ main{
         left: 110px;
         top: 90px;
     }
+    #clock {
+        left: 110px;
+        top: 130px;
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 600px){
@@ -220,10 +225,14 @@ main{
         width: 100px;
         font-size: 14px;
     }
-      #heartRate-div  {
+      #heartRate-div {
         left: 100px;
         top: 80px;
     }
+     #clock{
+       left: 90px;
+        top: 110px;
+     }
       #heartRate-div  {
      font-size: 20px;
     }
