@@ -49,11 +49,10 @@ timeButton.addEventListener('click',function(){
 heartRateButton.addEventListener('click',function(){
     clock.style.display='none'
     heartRatediv.style.display='block'
-    
 })
 
 function heartBeatChanger(){
-    heartRateRandom.textContent=Math.floor(Math.random()*110)+60
+    heartRateRandom.textContent=Math.floor(Math.random()*110)+6
 }
 heartBeatChanger()
 setInterval(heartBeatChanger, 20000)
@@ -61,27 +60,34 @@ setInterval(heartBeatChanger, 20000)
 
 
 
-red.addEventListener('click',function(){
-    watch.src="imgs/red.png"
-})
+// red.addEventListener('click',function(){
+//     watch.src="imgs/red.png"
+// })
 
-black.addEventListener('click',function(){
-    watch.src="imgs/black.png"
-})
+// black.addEventListener('click',function(){
+//     watch.src="imgs/black.png"
+// })
 
-purple.addEventListener('click',function(){
-    watch.src="imgs/purple.png"
-})
+// purple.addEventListener('click',function(){
+//     watch.src="imgs/purple.png"
+// })
 
-blue.addEventListener('click',function(){
-    watch.src="imgs/blue.png"
-})
+// blue.addEventListener('click',function(){
+//     watch.src="imgs/blue.png"
+// })
 
-pink.addEventListener('click',function(){
-    watch.src="imgs/pink.png"
-})
+// pink.addEventListener('click',function(){
+//     watch.src="imgs/pink.png"
+// })
 
 buyButton.addEventListener('click', function(){
     message.style.display='flex'
     
 })
+let  colors=document.getElementsByClassName('color')
+for(let element of  colors){
+    element.addEventListener('click',function(){
+        watch.src= `imgs/${element.id}.png `
+
+    })
+}
