@@ -18,16 +18,20 @@ body{
     position: absolute;
     align-items: center;
     display: none;
-    top:10%;
+    top:50%;
     padding: 10px;
-    width: 400px;
-    height: 100px;
-    border: 1px double rgb(0, 255, 191);
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0px 0px 20px rgb(0, 255, 149);
-    border-radius: 4px;
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    border: 1px double rgb(255, 4, 0);
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.514);
+    border-radius: 15px;
     color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 2;
 }
+
 header{
     background-color: rgb(33, 33, 52);
     width: 100%;
@@ -61,10 +65,11 @@ header{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.479);
     z-index: 1;
+    display: none;
 }
 
 .login-window-div{
-    display: flex;
+    display: none;
     align-items: center;
     justify-self: center;
     position: absolute;
@@ -100,9 +105,10 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
-#login-window form input{
+.name,  
+.pass{
     padding: 6px;
     border-radius: 6px;
     background-color: rgb(255, 166, 0);
@@ -112,6 +118,14 @@ header{
     border: none;
     border-bottom: 2px solid black;
 }
+#nameSpan,
+#passSpan{
+    display: none;
+    color: rgb(255, 0, 0);
+    display: flex;
+    align-self: start;
+}          
+
 #login-window form input::placeholder{
     color: rgb(0, 0, 0);
 }

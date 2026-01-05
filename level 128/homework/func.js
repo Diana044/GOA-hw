@@ -1,3 +1,5 @@
+let body=Document.body
+
 let clock=document.getElementById('clock')
 let watch=document.getElementById('watch-img')
 
@@ -15,6 +17,22 @@ let pink=document.getElementById('pink')
 
 let buyButton=document.getElementById('buy-button')
 let message= document.getElementById('message')
+
+
+let messageDiv=document.getElementById('message')
+
+let exit=document.getElementById('exit')
+let blurDiv=document.getElementById('blurDiv')
+let loginWindow=document.getElementById('login-window')
+let loginDiv=document.getElementById('login-window-div')
+let loginImg=document.getElementById('login-img')
+let form=document.getElementById('form')
+
+let user=document.getElementById('user')
+let submit=document.getElementById('submit')
+
+let nameSpan=document.getElementById('nameSpan')
+let passSpan=document.getElementById('passSpan')
 
 
 function currentTime(){
@@ -60,30 +78,17 @@ setInterval(heartBeatChanger, 20000)
 
 
 
-// red.addEventListener('click',function(){
-//     watch.src="imgs/red.png"
-// })
-
-// black.addEventListener('click',function(){
-//     watch.src="imgs/black.png"
-// })
-
-// purple.addEventListener('click',function(){
-//     watch.src="imgs/purple.png"
-// })
-
-// blue.addEventListener('click',function(){
-//     watch.src="imgs/blue.png"
-// })
-
-// pink.addEventListener('click',function(){
-//     watch.src="imgs/pink.png"
-// })
-
 buyButton.addEventListener('click', function(){
     message.style.display='flex'
+    blurDiv.style.display='flex'
     
 })
+message.addEventListener('click',function(){
+    message.style.display='none'
+    blurDiv.style.display='none'
+})
+
+
 let  colors=document.getElementsByClassName('color')
 for(let element of  colors){
     element.addEventListener('click',function(){
@@ -91,3 +96,51 @@ for(let element of  colors){
 
     })
 }
+
+
+
+loginImg.addEventListener('click',function(){
+    blurDiv.style.display='flex'
+    loginDiv.style.display='flex'
+})
+
+
+exit.addEventListener('click', function(){
+    loginDiv.style.display='none'
+    blurDiv.style.display='none'
+})
+
+form.addEventListener('submit',function(e){
+    e.preventDefault()
+
+    let userName=e.target.userName.value
+    let passw=e.target.password.value
+    nameSpan.style.display='none'
+    
+    let nameCorrect=false
+    if(e.target.userName.value===''){
+        nameSpan.style.display='flex'
+    }else{
+        nameSpan.style.display='none'
+        nameCorrect=true
+    }
+
+    let passCorrect=false
+    if(e.target.password.value===''){
+        passSpan.style.display='flex'
+    }else{
+        passSpan.style.display='none'
+        passCorrect=true
+    }
+
+
+    if (nameCorrect && passCorrect){
+        loginDiv.style.display='none'
+        blurDiv.style.display='none'
+        user.innerHTML=userName
+    }else{
+        alert('....one of  your inputs are  incorrect')
+    }
+  
+})
+

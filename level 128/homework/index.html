@@ -18,22 +18,24 @@
             <img class="amazon-logo" src="imgs/Amazon-logo.png" alt="amazon-logo">
         </div>
         <div id="login-info">
-            <p id="user">dddd</p>
+            <p id="user"></p>
             <img src="imgs/login-icon.png" alt="login-img" id="login-img">
         </div>
     </header>
 
-    <div  class="blur-div"></div>
-      <div class="login-window-div">
+    <div  class="blur-div" id="blurDiv"></div>
+      <div class="login-window-div" id="login-window-div">
         <div id="login-window">
             <img src="imgs/cross.png" alt="cross" id="exit">
             <img src="imgs/user.png" alt="user" class="chad-img">
             <p class="login-p">LOGIN</p>
-            <form>
-                <input type="text"  placeholder="username" name="userName">
-                <input type="password" placeholder="password" name="password">
+            <form  id="form">
+                <span id="nameSpan">Name  input must be  filled!</span>
+                <input type="text"  placeholder="username" name="userName"  class="name">
+                <span id="passSpan">*Required</span>
+                <input type="password" placeholder="password" name="password"  class="pass">
+                <input id="submit"  type="submit" name="submit"></input>
             </form>
-            <button id="submit">submit</button>
             <h5>Dont have an accaunt? <span>create one</span></h5>
         </div>
     </div>
