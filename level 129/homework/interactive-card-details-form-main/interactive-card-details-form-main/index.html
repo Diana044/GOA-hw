@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -14,34 +15,65 @@
 
 
   <div class="container">
-    <div class="cards side">
-      <img src="./images/bg-main-desktop.png" alt="">
-      <div class="card-front"></div>
-      <div class="card-back"></div>
+    <div class="cards-side">
+
+      <img src="./images/bg-main-desktop.png" alt="" class="bg-img">
+      <div class="card-front">
+        <div>
+          <img src="images/card-logo.svg" alt="">
+        </div>
+          <div class="card-numbers">
+            <div class="card-number">
+              0000 0000 0000 0000
+            </div>
+            <div class="name-date">
+              <p>Jane Appleseed</p>
+              <p>00/00</p>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="card-back">
+        <div class="black-line"></div>
+        <div class="grey-line">
+          <p class="cardCVC">000</p>
+        </div>
+      </div>
     </div>
 
-    <div class="info side"></div>
+    <div class="info-side">
+      <form action="" id="form">
+        <label for="holder-name">CARDHOLDER NAME</label>
+        <input type="text" class="inputs1-2" placeholder="e.g. Jane Appleseed" name="holder-name">
+        <label for="card-number">CARD NUMBER</label>
+        <input type="text" class="inputs1-2" placeholder="e.g. 1234 5678 9123 0000" name="card-number">
+        <div class="date-CVC">
+          <div class="exp-date-div">
+            <label for="exp-date">EXP. DATE (MM/YY)</label>
+            <div class="MM-YY-div">
+              <input type="text" class="exp-dates" placeholder="MM" name="exp-date-mm">
+              <input type="text"  class="exp-dates"  placeholder=" YY" name="exp-date-yy">
+            </div>
+          </div>
+          <div class="CVC-div">
+            <label for="CVC">CVC</label>
+            <input type="text"placeholder='e.g. 123' name="CVC">
+          </div>
+        </div>
+        <button type="submit"class='confim-btn'>Confirm</button>
+      </form>
+    </div>
+    
   </div>
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
 
-  000
 
-  Cardholder Name
-  e.g. Jane Appleseed
+ 
 
-  Card Number
-  e.g. 1234 5678 9123 0000
+ 
+ 
 
-  Exp. Date (MM/YY)
-  MM
-  YY
 
-  CVC
-  e.g. 123
-
-  Confirm
 
 
 
@@ -59,5 +91,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+
+  <script src="script.js"></script>
 </body>
 </html>
