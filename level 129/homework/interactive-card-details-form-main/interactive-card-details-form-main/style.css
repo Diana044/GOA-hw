@@ -14,6 +14,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    overflow: hidden;
 }
 
 .container {
@@ -58,7 +59,7 @@ body {
   position:absolute;
   top: 220px;
   left: 260px;
-  box-shadow: 0px 0px 20px rgb(197, 196, 196);
+  box-shadow: 0px 0px 40px rgb(197, 196, 196);
 
 }
 .card-numbers{
@@ -80,7 +81,7 @@ body {
     display: flex;
 }
 
-/* ukanma mxare */
+/*baratis ukana mxare */
 
 .card-back{
     width: 100%;
@@ -98,7 +99,7 @@ body {
     position:absolute;
     top: 525px;
     left: 350px;
-    box-shadow: 0px 0px 30px rgb(197, 196, 196);
+    box-shadow: 0px 0px 40px rgb(197, 196, 196);
 }
 
 .black-line{
@@ -122,7 +123,7 @@ body {
 
 
 
-
+/* form */
 
 
 #form {
@@ -135,7 +136,8 @@ body {
 #form label{
     color: hsl(278, 68%, 11%);
     font-weight: 700;
-    font-size: 13px;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 #form input{
     border: 1px solid hsl(270, 3%, 87%);
@@ -146,13 +148,14 @@ body {
     font-weight:700;
     font-size: 16px;
 }
-/* #form input:active {
+#form input:focus {
   background:
     linear-gradient( 90deg,
       rgba(100, 72, 254, 1) 37%,
       rgba(96, 5, 148, 1) 62%
       );
-      } */
+      color: white;
+ }
 
 .inputs1-2{
     width: 350px;
@@ -173,6 +176,11 @@ body {
 }
 .MM-YY-div{
     display: flex;
+    gap: 10px;
+}
+.MM-YY-div div{
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 .exp-dates{
@@ -203,4 +211,19 @@ body {
     border-radius: 8px;
     color: hsla(0, 0%, 100%, 0.819);
     cursor: pointer;
+    border: none;
+}
+ 
+.confim-btn:focus{
+    background:
+    linear-gradient( 90deg,
+      rgba(100, 72, 254, 1) 37%,
+      rgba(96, 5, 148, 1) 62%
+      );
+}
+
+span{
+    color: red;
+    font-size: 13px;
+    display: none;
 }
