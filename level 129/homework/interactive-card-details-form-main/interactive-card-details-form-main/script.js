@@ -22,9 +22,9 @@ form.addEventListener('submit',function(e){
 
     cardName=false
     if(e.target.cardName.value===''){
-        cardNumberSpan.style.display='flex'
+        cardNameSpan.style.display='flex'
     }else{
-        cardNumberSpan.style.display='none'
+        cardNameSpan.style.display='none'
         cardName=true
     }
     
