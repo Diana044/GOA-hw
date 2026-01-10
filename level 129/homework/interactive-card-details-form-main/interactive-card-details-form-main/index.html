@@ -54,7 +54,7 @@
         </div>
       </div>
     </div>
-
+    <div class="hidden"></div>
     <div class="info-side">
       <form action="" id="form">
         <label for="holder-name">CARDHOLDER NAME</label>
@@ -62,21 +62,22 @@
         <span id="cardNameSpan">Can't be blank</span>
         <label for="card-number">CARD NUMBER</label>
         <input type="text" class="inputs1-2" placeholder="e.g. 1234 5678 9123 0000" name="cardNumber">
-        <span id="cardNumberSpan">Wrong format, number only</span>
+        <span id="cardNumberSpan"></span>
         <div class="date-CVC">
           <div class="exp-date-div">
-            <label for="exp-date">EXP. DATE (MM/YY)</label>
-            <div class="MM-YY-div">
-              <input type="text" class="exp-dates" placeholder="MM" name="expDateMonth">
-              <input type="text" class="exp-dates" placeholder=" YY" name="expDateYear">
+            <div class="exp-date-div1">
+              <label for="exp-date">EXP. DATE (MM/YY)</label>
+              <div class="MM-YY-div">
+                  <input type="text" class="exp-dates" placeholder="MM" name="expDateMonth">
+                  <input type="text" class="exp-dates" placeholder=" YY" name="expDateYear">
+              </div>
+              <span id="expDateSpan">Can't be blank</span>
             </div>
-            <span id="expDateSpan">Can't be blank</span>
-          </div>
-          <div class="CVC-div">
-            <label for="CVC">CVC</label>
-            <input type="text" placeholder='e.g. 123' name="CVC">
-            <span id="expDateSpan">Can't be blank</span>
-
+            <div class="CVC-div">
+              <label for="CVC">CVC</label>
+              <input type="text" placeholder='e.g. 123' name="CVC">
+              <span id="cvcSpan">Can't be blank</span>
+            </div>
           </div>
         </div>
         <button type="submit" class='confim-btn'>Confirm</button>
