@@ -4,20 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive card details form</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -50,7 +39,7 @@
       <div class="card-back">
         <div class="black-line"></div>
         <div class="grey-line">
-          <p class="cardCVC">000</p>
+          <p id="cardCVC">000</p>
         </div>
       </div>
     </div>
@@ -74,8 +63,8 @@
               <span id="expDateSpan">Can't be blank</span>
             </div>
             <div class="CVC-div">
-              <label for="CVC">CVC</label>
-              <input type="text" placeholder='e.g. 123' name="CVC">
+              <label for="inputCVC">CVC</label>
+              <input type="text" placeholder='e.g. 123' name="inputCVC">
               <span id="cvcSpan">Can't be blank</span>
             </div>
           </div>

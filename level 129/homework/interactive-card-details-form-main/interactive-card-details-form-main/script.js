@@ -1,4 +1,4 @@
-let cardNumber=document.getElementById('card-number')
+let cardNumberr=document.getElementById('card-number')
 let userName=document.getElementById('userName')
 let cardMonth=document.getElementById('cardMonth')
 let cardYear=document.getElementById('cardYear')
@@ -19,36 +19,62 @@ form.addEventListener('submit',function(e){
     let cardNumber=e.target.cardNumber.value
     let expDateMonth=e.target.expDateMonth.value
     let expDateYear=e.target.expDateYear.value
-    let CVC=e.target.CVC.value
+    let inputCVC=e.target.inputCVC.value
 
     let cardNamCorrect=false
     if(e.target.cardName.value===''){
         cardNameSpan.style.display='flex'
         e.target.cardName.style.borderColor='red'
     }else{
+        let cleanedCardName = cardName.replaceAll(' ', '')
+        for(let i of cleanedCardName){
+            if('1234567890'.includes(i)){
+                cardNameSpan.style.display='flex'
+                cardNameSpan.innerHTML="Wrong format, letters only"
+                e.target.cardName.style.borderColor='red'
+                return 
+            }
+        }
         cardNameSpan.style.display='none'
         e.target.cardName.style.borderColor='hsl(270, 3%, 87%)'
         cardNamCorrect=true
     }
     
-    let cardNumbeCorrect=false
-    if(e.target.cardNumber.value===''){
-        cardNumberSpan.innerHTML="Can't be blank"
-        cardNumberSpan.style.display='flex'
-        e.target.cardNumber.style.borderColor='red'
-    }
-    else{
-        for(let i of e.target.cardNumber.value){
-            if(!('1234567890'.includes(i))){
-                cardNumberSpan.innerHTML='Wrong format, number only'
-                cardNumberSpan.style.display='flex'
-                return
-            }
+
+let cardNumbeCorrect = false
+let cleanedCardNumber = cardNumber.replaceAll(' ', '')
+
+if (cleanedCardNumber === '') {
+    cardNumberSpan.innerHTML = "Can't be blank"
+    cardNumberSpan.style.display = 'flex'
+    e.target.cardNumber.style.borderColor = 'red'
+} else {
+    for (let i of cleanedCardNumber) {
+        if (!('0123456789'.includes(i))) {
+            cardNumberSpan.innerHTML = 'Wrong format, numbers only'
+            cardNumberSpan.style.display = 'flex'
+            e.target.cardNumber.style.borderColor = 'red'
+            return
         }
-        cardNumberSpan.style.display='none'
-        e.target.cardNumber.style.borderColor='hsl(270, 3%, 87%)'
-        cardNumbeCorrect=true
     }
+
+    if (cleanedCardNumber.length < 16) {
+        cardNumberSpan.innerHTML = "Card number can't be less than 16 digits"
+        cardNumberSpan.style.display = 'flex'
+        e.target.cardNumber.style.borderColor = 'red'
+
+    } else if (cleanedCardNumber.length > 16) {
+        cardNumberSpan.innerHTML = "Card number can't be more than 16 digits"
+        cardNumberSpan.style.display = 'flex'
+        e.target.cardNumber.style.borderColor = 'red'
+
+    } else {
+        cardNumberSpan.style.display = 'none'
+        e.target.cardNumber.style.borderColor = 'hsl(270, 3%, 87%)'
+        cardNumbeCorrect = true
+    }
+}
+
 
     let expMonthCorrect=false
     if(expDateMonth==='' || expDateYear  ===''){
@@ -73,13 +99,21 @@ form.addEventListener('submit',function(e){
     }
 
     let cvcCorrect=false
-    if(CVC===''){
+    if(inputCVC===''){
         cvcSpan.style.display='flex'
-        e.target.CVC.style.borderColor='red'
+        e.target.inputCVC.style.borderColor='red'
     }else{
         cvcSpan.style.display='none'
-        e.target.CVC.style.borderColor='hsl(270, 3%, 87%)'
+        e.target.inputCVC.style.borderColor='hsl(270, 3%, 87%)'
         cvcCorrect=true
+    }
+
+    if(cardNamCorrect  &&  cardNumbeCorrect && expMonthCorrect  &&  cvcCorrect){
+        cardNumberr.innerHTML=cardNumber
+        userName.innerHTML=cardName
+        cardMonth.innerHTML=expDateMonth
+        cardYear.innerHTML=expDateYear
+        cardCVC.innerHTML=inputCVC
     }
 
 })
