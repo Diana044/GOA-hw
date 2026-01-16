@@ -12,7 +12,8 @@ let expDateSpan=document.getElementById('expDateSpan')
 let mmSpan=document.getElementById('mmSpan')
 let cvcSpan=document.getElementById('cvcSpan')
 
-
+let ConfirmationDiv=document.getElementById('ConfirmationDiv')
+let sound=new  Audio('Apple-pay-original.mp3')
 
 date=new Date()
 let year=date.getFullYear()
@@ -37,9 +38,8 @@ form.addEventListener('submit', function(e) {
         cardNameSpan.style.display = 'flex'
         e.target.cardName.style.borderColor = 'red'
     } else {
-        let cleanedCardName = cardName.replaceAll(' ', '')
         let valid = true
-        for (let i of cleanedCardName) {
+        for (let i of cardName) {
             if ('0123456789'.includes(i)) {
                 valid = false
                 break
@@ -95,7 +95,10 @@ form.addEventListener('submit', function(e) {
     for (let char of expDateMonth) {
         if ('0123456789'.includes(char)){
             cleanMonth += char
-        } 
+        } else {
+            cleanMonth = 'error'
+            break
+        }
     }
     expDateMonth = cleanMonth
 
@@ -103,6 +106,9 @@ form.addEventListener('submit', function(e) {
     for (let char of expDateYear) {
         if ('0123456789'.includes(char)){
          cleanYear += char
+        }else {
+            cleanYear = 'error'
+            break
         }
     }
     expDateYear = cleanYear
@@ -115,6 +121,16 @@ form.addEventListener('submit', function(e) {
             e.target.expDateMonth.style.borderColor = 'red'
         } 
         if (expDateYear === ''){
+            e.target.expDateYear.style.borderColor = 'red'
+        }
+    } else if (cleanYear === 'error' || cleanMonth === 'error') {
+        expDateSpan.innerHTML = "* Can't contain letters"
+        expDateSpan.style.display = 'flex'
+        
+        if (cleanMonth === 'error'){
+            e.target.expDateMonth.style.borderColor = 'red'
+        } 
+        if (cleanYear === 'error'){
             e.target.expDateYear.style.borderColor = 'red'
         }
     } else if (Number(expDateMonth) < 1 || Number(expDateMonth) > 12) {
@@ -135,29 +151,29 @@ form.addEventListener('submit', function(e) {
     }
 
 
-// cvc
-if (inputCVC === '') {
-    cvcSpan.style.display = 'flex'
-    cvcSpan.innerHTML = "* Can't be blank"
-    e.target.inputCVC.style.borderColor = 'red'
-} 
-else if (inputCVC.length > 3) {
-    cvcSpan.style.display = 'flex'
-    cvcSpan.innerHTML = "* Can't be more than 3 digits"
-    e.target.inputCVC.style.borderColor = 'red'
-}else if(inputCVC.length <3){
-    cvcSpan.style.display = 'flex'
-    cvcSpan.innerHTML = "* Can't be less than 3 digits"
-    e.target.inputCVC.style.borderColor = 'red'
-}
-else {
-    let valid = true
-    for (let char of inputCVC) {
-        if (!'0123456789'.includes(char)) {
-            valid = false
-            break
-        }
+    // cvc
+    if (inputCVC === '') {
+        cvcSpan.style.display = 'flex'
+        cvcSpan.innerHTML = "* Can't be blank"
+        e.target.inputCVC.style.borderColor = 'red'
+    } 
+    else if (inputCVC.length > 3) {
+        cvcSpan.style.display = 'flex'
+        cvcSpan.innerHTML = "* Can't be more than 3 digits"
+        e.target.inputCVC.style.borderColor = 'red'
+    }else if(inputCVC.length <3){
+        cvcSpan.style.display = 'flex'
+        cvcSpan.innerHTML = "* Can't be less than 3 digits"
+        e.target.inputCVC.style.borderColor = 'red'
     }
+    else {
+        let valid = true
+        for (let char of inputCVC) {
+            if (!'0123456789'.includes(char)) {
+                valid = false
+                break
+            }
+        }
 
     if (!valid) {
         cvcSpan.style.display = 'flex'
@@ -177,5 +193,9 @@ else {
         cardMonth.innerHTML = expDateMonth
         cardYear.innerHTML = expDateYear
         cardCVC.innerHTML = inputCVC
+
+        form.style.display='none'
+        ConfirmationDiv.style.display='flex'
+        sound.play()
     }
 })

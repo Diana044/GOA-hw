@@ -222,7 +222,31 @@ span{
 .hidden  {
     display: none;
 }
-
+.confiramtion-div{
+    display: none;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap: 18px;
+}
+.confiramtion-div H2{
+   font-size: 25px;
+   letter-spacing: 3px;
+   color: hsl(278, 68%, 11%);
+}
+.confiramtion-div p{
+   color: hsl(212, 12%, 71%);
+}
+.confiramtion-div button{
+    width: 300px;
+    height: 45px;
+    padding: 10px;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 8px;
+    color: hsla(0, 0%, 100%, 0.819);
+    cursor: pointer;
+    border: none;
+}
 
 
 
@@ -317,9 +341,9 @@ span{
         max-width: 160px;
     }
 
-.confim-btn{
-        width: 300px;
-        height: 45px;
+    .confim-btn{
+            width: 300px;
+            height: 45px;
     }
- 
+
 }
