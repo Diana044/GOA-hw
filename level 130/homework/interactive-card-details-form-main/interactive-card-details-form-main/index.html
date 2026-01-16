@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="cards-side">
+
+      <img src="./images/bg-main-desktop.png" alt="" class="bg-img">
+      <div class="card-front">
+        <div>
+          <img src="images/card-logo.svg" alt="">
+        </div>
+        <div class="card-numbers">
+          <div class="card-number" id="card-number">
+            0000 0000 0000 0000
+          </div>
+          <div class="name-date">
+            <p id="userName">Jane Appleseed</p>
+            <div class="card-mm-yy">
+              <p id="cardMonth">00</p>
+              <p>/</p>
+              <p id="cardYear">00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card-back">
+        <div class="black-line"></div>
+        <div class="grey-line">
+          <p id="cardCVC">000</p>
+        </div>
+      </div>
+    </div>
+    <div class="info-side">
+      <form action="" id="form">
+        <label for="holder-name">CARDHOLDER NAME</label>
+        <input type="text" class="inputs1-2" placeholder="e.g. Jane Appleseed" name="cardName">
+        <span id="cardNameSpan">* Can't be blank</span>
+        <label for="card-number">CARD NUMBER</label>
+        <input type="text" class="inputs1-2" placeholder="e.g. 1234 5678 9123 0000" name="cardNumber">
+        <span id="cardNumberSpan"></span>
+        <div class="date-CVC">
+          <div class="exp-date-div">
+            <div class="exp-date-div1">
+              <label for="exp-date">EXP. DATE (MM/YY)</label>
+              <div class="MM-YY-div">
+                  <input type="text" class="exp-dates" placeholder="MM" name="expDateMonth" maxlength="2" inputmode="numeric">
+                  <input type="text" class="exp-dates" placeholder=" YY" name="expDateYear"  maxlength="2" inputmode="numeric">
+              </div>
+              <span id="expDateSpan">* Can't be blank</span>
+            </div>
+            <div class="CVC-div">
+              <label for="inputCVC">CVC</label>
+              <input type="text" placeholder='e.g. 123' name="inputCVC"maxlength="3" inputmode="numeric">
+              <span id="cvcSpan">* Can't be blank</span>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class='confim-btn'>Confirm</button>
+      </form>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 
+ Completed state start 
+
+  Thank you!
+  We've added your card details
+  Continue
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
