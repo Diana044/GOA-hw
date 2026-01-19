@@ -13,9 +13,16 @@
     <div class="desserts-sect123">
       <div class="about-desserts">
         <img src="./assets/images/image-waffle-desktop.jpg" alt="Waffle"  class="dessert-img">
-        <div class="addToCart-btn">
-          <img src="./assets/images/icon-add-to-cart.svg" alt="cart">
-          <p>Add to Cart</p>
+        <div>
+          <div class="addToCart-btn"  id="addToCartBtn">
+            <img src="./assets/images/icon-add-to-cart.svg" alt="cart">
+            <p>Add to Cart</p>
+          </div>
+          <div id="orderPlusMinus" >
+            <img id="decrementIcon" src="./assets/images/icon-decrement-quantity.svg" alt="ramoveItemBtn">
+            <p id="itemAmount"></p>
+            <img id="incrementIcon" src="./assets/images/icon-increment-quantity.svg" alt="addItemBtn">
+          </div>
         </div>
         <p class="dessert-name">Waffle</p>
         <p class="description">Waffle with Berries</p>

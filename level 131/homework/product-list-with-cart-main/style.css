@@ -46,6 +46,24 @@ body{
     border-radius: 10px;
     
 }
+
+#orderPlusMinus{
+    display: none;
+    justify-content:space-around;
+    align-items:center;
+    gap: 10px;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid red;
+    width: 160px;
+    border-radius: 16px;
+    padding: 10px;
+    color: hsl(14, 65%, 9%) ;
+    position: absolute;
+    top: 270px;
+    left: 70px;
+    cursor: pointer;
+}
+
 .addToCart-btn{
     display: flex;
     justify-content:center;
