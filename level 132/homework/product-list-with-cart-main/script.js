@@ -15,14 +15,14 @@ let addingCartItems = document.getElementById('addingCartItems')
 for (let i = 0; i < addToCartBtnsArr.length; i++) {
     let count = 0
 
-    // gilaki dasamateblad
+    
     addToCartBtnsArr[i].addEventListener('click', function () {
         addToCartBtnsArr[i].style.display = 'none'
         orderPlusMinusDivsArr[i].style.display = 'flex'
         dessertImgsArr[i].style.border = '2px solid red'
     })
 
-    // mimateba
+    // damateba cartshi
     incrementIcon[i].addEventListener('click', function () {
         count++
         itemAmount[i].textContent = count
