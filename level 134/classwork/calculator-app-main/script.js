@@ -23,9 +23,11 @@ let themeChangerBtn=document.getElementById('themeChangerBtn')
 
 
 let operators=['+','-','*','/','.']
+
 function update() {
     input.innerHTML = number
 }
+
 
 let number=''
 
@@ -68,9 +70,10 @@ multiplication.addEventListener('click',function(){
 
 dot.addEventListener('click',function(){
     let lastChar=number[number.length-1]
-    if(operators.includes(lastChar)){
+    if(operators.includes(lastChar) ||  '.'.includes(number)){
         return
     }
+
     number+=dot.textContent
     update()
 })
@@ -87,9 +90,7 @@ division.addEventListener('click',function(){
 
 deleting.addEventListener('click', function () {
     let text = number.toString()
-    let characters = text.split("")
-    characters.pop()
-    number = characters.join("")
+    number = text.slice(0, text.length-1)
     update()
 })
 
@@ -102,6 +103,13 @@ equal.addEventListener('click',  function(){
     number=eval(number).toString()
     update()
 })
+
+
+
+
+
+
+
 
 // theme changin
 let defaultPosition=1
@@ -141,18 +149,48 @@ function position1(){
         
     for (let div of numbersDivs) {
         div.style.backgroundColor = 'rgb(234, 227, 219)'
-        div.style.COLOR = 'rgb(66, 74, 88)'
+        div.style.color = 'rgb(66, 74, 88)'
         div.style.borderBottomColor = 'rgb(178, 162, 150)'
 
 
     }
 
+    
+    
+   
+
+    addition.style.backgroundColor='rgb(234, 227, 219)'
+    addition.style.color = 'rgb(68, 75, 94)'
+    addition.style.borderBottomColor = 'rgb(181, 164, 153)'
+
     deleting.style.backgroundColor='rgb(162, 179, 225)'
-    deleting.style.borderBottomColor='rgb(66, 78, 115)'
+    deleting.style.color = 'rgb(255, 255, 255)'
+    deleting.style.borderBottomColor = 'rgb(66, 78, 115)'
+
+    multiplication.style.backgroundColor='rgb(234, 227, 219)'
+    multiplication.style.color = 'rgb(255, 229, 59)'
+    multiplication.style.borderBottomColor = 'rgb(181, 164, 153)'
+
+    dot.style.backgroundColor='rgb(234, 227, 219)'
+    dot.style.color =  'rgb(68, 75, 94)'
+    dot.style.borderBottomColor = 'rgb(181, 164, 153)'
+
+    substraction.style.backgroundColor='rgb(234, 227, 219)'
+    substraction.style.color = 'rgb(68, 75, 94)'
+    substraction.style.borderBottomColor = 'rgb(181, 164, 153)'
+
+    division.style.backgroundColor='rgb(234, 227, 219)'
+    division.style.color =  'rgb(68, 75, 94)'
+    division.style.borderBottomColor = 'rgb(181, 164, 153)'
+
     reset.style.backgroundColor='rgb(162, 179, 225)'
     reset.style.borderBottomColor='rgb(66, 78, 115)'
+    reset.style.color='rgb(255, 255, 255)'
+
     equal.style.backgroundColor='rgb(255, 138, 56)'
     equal.style.borderBottomColor='rgb(146, 37, 25)'
+    equal.style.color='rgb(255, 255, 255)'
+
 
 }
 
@@ -170,6 +208,7 @@ function position2(){
         
     for (let div of numbersDivs) {
         div.style.backgroundColor = 'rgb(229, 228, 224)'
+        div.style.borderBottomColor='rgb(165, 158, 144)'
     }
 
     deleting.style.backgroundColor='rgb(98, 181, 189)'
@@ -197,7 +236,30 @@ function position3(){
 
     }
 
+    addition.style.backgroundColor='rgb(51, 27, 77)'
+    addition.style.color = 'rgb(255, 229, 59)'
+    addition.style.borderBottomColor = 'rgb(133, 29, 157)'
+
     deleting.style.backgroundColor='rgb(134, 49, 176)'
+    deleting.style.color = 'rgb(255, 229, 59)'
+    deleting.style.borderBottomColor = 'rgb(133, 29, 157)'
+
+    multiplication.style.backgroundColor='rgb(51, 27, 77)'
+    multiplication.style.color = 'rgb(255, 229, 59)'
+    multiplication.style.borderBottomColor = 'rgb(133, 29, 157)'
+
+    dot.style.backgroundColor='rgb(51, 27, 77)'
+    dot.style.color = 'rgb(255, 229, 59)'
+    dot.style.borderBottomColor = 'rgb(133, 29, 157)'
+
+    substraction.style.backgroundColor='rgb(51, 27, 77)'
+    substraction.style.color = 'rgb(255, 229, 59)'
+    substraction.style.borderBottomColor = 'rgb(133, 29, 157)'
+
+    division.style.backgroundColor='rgb(51, 27, 77)'
+    division.style.color = 'rgb(255, 229, 59)'
+    division.style.borderBottomColor = 'rgb(133, 29, 157)'
+
     reset.style.backgroundColor='rgb(134, 49, 176)'
     reset.style.borderBottomColor='rgb(191, 21, 244)'
     equal.style.backgroundColor='rgb(148, 255, 249)'
