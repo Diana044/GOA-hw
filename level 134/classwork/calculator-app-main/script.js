@@ -70,7 +70,7 @@ multiplication.addEventListener('click',function(){
 
 dot.addEventListener('click',function(){
     let lastChar=number[number.length-1]
-    if(operators.includes(lastChar) ||  '.'.includes(number)){
+    if(operators.includes(lastChar)){
         return
     }
 
@@ -137,7 +137,7 @@ themeChangerBtn.addEventListener('click',function(){
 
 
 function position1(){
-    body.style.backgroundColor='rgb(59, 70, 100'
+    body.style.backgroundColor='rgb(59, 70, 100)'
     input.style.backgroundColor='rgb(24, 31, 50)'
     input.style.color='rgb(255, 255, 255)'
     for (let text of themesText) {
@@ -155,9 +155,6 @@ function position1(){
 
     }
 
-    
-    
-   
 
     addition.style.backgroundColor='rgb(234, 227, 219)'
     addition.style.color = 'rgb(68, 75, 94)'
@@ -218,7 +215,7 @@ function position2(){
 
 
 function position3(){
-    body.style.backgroundColor='rgb(23, 6, 42'
+    body.style.backgroundColor='rgb(23, 6, 42)'
     input.style.backgroundColor='rgb(30, 8, 54)'
     input.style.color='rgb(255, 229, 59)'
     for (let text of themesText) {
