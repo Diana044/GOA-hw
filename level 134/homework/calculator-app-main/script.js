@@ -3,7 +3,7 @@ let numbersContainer=document.querySelector('.numbers')
 let numbersDivs = numbersContainer.querySelectorAll('.num');
 let themes=document.querySelector('.themes')
 let themesText=themes.querySelectorAll('.themesText')
-
+let numsOps=document.getElementsByClassName('numsOps')
 
 
 let input=document.getElementById('input')
@@ -17,7 +17,7 @@ let dot=document.getElementById('dot')
 let reset=document.getElementById('reset')
 let equal=document.getElementById('equal')
 
-// theme changing
+
 let themeChangerDiv=document.getElementById('themeChangerDiv')
 let themeChangerBtn=document.getElementById('themeChangerBtn')
 
@@ -25,7 +25,14 @@ let themeChangerBtn=document.getElementById('themeChangerBtn')
 let operators=['+','-','*','/','.']
 
 function update() {
-    input.innerHTML = number
+    input.textContent = number || '0'
+}
+
+function addOperator(op) {
+    let lastChar = number[number.length - 1]
+    if (operators.includes(lastChar)) return
+    number += op
+    update()
 }
 
 
@@ -35,58 +42,30 @@ for(let i =0; i<numbersArr.length;i++){
     numbersArr[i].addEventListener('click',function(){      
         number+=numbersArr[i].textContent
         update()
-        console.log(number)
     })
 }
 
 
-
 addition.addEventListener('click',function(){
-    let lastChar=number[number.length-1]
-    if(operators.includes(lastChar)){
-        return
-    }
-    number+=addition.textContent
-    update()
+    addOperator('+')
+
 })
 
 substraction.addEventListener('click',function(){
-    let lastChar=number[number.length-1]
-    if(operators.includes(lastChar)){
-        return
-    }
-    number+=substraction.textContent
-    update()
+   addOperator('-')
 })
 
 multiplication.addEventListener('click',function(){
-    let lastChar=number[number.length-1]
-    if(operators.includes(lastChar)){
-        return
-    }
-    number+='*'
-    update()
+    addOperator('*')
 })
 
 dot.addEventListener('click',function(){
-    let lastChar=number[number.length-1]
-    if(operators.includes(lastChar)){
-        return
-    }
-
-    number+=dot.textContent
-    update()
+   addOperator('.')
+    
 })
 division.addEventListener('click',function(){
-    let lastChar=number[number.length-1]
-    if(operators.includes(lastChar)){
-        return
-    }
-    number+=division.textContent
-    update()
+    addOperator('/')
 })
-
-
 
 deleting.addEventListener('click', function () {
     let text = number.toString()
@@ -103,10 +82,6 @@ equal.addEventListener('click',  function(){
     number=eval(number).toString()
     update()
 })
-
-
-
-
 
 
 
@@ -135,7 +110,6 @@ themeChangerBtn.addEventListener('click',function(){
 
 
 
-
 function position1(){
     body.style.backgroundColor='rgb(59, 70, 100)'
     input.style.backgroundColor='rgb(24, 31, 50)'
@@ -155,30 +129,16 @@ function position1(){
 
     }
 
-
-    addition.style.backgroundColor='rgb(234, 227, 219)'
-    addition.style.color = 'rgb(68, 75, 94)'
-    addition.style.borderBottomColor = 'rgb(181, 164, 153)'
+    for(let  i of  numsOps){
+        i.style.backgroundColor='rgb(234, 227, 219)'
+        i.style.color = 'rgb(68, 75, 94)'
+        i.style.borderBottomColor = 'rgb(181, 164, 153)'
+    }
+    
 
     deleting.style.backgroundColor='rgb(162, 179, 225)'
     deleting.style.color = 'rgb(255, 255, 255)'
     deleting.style.borderBottomColor = 'rgb(66, 78, 115)'
-
-    multiplication.style.backgroundColor='rgb(234, 227, 219)'
-    multiplication.style.color = 'rgb(255, 229, 59)'
-    multiplication.style.borderBottomColor = 'rgb(181, 164, 153)'
-
-    dot.style.backgroundColor='rgb(234, 227, 219)'
-    dot.style.color =  'rgb(68, 75, 94)'
-    dot.style.borderBottomColor = 'rgb(181, 164, 153)'
-
-    substraction.style.backgroundColor='rgb(234, 227, 219)'
-    substraction.style.color = 'rgb(68, 75, 94)'
-    substraction.style.borderBottomColor = 'rgb(181, 164, 153)'
-
-    division.style.backgroundColor='rgb(234, 227, 219)'
-    division.style.color =  'rgb(68, 75, 94)'
-    division.style.borderBottomColor = 'rgb(181, 164, 153)'
 
     reset.style.backgroundColor='rgb(162, 179, 225)'
     reset.style.borderBottomColor='rgb(66, 78, 115)'
@@ -232,30 +192,18 @@ function position3(){
         
 
     }
-
-    addition.style.backgroundColor='rgb(51, 27, 77)'
-    addition.style.color = 'rgb(255, 229, 59)'
-    addition.style.borderBottomColor = 'rgb(133, 29, 157)'
+    
+    for(let  i of  numsOps){
+        i.style.backgroundColor='rgb(51, 27, 77)'
+        i.style.color = 'rgb(255, 229, 59)'
+        i.style.borderBottomColor = 'rgb(133, 29, 157)'
+    }
+   
 
     deleting.style.backgroundColor='rgb(134, 49, 176)'
     deleting.style.color = 'rgb(255, 229, 59)'
     deleting.style.borderBottomColor = 'rgb(133, 29, 157)'
 
-    multiplication.style.backgroundColor='rgb(51, 27, 77)'
-    multiplication.style.color = 'rgb(255, 229, 59)'
-    multiplication.style.borderBottomColor = 'rgb(133, 29, 157)'
-
-    dot.style.backgroundColor='rgb(51, 27, 77)'
-    dot.style.color = 'rgb(255, 229, 59)'
-    dot.style.borderBottomColor = 'rgb(133, 29, 157)'
-
-    substraction.style.backgroundColor='rgb(51, 27, 77)'
-    substraction.style.color = 'rgb(255, 229, 59)'
-    substraction.style.borderBottomColor = 'rgb(133, 29, 157)'
-
-    division.style.backgroundColor='rgb(51, 27, 77)'
-    division.style.color = 'rgb(255, 229, 59)'
-    division.style.borderBottomColor = 'rgb(133, 29, 157)'
 
     reset.style.backgroundColor='rgb(134, 49, 176)'
     reset.style.borderBottomColor='rgb(191, 21, 244)'
