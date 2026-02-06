@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="overlay"></div>
+
+  <div class="main"> 
+    <div id="rulesDiv">
+      <div>
+        <p>RULES</p>
+        <img id="closeingIcon" src="images/icon-close.svg" alt="">
+      </div>
+      <img src="images/image-rules.svg" alt="">
+    </div>
+
+    <div class="scoreDiv">
+      <h1>ROCK PAPER SCISSORS</h1>
+      <div class="scoreCountDiv">
+        <p>SCORE</p>
+        <h2 id="scoreCount">0</h2>
+      </div>
+    </div>
+
+    <div class="choiceDiv" id="choiceDiv">
+      <div>
+        <img src="5finger.png" class="images">
+        <img src="2fingers.png" class="images">
+      </div>
+      <img src="0fingers.png" class="images">  
+    </div>
+
+    <div class="choiceDiv2" id="choiceDiv2">
+      <div>
+        <p>YOU PICKED</p>
+        <img id="userChoice">
+      </div>
+      <div>
+        <h1 id="loseOrWin"></h1>
+        <button id="playAgain">PLAY AGAIN</button>
+      </div>
+      <div>
+        <p>THE HOUSE PICKED</p>
+        <img id="computerChoice">
+      </div>
+    </div>
+  </div>
+
+  <div id="rulesButton">
+    <p>RULES</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
