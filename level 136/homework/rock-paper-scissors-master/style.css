@@ -81,7 +81,7 @@ body{
 
 .choiceDiv2{
     display: none;
-    gap: 15px;
+    gap: 30px;
     align-items: center;
     justify-content: center;
     
@@ -171,3 +171,41 @@ body{
     z-index: 10;
 }
 
+@media(max-width:900px){
+    .scoreDiv{
+        width: 500px;
+    }
+}
+@media(max-width:600px){
+    .scoreDiv{
+        width: 400px;
+    }
+    .scoreDiv h1{
+    max-width: 100px;
+    font-size: 25px;
+    }
+    .scoreDiv div{
+        width: 100px;
+        gap: 3px;
+    }
+    .choiceDiv img{
+        width:170px;
+    }
+    #rulesButton{
+        align-self: center;
+    }
+    .choiceDiv2 div{
+        flex-direction: column-reverse;
+    }
+    .loseOrWin{
+        order: 3;
+    }
+
+    .choiceDiv2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
