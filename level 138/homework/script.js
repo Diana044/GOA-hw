@@ -91,7 +91,7 @@ let score = 75
 
 let result = 
     score >= 90 ? "Excellent" : 
-    score >= 70 ? "Good"  : "Fail";      
+    score >= 70 ? "Good"  : "Fail"     
 
 console.log(result);
 
