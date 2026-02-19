@@ -51,7 +51,14 @@ header {
 nav ul li a {
   text-decoration: none;
   color: rgb(129, 130, 135);
+  transition: 0.5s ease-out;
 }
+
+nav ul li a:hover{
+  border-bottom: 4px solid rgb(254, 125, 27);
+  padding-bottom: 30px;
+}
+
 
 .cartAndImage {
   display: flex;
@@ -97,7 +104,6 @@ main {
   width: 120px;
   border-radius: 10px;
 }
-
 /* ---------------- */
 .description {
   display: flex;
