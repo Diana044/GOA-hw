@@ -16,6 +16,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  position: relative;
 }
 
 #menuIcon {
@@ -29,7 +30,9 @@ header {
   width: 85%;
   padding: 20px 150px;
   flex-wrap: wrap;
+  position: relative;
 }
+
 .h1AndNav {
   display: flex;
   justify-content: center;
@@ -54,11 +57,10 @@ nav ul li a {
   transition: 0.5s ease-out;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   border-bottom: 4px solid rgb(254, 125, 27);
   padding-bottom: 30px;
 }
-
 
 .cartAndImage {
   display: flex;
@@ -71,12 +73,56 @@ nav ul li a:hover{
   width: 25px;
   height: 25px;
 }
+
+#viewCartIcon:active {
+  filter: brightness(0%);
+}
+
 #avatarImg {
   width: 45px;
   height: 45px;
+  cursor: pointer;
 }
 
-/* ----------------------------- */
+#avatarImg:active {
+  border: 3px solid rgb(208, 139, 84);
+  border-radius: 50%;
+}
+
+.active-style {
+  outline: 3px solid hsl(26, 100%, 55%);
+  opacity: 0.5;
+}
+
+.cart {
+  border-radius: 10px;
+  box-shadow: 0px 15px 50px rgb(205, 205, 207);
+  width: 100%;
+  max-width: 345px;
+  height: 240px;
+  position: absolute;
+  top: 76px;
+  right: 100px;
+  background-color: white;
+  display: none;
+  z-index: 10;
+}
+
+.cart h3 {
+  width: 100%;
+  border-bottom: 1px solid rgb(246, 246, 246);
+  padding: 20px;
+  color: rgb(44, 43, 46);
+  font-size: 16px;
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
 
 main {
   display: flex;
@@ -86,40 +132,48 @@ main {
   padding: 80px 200px;
   flex-wrap: wrap;
 }
+
 .mainImg {
   width: 560px;
   border-radius: 10px;
+  cursor: pointer;
 }
+
+#productMainImg {
+  display: block;
+  width: 445px;
+  border-radius: 15px;
+}
+
 .imagesDiv {
   display: flex;
   flex-direction: column;
   gap: 25px;
   align-items: center;
 }
+
 .smallImages {
   display: flex;
   gap: 25px;
 }
+
 .smallImages img {
   width: 120px;
   border-radius: 10px;
+  cursor: pointer;
 }
-/* ---------------- */
+
 .description {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.desc-upper {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
 .desc-upper h2 {
   color: rgb(139, 142, 149);
   font-size: 20px;
 }
+
 .desc-upper h1 {
   color: rgb(30, 32, 38);
   font-weight: 900;
@@ -138,11 +192,13 @@ main {
   flex-direction: column;
   gap: 5px;
 }
+
 .newPrice {
   font-weight: 900;
   font-size: 28px;
   color: rgb(26, 29, 32);
 }
+
 .newPrice span {
   background-color: rgb(26, 30, 36);
   color: rgb(230, 231, 236);
@@ -151,6 +207,7 @@ main {
   padding: 5px 11px;
   font-weight: 600;
 }
+
 .oldPrice {
   text-decoration: line-through;
   color: rgb(136, 141, 149);
@@ -174,15 +231,6 @@ main {
   width: 150px;
 }
 
-.minusCountPlus img {
-  cursor: pointer;
-  transition:  0.2s;
-}
-
-.minusCountPlus img:hover {
-  opacity: 0.6;
-}
-
 .addToCart {
   display: flex;
   justify-content: center;
@@ -199,24 +247,87 @@ main {
   cursor: pointer;
 }
 
+.mainImgWithSwitches {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.iconDesign {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.leftIcon {
+  left: -25px;
+}
+
+.rightIcon {
+  right: -25px;
+}
+
+#closeIcon {
+  align-self: flex-end;
+  cursor: pointer;
+  filter: brightness(0%);
+}
+
+#blur {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 998;
+}
+
+#popUpDiv {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  align-items: center;
+  gap: 20px;
+}
+
+#popUpMainImg {
+  width: 550px;
+  border-radius: 15px;
+}
+
 @media (max-width: 1224px) {
   header {
     justify-content: center;
     padding: 12px;
   }
-  /* ----------------------- */
-    main{
-    gap:100px;
+  .cart {
+    top: 105px;
+  }
+  main {
+    gap: 100px;
   }
 }
 
 @media (max-width: 686px) {
   header {
-    gap: 50px;
+    gap: 55px;
     flex-wrap: nowrap;
   }
   .h1AndNav {
-    gap: 30px;
+    gap: 15px;
   }
   nav {
     display: none;
@@ -232,49 +343,84 @@ main {
     width: 40px;
     height: 40px;
   }
-  /* ----------------------- */
-  main{
-    padding:40px 0;
+  .cart {
+    top: 105px;
+    right: -10px;
+    width: 460px;
+    height: 300px;
+  }
+  main {
+    padding: 5px 0;
     gap: 40px;
   }
-  .mainImg{
+  .mainImg {
     width: 100%;
     border-radius: none;
   }
-  .smallImages{
+  .smallImages {
     display: none;
   }
-
-  .description{
+  .description {
     gap: 20px;
-    justify-content:start;
+    justify-content: start;
     margin: 15px;
   }
-  .desc-upper h1{
+  .desc-upper h1 {
     font-size: 33px;
     max-width: 300px;
   }
-   .desc-upper h2{
+  .desc-upper h2 {
     font-size: 16px;
   }
-  .text{
+  .text {
     max-width: 360px;
-    font-size:16px
+    font-size: 16px;
   }
-  .prices{
+  .prices {
     flex-direction: row;
     justify-content: space-between;
   }
-  .buttons{
+  .buttons {
     flex-direction: column;
     width: 100%;
   }
-  .buttons  button{
+  .buttons button {
     width: 100%;
   }
-  .minusCountPlus{
-  justify-content: space-between; 
-  width: 100%;                   
-  min-width: 150px;
+  .minusCountPlus {
+    justify-content: space-between;
+    width: 100%;
+    min-width: 150px;
+  }
+  .iconDesign {
+    display: flex;
+  }
+  .iconDesign img {
+    width: 10px;
+  }
+  .leftIcon {
+    top: 350px;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+  }
+  .rightIcon {
+    top: 350px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 509px) {
+  .leftIcon,
+  .rightIcon {
+    top: 250px;
+  }
+  .rightIcon {
+    right: 20px;
+  }
+  .leftIcon {
+    left: 20px;
   }
 }
