@@ -12,7 +12,6 @@ button.addEventListener('click', function(){
     countText.innerHTML=`Roll : ${count}`
 
 
-
     newDiv.style.cssText = `
         display:flex;
         justify-content:space-between;
