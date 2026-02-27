@@ -1,5 +1,5 @@
 let total = document.getElementById('total')
-let remaining  = document.getElementById('remaining')
+let   = document.getElementById('remaining')
 let input = document.getElementById('text')
 
 
@@ -11,4 +11,6 @@ input.addEventListener('input',function(e){
     if(characterCount > 49){
         e.target.value =  e.target.value.slice(0, -1)
     }
+
+    remaining.innerHTML=50-characterCount  
 })
