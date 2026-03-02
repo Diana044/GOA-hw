@@ -1,5 +1,5 @@
 let total = document.getElementById('total')
-let   = document.getElementById('remaining')
+let  remaining = document.getElementById('remaining')
 let input = document.getElementById('text')
 
 
