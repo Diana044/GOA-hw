@@ -9,9 +9,9 @@ let zvianguriArr=[
     "bangladesahdze",
 ]
 
-const [name1, name2, name3, name4] = zvianguriArr
+const [name1, name2, name3, name4,ss] = zvianguriArr
 
-console.log(name1, name2, name3,name4)
+console.log(name1, name2, name3,name4,ss)
 
 
 const myInfo = {
