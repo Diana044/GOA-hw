@@ -6,6 +6,6 @@ let user = {
     gmail  : 'shalvaRamishvili@gmail.com',
     role : undefined
 }
-const { name, gmail, role} = user
+const { name, gmail='33', role='эпгуые'} = user
 
 console.log( name, gmail, role)

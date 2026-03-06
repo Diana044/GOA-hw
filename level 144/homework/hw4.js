@@ -9,8 +9,7 @@ let  person  = {
         country : 'ukraina'
     }
 }
-const {name} =  person
-const {address} =  person
+const {name,address} =  person
 const {city, country} = address
 
 console.log( name,city, country)
