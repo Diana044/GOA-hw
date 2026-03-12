@@ -1,33 +1,31 @@
 // 1)მოცემულია ობიექტი:
 
-// const company = {
-//   name: "TechCorp",
-//   location: {
-//     country: "Georgia",
-//     city: {
-//       name: "Tbilisi",
-//       street: "Rustaveli"
-//     }
-//   },
-//   employees: [
-//     { name: "Nika", age: 22 },
-//     { name: "Giorgi", age: 25 }
-//   ]
-// }
+const company = {
+  name: "TechCorp",
+  location: {
+    country: "Georgia",
+    city: {
+      name: "Tbilisi",
+      street: "Rustaveli"
+    }
+  },
+  employees: [
+    { name: "Nika", age: 22 },
+    { name: "Giorgi", age: 25 }
+  ]
+}
 
 // დესტრუქციის გამოყენებით ერთ ლაინში გამოიტანე კონსოლში:
-
 // company name
-
 // country
-
 // city name
-
 // street
-
 // პირველი employee-ს name
-
 // მეორე employee-ს age
+const { name,location,} = company
+// const { name,location,location:{country,city}, city:{name:cityName,street},employees,employees:[obj1:{name:emp1Name},obj2:{age}],} =company
+
+console.log(name,location)
 
 
 // 2)const university = {
