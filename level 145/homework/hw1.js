@@ -1,4 +1,12 @@
-// 1)მოცემულია ობიექტი:
+
+// დესტრუქციის გამოყენებით ერთ ლაინში გამოიტანე კონსოლში:
+// company name
+// country
+// city name
+// street
+// პირველი employee-ს name
+// მეორე employee-ს age
+// const { name,location} = company
 
 const company = {
   name: "TechCorp",
@@ -15,132 +23,23 @@ const company = {
   ]
 }
 
-// დესტრუქციის გამოყენებით ერთ ლაინში გამოიტანე კონსოლში:
-// company name
-// country
-// city name
-// street
-// პირველი employee-ს name
-// მეორე employee-ს age
-const { name,location,} = company
-// const { name,location,location:{country,city}, city:{name:cityName,street},employees,employees:[obj1:{name:emp1Name},obj2:{age}],} =company
+const {name,
+  location : {
+  country,
+  city,
+  city :{name:cityName,street}
+},
+  employees: [
+    { name: emp1Name }, 
+    { age }
+  ]
+} = company
 
-console.log(name,location)
-
-
-// 2)const university = {
-//   name: "TSU",
-//   faculty: {
-//     title: "Computer Science",
-//     head: {
-//       name: "Irakli",
-//       age: 50
-//     }
-//   },
-//   students: [
-//     {
-//       name: "Ana",
-//       grades: {
-//         math: 90,
-//         js: 95
-//       }
-//     }
-//   ]
-// }
-
-// დესტრუქციის გამოყენებით გამოიტანე კონსოლში:
-
-// university name
-
-// faculty title
-
-// head name
-
-// student name
-
-// math grade
-
-// js grade
+console.log(name,country,cityName,street,emp1Name,age)
 
 
 
-// 3)const store = {
-//   name: "MegaShop",
-//   address: {
-//     city: "Batumi",
-//     location: {
-//       street: "Chavchavadze",
-//       number: 10
-//     }
-//   },
-//   products: [
-//     {
-//       name: "Laptop",
-//       price: 2500
-//     },
-//     {
-//       name: "Phone",
-//       price: 1200
-//     }
-//   ]
-// }
-// დესტრუქციით გამოიტანე:
-
-// store name
-
-// city
-
-// street
-
-// first product name
-
-// second product price
 
 
-// 4)const user = {
-//   name: "Nika",
-//   surname: "Beridze",
-//   address: {
-//     country: "Georgia",
-//     city: {
-//       name: "Tbilisi",
-//       street: "Pekini"
-//     }
-//   }
-// }
 
-// 📌 დესტრუქციის გამოყენებით გამოიტანე:
 
-// name
-
-// surname
-
-// country
-
-// city name
-
-// street
-
-// 5)const car = {
-//   brand: "BMW",
-//   model: "M5",
-//   engine: {
-//     type: "V8",
-//     power: {
-//       hp: 600,
-//       torque: 750
-//     }
-//   }
-// }
-
-// დესტრუქციის გამოყენებით გამოიტანე:
-
-// brand
-
-// model
-
-// engine type
-
-// hp
-
-// torque
