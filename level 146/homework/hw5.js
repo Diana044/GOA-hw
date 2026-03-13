@@ -9,7 +9,7 @@ const users = [
 
 const onlyNames = users.map(objects=>{
     const{name}= objects
-    return [name]
+    return {name}
 })
 
 console.log(onlyNames)

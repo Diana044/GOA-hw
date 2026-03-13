@@ -9,8 +9,7 @@ const discounted=products.map(eachObj=>{
     const{name,price}=eachObj
     return{
         name:name,
-        price:price*0.9  
-
+        price:price*0.9 
     }
 })
 
