@@ -9,7 +9,7 @@
 
 
 const arr = ['diana','ana', 'giorgi', 'levani', 'lasha', 'konstantine', 'goga', 'gocha', 'natali', 'tekla']
-const newArr = arr.filter(elements => elements.length > 5 && elements.startsWith('g'))
+const newArr = arr.filter(elements => elements.length > 5 && elements('g'))
 
 console.log(newArr)
 
