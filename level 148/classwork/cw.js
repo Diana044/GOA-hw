@@ -8,8 +8,8 @@
 
 
 
-const arr = ['diana','ana', 'giorgi', 'levani', 'lasha', 'konstantine', 'goga', 'gocha', 'natali', 'tekla']
-const newArr = arr.filter(elements => elements.length > 5 && elements('g'))
+const arr = ['diana','ana', 'giorgi', 'gooevani', 'lasha', 'konstantine', 'goga', 'gocha', 'natali', 'tekla']
+const newArr = arr.filter(elements => elements.length > 5 && elements.startsWith('g'))
 
 console.log(newArr)
 

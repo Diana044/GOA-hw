@@ -14,3 +14,4 @@ const discounted=products.map(eachObj=>{
 })
 
 console.log(discounted)
+
