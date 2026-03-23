@@ -15,4 +15,4 @@ const  wholeStr=  students.reduce((accumulator, currentValue,index)=>{
     }
 },"")
 
-console.log(students)
+console.log(wholeStr)

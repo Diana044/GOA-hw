@@ -13,9 +13,6 @@ const employees = [
     { name: "ნინო", age: 35, department: "IT", salary: 2000 }
 ];
 
-const newArr= employees.filter(eachObj=>{
-    if(eachObj.age<30 &&  eachObj.salary<1500 ){
-        console.log(eachObj.name) 
-    }
-})
-
+const newArr= employees.filter(eachObj=>eachObj.age<30 &&  eachObj.salary<1500 )
+const filteredName = newArr.map(obj=>obj.name)
+console.log(filteredName)

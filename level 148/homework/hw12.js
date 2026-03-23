@@ -7,6 +7,7 @@ const products = [
     { name: "ბანანი", price: 3 },
     { name: "სტაფილო", price: 1 }
 ];
+
 let prices = products.reduce((accumulator,currentValue)=>{
     return accumulator+currentValue.price
 },0)

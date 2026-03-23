@@ -4,6 +4,7 @@
 
 const numbers = [5, 10, 15, 20];
 
+
 let newArr =  numbers.reduce((accumulator,currentValue)=>{
     return accumulator+currentValue
 },0)
