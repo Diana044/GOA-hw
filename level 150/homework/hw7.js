@@ -25,3 +25,4 @@ const pass1=new Password('1234567')
 console.log(pass1)
 pass1.changePassword('diana123')
 pass1.checkPassword()
+
