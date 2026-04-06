@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+  background-color: #3a3838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+img{
+    width: 40px;
+}
+button * {
+    pointer-events: none;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 400px;
+    height: 750px;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.section1 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(24, 24, 24);
+    width: 60px;
+    height: 60px;
+    padding:5px;
+}
+.section1 div img{
+    width: 40px;
+}
+
+.iphone-calc {
+  width: 375px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.display {
+  color: white;
+  text-align: right;
+  padding: 20px;
+  margin-bottom: 10px;
+
+}
+
+.history {
+  font-size: 24px;
+  color: #888;
+}
+
+.current {
+  font-size: 5rem;
+  font-weight: 300;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.btn {
+  border: none;
+  aspect-ratio: 1 / 1; 
+  border-radius: 50%;
+  font-size: 2.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+
+.btn:active {
+  opacity: 0.7;
+}
+.dark-gray {
+  background-color: #333333;
+  color: white;
+}
+
+.light-gray {
+  background-color: #A5A5A5;
+  color: black;
+}
+
+.orange {
+  background-color: #FF9F0A;
+  color: white;
+}

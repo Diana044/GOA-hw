@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
-        <label for="name"></label>
-        <input type="text">
-        <label for="age"></label>
-        <input type="text">
-    </form>
+    <div class="main">
+        <div class="section1">
+            <div><img src="imgs/burger-menu.png" alt=""></div>
+            <div><img src="imgs/smallCanculator.png" alt=""></div>
+        </div>
+ <div class="iphone-calc" id="canculator">
+  <div class="display" >
+    <input id="display" class="current" readonly>
+  </div>
+
+    <div class="buttons" id="buttons">
+        <button class="btn light-gray" onclick="append()">⌫</button>
+        <button class="btn light-gray"  onclick="clearDisplay()">AC</button>
+        <button class="btn light-gray">%</button>
+        <button class="btn orange"  onclick="append()">÷</button>
+
+        <button class="btn dark-gray"  onclick="append()">7</button>
+        <button class="btn dark-gray"   onclick="append()">8</button>
+        <button class="btn dark-gray"  onclick="append()">9</button>
+        <button class="btn orange"  onclick="append()">×</button>
+
+        <button class="btn dark-gray"  onclick="append()">4</button>
+        <button class="btn dark-gray"  onclick="append()">5</button>
+        <button class="btn dark-gray"  onclick="append()">6</button>
+        <button class="btn orange"  onclick="append()">−</button>
+
+        <button class="btn dark-gray"  onclick="append()">1</button>
+        <button class="btn dark-gray"  onclick="append()">2</button>
+        <button class="btn dark-gray"   onclick="append()">3</button>
+        <button class="btn orange"  onclick="append()">+</button>
+
+        <button class="btn light-gray">+/-</button>
+        <button class="btn dark-gray"  onclick="append()">0</button>
+        <button class="btn dark-gray"  onclick="append()">.</button>
+        <button class="btn orange"  onclick="canculate()">=</button>
+    </div>
+    </div>
+</div>
+
+<script src="hw.js"></script>
 </body>
 </html>

@@ -47,7 +47,7 @@ gayofa.addEventListener('click',function(){
 
 
 let numbers2 = new Calculator(20,5)
-
+ 
 let numbers3 = new Calculator(5,5)
 
-operations.innerHTML=numbers2
+
