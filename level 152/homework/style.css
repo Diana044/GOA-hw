@@ -17,7 +17,7 @@ body{
     align-items:center;
     flex-direction: column;
     width: 350px;
-    height: 350px;
+    height: 500px;
     background-color: white;
     padding: 5px;
     border-radius: 10px;
@@ -32,6 +32,9 @@ button{
     border-radius: 10px;
     transition: 0.7s;
     cursor: pointer;
+    width: 65px;
+    height: 30px;
+    margin: 4px;
 }
 
 button:hover{

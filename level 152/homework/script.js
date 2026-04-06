@@ -4,10 +4,10 @@ class TodoApp {
     this.list = document.getElementById('todoList')
     this.addBtn = document.getElementById('addBtn')
 
-    this.addBtn.onclick = () => this.addTask()
+    this.addBtn.onclick = () => this.add()
   }
 
-  addTask() {
+  add() {
     const text = this.input.value
     if (text === '') {
         alert('input must be filed')
