@@ -67,6 +67,7 @@ function canCraft(recipe, stash) {
     return true
 }
 
+
 let result = canCraft(healthPotionRecipe, guildStash)
 console.log(result)
 
