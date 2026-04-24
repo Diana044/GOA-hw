@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: pink;
+        color: rgb(207, 0, 111);
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: white;
+      }
+    .main{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    width: 400px;
+    height:300px; 
+    border-radius:15px;
+    background-color: rgb(217, 70, 158);
+    gap: 10px;
+    box-shadow: 0px 0px 30px rgba(255, 4, 159, 0.975);
+    padding: 15px;
+    overflow-y: auto;
+}
+
+
+      input {
+        padding: 10px;
+        border: red;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+      }
+      button {
+        border: none;
+        border-radius: 10px;
+        padding: 10px 30px;
+        background-color: rgb(250, 182, 240);
+        cursor: pointer;
+        border: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <input type="text" id="input" name="input" placeholder="Add task..." />
+      <button id="btn">Add</button>
+      <div id="list"></div>
+    </div>
+
+    <script src="hw4-5.js"></script>
+  </body>
+</html>
