@@ -38,17 +38,7 @@ button.addEventListener('click', () => {
 
     text.textContent = input.value
 
-    div.style.cssText = `
-        border:1px solid white;
-        padding:10px;
-        width:200px;
-        border-radius:10px;
-        margin:5px;
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        gap:20px; 
-    `
+
 
     deleteBtn.onclick = function () {
         list.removeChild(div)
@@ -63,3 +53,5 @@ button.addEventListener('click', () => {
 
     input.value = ''
 })
+
+
