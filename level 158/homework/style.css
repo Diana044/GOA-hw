@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('earth.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-text{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+}
+
+.logo{
+    width:130px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 36px;
+    
+}
+nav ul li{
+    list-style: none;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 5px 5px 30px #ffffff;
+}
+main{
+    padding: 30px 110px;
+}
+.formDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+    border:1px solid rgb(108, 105, 105);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.432);
+    padding: 15px;
+    max-width: 340px;
+    width: 100%;
+    height: 480px;
+    background-color: #ffffff74;
+    border-radius: 14px;
+    background: rgba(255, 251, 251, 0);
+    backdrop-filter: blur(4.5px);
+    padding: 30px;
+    border-radius: 40px;
+   
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+}
+form label{
+    font-size: 14px;
+}
+form input{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 30px;
+    padding: 8px;
+    cursor: pointer;
+    transition:0.6s ease;
+}
+form input:hover{
+    transform:translateY(-6px);
+    box-shadow: 0px  0px 20px  rgb(118, 225, 252);
+}
+.submitBtn{
+    width: 100%;
+    height: 35px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: 1px dashed rgb(118, 225, 252);
+    box-shadow: 0px 0px 15px rgb(118, 225, 252);
+    background-color: rgb(6, 7, 21);
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition:0.7s ease;
+}
+
+.submitBtn:hover{
+    transform:translateY(-6px);
+}
+
+.line{
+    width:100%;
+    border: 1px solid rgba(255, 255, 255, 0.444);
+}
+.loginP{
+    font-size: 13px;
+}
+.loginP span a{
+    color: rgb(88, 169, 249);
+    text-decoration: none;
+}
