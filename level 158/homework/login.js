@@ -1,6 +1,6 @@
 const form = document.getElementById('form')
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', function (e) {
     e.preventDefault()
 
     const username = e.target.name.value
@@ -19,7 +19,14 @@ form.addEventListener('submit', e => {
 
     if (foundUser) {
         alert('Login successful')
-        localStorage.setItem('loggedUser', username)
+
+        let loggedUsers = JSON.parse(localStorage.getItem('loggedUsers')) || []
+
+        if (!loggedUsers.includes(username)) {
+            loggedUsers.push(username)
+        }
+
+        localStorage.setItem('loggedUsers', JSON.stringify(loggedUsers))
     } else {
         alert('Wrong username or password')
     }
