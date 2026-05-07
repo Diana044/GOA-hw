@@ -1,12 +1,6 @@
-//   1) ააწყოთ register და login
-//  გვერდები თავისი ფუნქციონალით კარგი დიზაინით და + localstorage
-
-
 const form = document.getElementById('form')
-const btn = document.getElementById('btn')
 
-
-form.addEventListener('submit',(e)=>{
+form.addEventListener('submit', (e) => {
     e.preventDefault()
 
     const username = e.target.name.value
@@ -18,16 +12,31 @@ form.addEventListener('submit',(e)=>{
         return
     }
 
-    const newUser = {
-        username : username,
-        email : email,
-        password :password,
-    }
-    
     let usersArr = JSON.parse(localStorage.getItem('users')) || []
 
-    usersArr.push(newUser)
+    let exists = false
 
+    for (let i = 0; i < usersArr.length; i++) {
+        if (usersArr[i].email === email) {
+            exists = true
+            break
+        }
+    }
+
+    if (exists) {
+        alert('Email already exists')
+        return
+    }
+
+    const newUser = {
+        username:username,
+        email:email,
+        password:password
+    }
+
+    usersArr.push(newUser)
     localStorage.setItem('users', JSON.stringify(usersArr))
 
+    alert('Registration successful!')
+    form.reset()
 })

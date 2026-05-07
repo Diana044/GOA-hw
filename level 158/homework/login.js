@@ -20,14 +20,14 @@ form.addEventListener('submit', function (e) {
     if (foundUser) {
         alert('Login successful')
 
-        let loggedUsers = JSON.parse(localStorage.getItem('loggedUsers')) || []
+        let loggedUser= JSON.parse(localStorage.getItem('loggedUser')) || []
 
-        if (!loggedUsers.includes(username)) {
-            loggedUsers.push(username)
-        }
-
-        localStorage.setItem('loggedUsers', JSON.stringify(loggedUsers))
+        loggedUser=username
+      
+    
+        localStorage.setItem('loggedUser', JSON.stringify(loggedUser))
     } else {
         alert('Wrong username or password')
     }
+    form.reset()
 })
